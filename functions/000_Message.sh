@@ -3,6 +3,21 @@
 # ║     ║
 # ╚ ═══ ╝
 
+MESSAGE_OLD_TOP(){
+echo "╔══════════════════════════════════════════════════════╗";
+echo "║                                                      ║";
+echo "║         ════ Intelligence Artificielle ════          ║";
+echo "║                                                      ║";
+echo "║    ════ BIENVENUE SUR LE SCRIPT DE DÉPLOIEMENT ════  ║";
+echo "║                                                      ║";
+echo "║                   Par Marc JAFFRE                    ║";
+echo "║                                                      ║";
+echo "║                 Tous droits réservés                 ║";
+echo "║                                                      ║";
+echo "╚══════════════════════════════════════════════════════╝";
+echo "";
+}
+
 MESSAGE_TOP(){
 echo "
 ╔══════════════════════════════════════════════════════╗
