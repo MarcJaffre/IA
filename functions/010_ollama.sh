@@ -9,7 +9,7 @@ fi
 
 ########################################################################################################################
 LLAMA_GIT_CLONE(){
-git clone https://github.com/ggerganov/llama.cpp.git "$WORKDIR/llama.cpp";
+git clone --quiet https://github.com/ggerganov/llama.cpp.git "$WORKDIR/llama.cpp";
 }
 
 ########################################################################################################################
