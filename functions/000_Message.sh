@@ -1,8 +1,8 @@
 # =====================================================================================
 MESSAGE_TOP_1(){
 echo " ____________________________________________________ ";
-echo "|                                                    |";
-echo "|       BIENVENUE SUR LE SCRIPT DE DEPLOIEMENT       |";
+echo "|                  Par Marc JAFFRE                   |";
+echo "|  ==== BIENVENUE SUR LE SCRIPT DE DEPLOIEMENT ====  |";
 echo "|____________________________________________________|";
 echo "                                                      ";
 echo "                                                      ";
