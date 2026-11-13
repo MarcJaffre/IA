@@ -5,20 +5,19 @@
 ### A. Version
 #### Alpha 0.1 (13-11-2026)
 ```
-Opérationnel:
- - Installation des dépendances
- - Installation du pilote Nvidia
- - Téléchargement du dépôt LLAMA
- - Compilation du dépôt
- - Test de fonctionnement Appz
-KO:
- - Déplacement code Source
+Fonctionnement!
+- [OK] Installation des dépendances
+- [OK] Installation du pilote Nvidia
+- [OK] Téléchargement du dépôt LLAMA
+- [OK] Compilation du dépôt
+- [OK] Test de fonctionnement Appz
+- [OK] Compilation en mode silencieux
 
 Amélioration:
- - Compilation trop verbeux
- - Batch de lancement de llama-server
- - Liens symbolique llama-server vers /usr/bin/llama-server
- - Service systemd /etc/systemd/system/llama-server.service
+ - [XXXXXX] Batch de compilation avec "$CMAKE_ARGS"
+ - [XXXXXX] Batch de lancement de llama-server
+ - [XXXXXX] Liens symbolique llama-server vers /usr/bin/llama-server
+ - [XXXXXX] Service systemd /etc/systemd/system/llama-server.service
 ```
 
 
