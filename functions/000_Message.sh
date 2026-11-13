@@ -3,8 +3,7 @@
 # ║     ║
 # ╚ ═══ ╝
 
-
-MESSAGE═TOP(){
+MESSAGE_TOP(){
 echo "╔══════════════════════════════════════════════════════╗";
 echo "║                                                      ║";
 echo "║         ════ Intelligence Artificielle ════          ║";
