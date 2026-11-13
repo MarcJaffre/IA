@@ -21,8 +21,9 @@ fi
 #########################
 LLAMA_BUILD_01(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
-  cd    "$WORKDIR/src/llama.cpp";
-  cmake -B build -DGGML_CUDA=ON -DLLAMA_OPENSSL=OFF --log-level=ERROR > /dev/null;
+  cd    "$WORKDIR/src/llama.cpp";e
+  cmake -B build $CMAKE_ARGS --log-level=ERROR > /dev/null;
+  # cmake -B build -DGGML_CUDA=ON -DLLAMA_OPENSSL=OFF --log-level=ERROR > /dev/null;
 else
   echo "La fonction LLAMA_BUILD_01 est en erreur";
 fi
