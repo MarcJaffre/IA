@@ -27,7 +27,7 @@ if [ -d /tmp/IA 2>/dev/null ]; then
   rm -rf /tmp/IA;
 else
   echo "Téléchargement du dépôt IA";
-  git clone https://github.com/MarcJaffre/IA.git /tmp/IA;
+  git clone --quiet https://github.com/MarcJaffre/IA.git /tmp/IA;
   cd /tmp/IA;
 fi
 ```
