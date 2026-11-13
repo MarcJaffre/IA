@@ -19,7 +19,6 @@ if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;    
 if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y pciutils;                   fi
 if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;                       fi
 if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget;                       fi
-
 echo "" > /tmp/1;
 }
 
