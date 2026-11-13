@@ -43,7 +43,7 @@ fi
 LLAMA_BUILD_MV_BIN(){
 if [ ! -d  "$WORKDIR/output/llama.cpp" ]; then
   mkdir    "$WORKDIR/output/llama.cpp";
-  mv       "$WORKDIR/llama.cpp/build/bin/*" "$WORKDIR/output/llama.cpp";
+  mv       "$WORKDIR/llama.cpp/srv/build/bin/*" "$WORKDIR/output/llama.cpp";
 fi
 }
 
