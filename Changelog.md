@@ -16,6 +16,7 @@ Fonctionnement
 
 Amélioration:
  - [XXXXXX] Batch de compilation avec "$CMAKE_ARGS"
+ - [XXXXXX] Téléchargement de modèle
  - [XXXXXX] Batch de lancement de llama-server
  - [XXXXXX] Liens symbolique llama-server vers /usr/bin/llama-server
  - [XXXXXX] Service systemd /etc/systemd/system/llama-server.service
