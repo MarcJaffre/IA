@@ -1,10 +1,11 @@
 HOST_DEBIAN_APT(){
-apt install -y build-essential;
-apt install -y cmake;
-apt install -y curl;
-apt install -y linux-headers-$(uname -r);
-apt install -y pciutils;
-apt install -y wget;
+if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;                          fi
+if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                                    fi
+if [ ! -d /usr/share/doc/curl                ]; then apt install -y curl;                                     fi
+if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y apt install -y linux-headers-$(uname -r); fi
+if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y apt install -y pciutils;                  fi
+if [ ! -d /usr/share/doc/wget                ]; then apt install -y apt install -y wget;                      fi
+echo "" > /tmp/1;
 }
 
 HOST_DEBIAN_BLACKLIST_NOUVEAU(){
