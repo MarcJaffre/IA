@@ -42,8 +42,12 @@ fi
 ########################################
 LLAMA_BUILD_MV_BIN(){
 if [ ! -d  "$WORKDIR/output/llama.cpp" ]; then
+  echo "OK"
   mkdir    "$WORKDIR/output/llama.cpp";
   mv       "$WORKDIR/src/llama.cpp/build/bin/"* "$WORKDIR/output/llama.cpp";
+else
+ echo "Le script est en erreur ls $WORKDIR/output/llama.cpp)";
+
 fi
 }
 
