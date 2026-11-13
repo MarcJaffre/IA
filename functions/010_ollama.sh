@@ -21,7 +21,7 @@ fi
 #########################
 LLAMA_BUILD_01(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
-  cd "$WORKDIR/src/llama.cpp";
+  cd    "$WORKDIR/src/llama.cpp";
   cmake -B build -DGGML_CUDA=ON;
 else
   echo "La fonction LLAMA_BUILD_01 est en erreur";
@@ -41,13 +41,12 @@ fi
 # Déplacement de la Source vers output #
 ########################################
 LLAMA_BUILD_MV_BIN(){
-if [ ! -d   "$WORKDIR/output/llama.cpp" ]; then
- echo "mkdir $WORKDIR/output/llama.cpp";
- echo "cd    $WORKDIR/src/llama.cpp/build/bin/"
- echo "mv *  $WORKDIR/output/llama.cpp";
+if [ ! -d    "$WORKDIR/output/llama.cpp" ]; then
+  echo "mkdir $WORKDIR/output/llama.cpp";
+  echo "cd    $WORKDIR/src/llama.cpp/build/bin/"
+  echo "mv *  $WORKDIR/output/llama.cpp";
 else
- echo "Le script est en erreur ls $WORKDIR/output/llama.cpp)";
-
+  echo "Le script est en erreur ls $WORKDIR/output/llama.cpp)";
 fi
 }
 
