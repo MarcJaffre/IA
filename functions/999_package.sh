@@ -20,7 +20,8 @@ if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev; 
 if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y pciutils;                   fi
 if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;                       fi
 if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget;                       fi
-echo "" > /tmp/1;
+# Bypass Erreur
+echo "" > $WORKDIR/Test;
 }
 
 ############################################################################################################################
