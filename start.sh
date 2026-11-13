@@ -23,23 +23,23 @@ fi
 # ============================================================================================================================================================
 # Opérationnel
 # ------------------------------
-MESSAGE_TOP_1;
-HOST_DEBIAN_APT;
-HOST_DEBIAN_BLACKLIST_NOUVEAU;
-HOST_DEBIAN_NVIDIA;
-HOST_DEBIAN_NVIDIA_CUDA;
+#MESSAGE_TOP_1;
+#HOST_DEBIAN_APT;
+#HOST_DEBIAN_BLACKLIST_NOUVEAU;
+#HOST_DEBIAN_NVIDIA;
+#HOST_DEBIAN_NVIDIA_CUDA;
 # ------------------------------
-LLAMA_PURGE_DIR;
-MESSAGE_LLAMA_GIT;
-LLAMA_GIT_CLONE;
+#LLAMA_PURGE_DIR;
+#MESSAGE_LLAMA_GIT;
+#LLAMA_GIT_CLONE;
 # ------------------------------
-MESSAGE_LLAMA_BUILD;
-LLAMA_BUILD_01;
-LLAMA_BUILD_02;
+#MESSAGE_LLAMA_BUILD;
+#LLAMA_BUILD_01;
+#LLAMA_BUILD_02;
 # ------------------------------
 # ============================================================================================================================================================
 # En developpement
-LLAMA_BUILD_MV_BIN;
+#LLAMA_BUILD_MV_BIN;
 LLAMA_RUN_APPZ
 # ============================================================================================================================================================
 #CHECK_ROOT_BUILD;
