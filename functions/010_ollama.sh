@@ -28,7 +28,7 @@ cmake --build build --config Release -j $BUILD_CPUS;
 ########################################################################################################################
 # Déplacement de la Source vers output #
 ########################################
-LLAMA_BIN_MV(){
+LLAMA_BUILD_MV_BIN(){
 if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
  mkdir    "$WORKDIR/output/llama.cpp";
  mv       "$WORKDIR/llama.cpp/build/bin/*" "$WORKDIR/output/llama.cpp"
