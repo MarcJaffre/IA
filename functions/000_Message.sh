@@ -19,34 +19,34 @@ echo "";
 }
 # =====================================================================================
 MESSAGE_LOADING_GLOBAL(){
-echo "╔════════════════════════════════════════════════════╗";
-echo "║ - Phase 0 - Chargement de la configuration Globale ║";
+echo "╔══════════════════════════════════════════════════════╗";
+echo "║ - Phase 0 - Chargement de la configuration Globale   ║";
 }
 
 # =====================================================================================
 MESSAGE_LLAMA_PURGE_GIT(){
-echo "║ - Phase 1 - Purge du dossier WORKDIR               ║";
+echo "║ - Phase 1 - Purge du dossier WORKDIR                 ║";
 }
 
 # =====================================================================================
 MESSAGE_LLAMA_GIT_CLONE(){
-echo "║ - Phase 2 - Téléchargement des sources de LLAMA    ║";
+echo "║ - Phase 2 - Téléchargement des sources de LLAMA      ║";
 }
 
 # =====================================================================================
 MESSAGE_LLAMA_BUILD(){
-echo "║ - Phase 3 - Construction du projet LLAMA           ║";
+echo "║ - Phase 3 - Construction du projet LLAMA             ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_END(){
-echo "║ - Phase 4 - Construction de LLAMA terminee         ║";
+echo "║ - Phase 4 - Construction de LLAMA terminee           ║";
 }
 # =====================================================================================
 # =====================================================================================
 MESSAGE_BOT(){
-echo "║                                                    ║";
-echo "║                 Version Alpha 0.1                  ║";
-echo "║                                                    ║";
-echo "╚════════════════════════════════════════════════════╝";
+echo "║                                                      ║";
+echo "║                 Version Alpha 0.1                    ║";
+echo "║                                                      ║";
+echo "╚══════════════════════════════════════════════════════╝";
 }
 
