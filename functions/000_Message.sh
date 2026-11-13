@@ -12,7 +12,7 @@ echo "| - Phase 0 - Chargement de la configuration Globale |";
 
 
 # =====================================================================================
-MESSAGE_LLAMA_GIT(){
+MESSAGE_LLAMA_PURGE_GIT(){
 echo "| - Phase 1 - Purge du dossier WORKDIR               |";
 }
 
