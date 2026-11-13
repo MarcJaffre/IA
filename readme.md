@@ -30,7 +30,6 @@
 ```
 
 
-```
 ### B. Utilisation
 ```bash
 clear;
