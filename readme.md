@@ -82,7 +82,7 @@ Bash                                                   │
               |
               ├──> [999_package.sh] Installation des dépendances
               ├──>
-              ├──> [999_package.sh] Blackliste pilote Libre Nouveau
+              ├──> [999_package.sh] Blackliste du pilote vidéo libre (Nouveau) 
               ├──>
               ├──> [999_package.sh] Installation du pilote Nvidia
               ├──> [999_package.sh] Installation de paquet Nvidia-Cuda-Toolkit 
