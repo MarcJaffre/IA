@@ -17,7 +17,7 @@ EOF
 }
 
 HOST_DEBIAN_NVIDIA(){
-
 wget -q https://fr.download.nvidia.com/XFree86/Linux-x86_64/$RELEASE_NVIDIA/NVIDIA-Linux-x86_64-$RELEASE_NVIDIA.run -O /tmp/NVIDIA-Linux-x86_64.run;
 ls /tmp/NVIDIA-Linux-x86_64.run;
+bash /tmp/NVIDIA-Linux-x86_64.run;
 }
