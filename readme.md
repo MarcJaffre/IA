@@ -2,19 +2,20 @@
 # <p align='center'> Construction des outils pour l'Intelligence Artificielle </p>
 --------------------------------------------------------------------------------------------
 ## I. Avancement
+Le projet est pour Debian.
 
-| Application      | Etat ou Avancement |
-|------------------|--------------------|
-| Dépendance       | Opérationnel       |
-| Blacklist        | Opérationnel       |
-| Nvidia Drivers   | Opérationnel       |
-| Nvidia Cuda      | Opérationnel       |
-| LLAMA            | 90%                |
-| OpenWebui        | 1%                 |
-| Stable-Diffusion | 1%                 |
-| Open-Terminal    | 0%                 |
-| SearXNG          | 0%                 |
-| Docker           | 0%                 |
+| Application       | Etat ou Avancement |
+|-------------------|--------------------|
+| Dépendance        | Opérationnel       |
+| Blacklist         | Opérationnel       |
+| Nvidia Drivers    | Opérationnel       |
+| Nvidia Cuda       | Opérationnel       |
+| LLAMA             | 90%                |
+| OpenWebui         | 1%                 |
+| Stable-Diffusion  | 1%                 |
+| Open-Terminal     | 0%                 |
+| SearXNG           | 0%                 |
+| Docker            | 0%                 |
 
 --------------------------------------------------------------------------------------------
 ## II. Présentation
