@@ -19,7 +19,7 @@ echo "| - Phase 1 - Purge du dossier WORKDIR               |";
 }
 
 # =====================================================================================
-MESSAGE_LLAMA_GIT(){
+MESSAGE_LLAMA_GIT_CLONE(){
 echo "| - Phase 2 - Téléchargement des sources de LLAMA    |";
 }
 
