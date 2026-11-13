@@ -11,7 +11,8 @@
 │   └── stablediffusion.conf     # Variables utilisés pour le projet Stable-diffusion
 │
 ├── functions
-│   ├── 001_check.sh
+│   ├── 000_Message.sh          # Message Dédiée au terminal
+│   ├── 001_check.sh            # Fonctions liées à la vérification
 │   ├── 010_ollama.sh           # Fonctions liées à Git (clonage, mise à jour)
 │   ├── 011_openwebui.sh        # Fonctions liées à la compilation (make, cmake)
 │   ├── 012_stablediffusion.sh  # Fonctions liées à la compilation (make, cmake)
