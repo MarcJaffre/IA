@@ -5,7 +5,6 @@ echo "|                  Par Marc JAFFRE                   |";
 echo "|  ==== BIENVENUE SUR LE SCRIPT DE DEPLOIEMENT ====  |";
 echo "|____________________________________________________|";
 echo "                                                      ";
-echo "                                                      ";
 echo " ____________________________________________________ ";
 echo "| - Phase 0 - Chargement de la configuration Globale |";
 }
