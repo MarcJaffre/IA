@@ -48,7 +48,7 @@ bash test.sh
 │
 ├── output/                     # Binaires compilés (ignoré par Git)
 │
-├── src
+├── src                         # Dossier de téléchargement des sources.
 │
 ├── start.sh                    # Script principal qui charge tout et exécute
 │
