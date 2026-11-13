@@ -17,3 +17,10 @@
 ├── build.sh                   # Script principal qui charge tout et exécute
 └── README.md                  # Documentation
 ```
+### B. Utilisation
+```bash
+clear;
+git clone https://github.com/MarcJaffre/IA.git;
+cd IA;
+bash build.sh;
+```
