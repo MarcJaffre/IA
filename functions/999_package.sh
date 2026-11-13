@@ -5,7 +5,10 @@
 
 ############################################################################################################################
 # Fondamentaux
-HOST_DEBIAN_APT(){
+HOST_DEBIAN_APT_UPDATE(){
+/usr/bin/apt update 1>/dev/null;
+}
+HOST_DEBIAN_APT_INSTALL(){
 if [ ! -d /usr/share/doc/btop                ]; then apt install -y btop;                       fi
 if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            fi
 if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      fi
