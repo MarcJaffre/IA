@@ -42,6 +42,7 @@ bash test.sh
 │   ├── 011_openwebui.sh        # Fonctions liées à la compilation (make, cmake)
 │   ├── 012_stablediffusion.sh  # Fonctions liées à la compilation (make, cmake)
 │   └── 100_docker.sh           # Fonctions pour installer Docker
+│   └── 999_package.sh          # Fonctions pour installer les dépendances, pilotes
 │
 ├── globale.conf                # Variables utilisés pour tout le système
 │
