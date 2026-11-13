@@ -3,7 +3,7 @@ CHECK_ROOT_BUILD(){
 
 if [ -d "/tmp/IA" ]; then
   cd /tmp/IA;
-  tree | grep -iv "readme.md";
+  tree -D 2 | grep -iv "readme.md";
 fi
 }
 
