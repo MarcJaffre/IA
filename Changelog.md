@@ -4,8 +4,9 @@
 ## I. Fondamentaux
 ### A. Version
 #### Alpha 0.1 (13-11-2026)
+Cette Release ne concerne que les dépendances, nvidia, nvidia cuda Toolkit et LLAMA.
 ```
-Fonctionnement!
+Fonctionnement
 - [OK] Installation des dépendances
 - [OK] Installation du pilote Nvidia
 - [OK] Téléchargement du dépôt LLAMA
