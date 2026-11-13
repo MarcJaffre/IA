@@ -52,6 +52,8 @@ bash test.sh
 │
 ├── start.sh                    # Script principal qui charge tout et exécute
 │
+├── Changelog.md                # Information sur les modifications du projet
+├
 └── workspaces/                 # Dépôts téléchargés (ignoré par Git)
 ```
 
