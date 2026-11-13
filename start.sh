@@ -15,7 +15,7 @@ clear;
 if [ -f   "./config/globale.conf" 1>/dev/null ]; then
    source "./config/globale.conf";
 else
-  echo "Erreur : Le fichier ./config/globale.conf est introuvable."; 
+  echo "Erreur : Le fichier ./config/globale.conf est introuvable.";
   exit 1;
 fi
 
