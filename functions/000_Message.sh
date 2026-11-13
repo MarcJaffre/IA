@@ -1,18 +1,18 @@
 # =====================================================================================
 MESSAGE_TOP(){
-echo " ____________________________________________________ ";
-echo "|                                                    |";
-echo "|       ===== Intelligence Artificielle =====        |";
-echo "|                                                    |";
-echo "|  ==== BIENVENUE SUR LE SCRIPT DE DEPLOIEMENT ====  |";
-echo "|                                                    |";
-echo "|                  Par Marc JAFFRE                   |";
-echo "|                                                    |";
-echo "|                Tout droits réservés                |";
-echo "|____________________________________________________|";
-echo "                                                      ";
+echo "╔══════════════════════════════════════════════════════╗";
+echo "║                                                      ║";
+echo "║         ════ Intelligence Artificielle ════          ║";
+echo "║                                                      ║";
+echo "║    ════ BIENVENUE SUR LE SCRIPT DE DÉPLOIEMENT ════  ║";
+echo "║                                                      ║";
+echo "║                   Par Marc JAFFRE                    ║";
+echo "║                                                      ║";
+echo "║                 Tous droits réservés                 ║";
+echo "║                                                      ║";
+echo "╚══════════════════════════════════════════════════════╝";
+echo "";
 }
-
 # =====================================================================================
 MESSAGE_LOADING_GLOBAL(){
 echo " ____________________________________________________ ";
