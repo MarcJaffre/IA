@@ -1,13 +1,11 @@
 HOST_DEBIAN_APT(){
-if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;                          fi
-if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                                    fi
-if [ ! -d /usr/share/doc/curl                ]; then apt install -y curl;                                     fi
-if [ ! -d /usr/share/doc/gnupg2              ]; then apt install -y gnupg2;                                   fi
-if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y apt install -y linux-headers-$(uname -r); fi
-if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y apt install -y pciutils;                  fi
-if [ ! -d /usr/share/doc/wget                ]; then apt install -y apt install -y wget;                      fi
-
-
+if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            fi
+if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      fi
+if [ ! -d /usr/share/doc/curl                ]; then apt install -y curl;                       fi
+if [ ! -d /usr/share/doc/gnupg2              ]; then apt install -y gnupg2;                     fi
+if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r);  fi
+if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y pciutils;                   fi
+if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget;                       fi
 echo "" > /tmp/1;
 }
 
@@ -20,13 +18,14 @@ EOF
 }
 
 HOST_DEBIAN_NVIDIA(){
-apt install nvidia-detect;
+if [ ! -d /usr/share/bug/nvidia-detect           ]; then apt install -y nvidia-detect;           fi
+if [ ! -d /usr/share/doc/nvidia-driver           ]; then apt install -y nvidia-driver;           fi
+if [ ! -d /usr/share/doc/nvidia-settings         ]; then apt install -y nvidia-settings;         fi
 }
 
-
 HOST_DEBIAN_NVIDIA_CUDA(){
-apt install -y aptnvidia-cuda-toolkit
-apt install -y aptnvidia-cuda-toolkit-gcc
+if [ ! -d /usr/lib/nvidia-cuda-toolkit           ]; then apt install -y nvidia-cuda-toolkit;     fi
+if [ ! -d /usr/share/doc/nvidia-cuda-toolkit-gcc ]; then apt install -y nvidia-cuda-toolkit-gcc; fi
 #apt install -y apt nvidia-cuda-dev
 #apt install -y apt nvidia-cuda-gdb
 #apt install -y apt nvidia-cuda-mps
