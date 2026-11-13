@@ -23,11 +23,11 @@ fi
 # ============================================================================================================================================================
 # Opérationnel
 # ------------------------------
-#MESSAGE_TOP_1;
-#HOST_DEBIAN_APT;
-#HOST_DEBIAN_BLACKLIST_NOUVEAU;
-#HOST_DEBIAN_NVIDIA;
-#HOST_DEBIAN_NVIDIA_CUDA;
+MESSAGE_TOP_1;
+HOST_DEBIAN_APT;
+HOST_DEBIAN_BLACKLIST_NOUVEAU;
+HOST_DEBIAN_NVIDIA;
+HOST_DEBIAN_NVIDIA_CUDA;
 # ------------------------------
 LLAMA_PURGE_DIR;
 MESSAGE_LLAMA_GIT;
