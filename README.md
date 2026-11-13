@@ -15,7 +15,8 @@
 │   └── stablediffusion.sh     # Fonctions d'affichage (messages colorés, erreurs)
 ├── workspaces/                # Dépôts téléchargés (ignoré par Git)
 ├── output/                    # Binaires compilés (ignoré par Git)
-├── build.sh                   # Script principal qui charge tout et exécute
+├── globale.conf               # Variables utilisés pour tout le système
+├── start.sh                   # Script principal qui charge tout et exécute
 └── README.md                  # Documentation
 ```
 ### B. Utilisation
