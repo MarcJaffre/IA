@@ -12,9 +12,11 @@ if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;      
 if [ ! -d /usr/share/doc/curl                ]; then apt install -y curl;                       fi
 if [ ! -d /usr/share/doc/gnupg2              ]; then apt install -y gnupg2;                     fi
 if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r);  fi
+if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    fi
 if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y pciutils;                   fi
 if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;                       fi
 if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget;                       fi
+
 echo "" > /tmp/1;
 }
 
