@@ -24,10 +24,11 @@ fi
 # Fonctions qui sont Opérationnelles #
 # ================================== #
 # ---------------------------------------
-MESSAGE_TOP;
 HOST_DEBIAN_APT_UPDATE 1>/dev/null;
 HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
+clear;
 # ---------------------------------------
+MESSAGE_TOP;
 HOST_DEBIAN_BLACKLIST_NOUVEAU;
 HOST_DEBIAN_NVIDIA;
 HOST_DEBIAN_NVIDIA_CUDA;
