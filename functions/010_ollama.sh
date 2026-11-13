@@ -4,12 +4,18 @@
 LLAMA_PURGE_DIR(){
 if [ -d  "$WORKDIR/src/llama.cpp" ]; then 
   rm -rf "$WORKDIR/src/llama.cpp";
+else
+ echo "La fonction LLAMA_PURGE_DIR est en erreur";
 fi
 }
 
 ########################################################################################################################
 LLAMA_GIT_CLONE(){
-git clone --quiet https://github.com/ggerganov/llama.cpp.git "$WORKDIR/llama.cpp";
+if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
+  git clone --quiet https://github.com/ggerganov/llama.cpp.git "$WORKDIR/src/llama.cpp";
+else
+ echo "La fonction LLAMA_GIT_CLONE est en erreur";
+fi
 }
 
 ########################################################################################################################
