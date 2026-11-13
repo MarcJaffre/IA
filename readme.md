@@ -34,7 +34,7 @@
 ### B. Utilisation
 ```bash
 clear;
-
+cat > test.sh << 'EOF'
 if [ -d /tmp/IA 2>/dev/null ]; then
   cd $HOME;
   rm -rf /tmp/IA;
@@ -46,4 +46,6 @@ else
   cd /tmp/IA;
   bash start.sh;
 fi
+EOF
+bash test.sh
 ```
