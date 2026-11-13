@@ -24,3 +24,11 @@ echo "| - Phase 2 - Téléchargement des sources de LLAMA    |";
 MESSAGE_LLAMA_BUILD(){
 echo "| - Phase 3 - Construction du projet LLAMA           |";
 }
+
+
+MESSAGE_BOT(){
+
+echo "|                                                    |";
+echo " ____________________________________________________ ";
+}
+
