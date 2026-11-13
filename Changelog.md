@@ -21,6 +21,9 @@ Amélioration:
  - [XXXXXX] Service systemd /etc/systemd/system/llama-server.service
 ```
 
+<img width="1108" height="383" alt="image" src="https://github.com/user-attachments/assets/6d42427d-093e-452a-ba76-2551f2efd0db" />
+
+
 
 ----------------------------------------------------------------------------------
 ## II. Sécurité
