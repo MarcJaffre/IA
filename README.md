@@ -20,7 +20,12 @@
 ### B. Utilisation
 ```bash
 clear;
-git clone https://github.com/MarcJaffre/IA.git;
-cd IA;
-bash build.sh;
+
+if [ -d /tmp/IA 2>/dev/null ]; then
+  cd $HOME;
+  rm -rf /tmp/IA;
+else
+  git clone https://github.com/MarcJaffre/IA.git /tmp/IA;;
+  cd /tmp/IA;
+fi
 ```
