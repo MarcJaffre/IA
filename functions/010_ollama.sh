@@ -41,10 +41,10 @@ fi
 # Déplacement de la Source vers output #
 ########################################
 LLAMA_BUILD_MV_BIN(){
-if [ ! -d  "$WORKDIR/output/llama.cpp" ]; then
-  echo "OK"
- echo mkdir    "$WORKDIR/output/llama.cpp";
- echo mv       "$WORKDIR/src/llama.cpp/build/bin/"* "$WORKDIR/output/llama.cpp";
+if [ ! -d   "$WORKDIR/output/llama.cpp" ]; then
+ echo "mkdir $WORKDIR/output/llama.cpp";
+ echo "cd    $WORKDIR/src/llama.cpp/build/bin/"
+ echo "mv *  $WORKDIR/output/llama.cpp";
 else
  echo "Le script est en erreur ls $WORKDIR/output/llama.cpp)";
 
