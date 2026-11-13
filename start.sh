@@ -25,7 +25,7 @@ fi
 # ================================== #
 # ---------------------------------------
 MESSAGE_TOP;
-HOST_DEBIAN_APT_UPDATE;
+HOST_DEBIAN_APT_UPDATE 1>/dev/null;
 HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
 # ---------------------------------------
 HOST_DEBIAN_BLACKLIST_NOUVEAU;
