@@ -5,20 +5,15 @@ if [ !   -d "$WORKDIR" ]; then
   # ====================
   mkdir  -p "$WORKDIR";
   cd        "$WORKDIR";
+  ls -la "$WORKDIR";
   # ====================
 else
   # ====================
   rm    -rf "$WORKDIR";
   mkdir -p  "$WORKDIR";
   cd        "$WORKDIR";
+  ls -la "$WORKDIR";
   # ====================
 fi
 }
 # ===========================================================================================================
-
-CHECK_WORKDIR_FILE(){
-if [ -d  "$WORKDIR" ]; then
-  touch  "$WORKDIR/Demo.txt";
-  ls -la "$WORKDIR";
-fi
-}
