@@ -23,3 +23,6 @@ fi
 echo " ____________________________________________________ ";
 echo "|                                                    |";
 echo "| Phase 0 - Chargement de la configuration Globale   |";
+
+
+CHECK_WORKDIR_EXIST;
