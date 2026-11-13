@@ -14,4 +14,8 @@ else
   echo "Erreur : Le fichier $CONFIG_FILE_1 est introuvable."; 
   exit 1;
 fi
+
 # ======================================================================================
+if [ ! -d "$WORKDIR" ]; then
+ mkdir -p "$WORKDIR";
+fi
