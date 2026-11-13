@@ -5,7 +5,7 @@ LLAMA_PURGE_DIR(){
 if [ -d  "$WORKDIR/src/llama.cpp" ]; then 
   rm -rf "$WORKDIR/src/llama.cpp";
 else
- echo "La fonction LLAMA_PURGE_DIR est en erreur";
+  echo "La fonction LLAMA_PURGE_DIR est en erreur";
 fi
 }
 
@@ -14,7 +14,7 @@ LLAMA_GIT_CLONE(){
 if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
   git clone --quiet https://github.com/ggerganov/llama.cpp.git "$WORKDIR/src/llama.cpp";
 else
- echo "La fonction LLAMA_GIT_CLONE est en erreur";
+  echo "La fonction LLAMA_GIT_CLONE est en erreur";
 fi
 }
 
@@ -26,15 +26,15 @@ if [ -d "$WORKDIR/src/llama.cpp" ]; then
   cd "$WORKDIR/src/llama.cpp"
   cmake -B build -DGGML_CUDA=ON
 else
- echo "La fonction LLAMA_BUILD_01 est en erreur";
+  echo "La fonction LLAMA_BUILD_01 est en erreur";
 fi
 }
 LLAMA_BUILD_02(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
-  cd "$WORKDIR/src/llama.cpp"
+  cd    "$WORKDIR/src/llama.cpp";
   cmake --build build --config Release -j $BUILD_CPUS;
 else
- echo "La fonction LLAMA_BUILD_02 est en erreur";
+  echo "La fonction LLAMA_BUILD_02 est en erreur";
 fi
 }
 
@@ -43,9 +43,9 @@ fi
 # Déplacement de la Source vers output #
 ########################################
 LLAMA_BUILD_MV_BIN(){
-if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
- mkdir    "$WORKDIR/output/llama.cpp";
- mv       "$WORKDIR/llama.cpp/build/bin/*" "$WORKDIR/output/llama.cpp"
+if [ ! -d  "$WORKDIR/output/llama.cpp" ]; then
+  mkdir    "$WORKDIR/output/llama.cpp";
+  mv       "$WORKDIR/llama.cpp/build/bin/*" "$WORKDIR/output/llama.cpp"
 fi
 }
 
