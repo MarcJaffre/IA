@@ -22,10 +22,12 @@
 clear;
 
 if [ -d /tmp/IA 2>/dev/null ]; then
+  echo "Suppression du dépôt IA";
   cd $HOME;
   rm -rf /tmp/IA;
 else
-  git clone https://github.com/MarcJaffre/IA.git /tmp/IA;;
+  echo "Téléchargement du dépôt IA";
+  git clone https://github.com/MarcJaffre/IA.git /tmp/IA;
   cd /tmp/IA;
 fi
 ```
