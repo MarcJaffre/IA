@@ -1,8 +1,14 @@
 # =====================================================================================
 MESSAGE_TOP(){
 echo " ____________________________________________________ ";
-echo "|                  Par Marc JAFFRE                   |";
+echo "|                                                    |";
+echo "|       ===== Intelligence Artificielle =====        |";
+echo "|                                                    |";
 echo "|  ==== BIENVENUE SUR LE SCRIPT DE DEPLOIEMENT ====  |";
+echo "|                                                    |";
+echo "|                  Par Marc JAFFRE                   |";
+echo "|                                                    |";
+echo "|                Tout droits réservés                |";
 echo "|____________________________________________________|";
 echo "                                                      ";
 }
