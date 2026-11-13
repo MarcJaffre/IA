@@ -5,14 +5,14 @@ if [ !   -d "$WORKDIR" ]; then
   # ====================
   mkdir  -p "$WORKDIR";
   cd        "$WORKDIR";
-  ls -la "$WORKDIR";
+  ls -la    "$WORKDIR";
   # ====================
 else
   # ====================
   rm    -rf "$WORKDIR";
   mkdir -p  "$WORKDIR";
   cd        "$WORKDIR";
-  ls -la "$WORKDIR";
+  ls -la    "$WORKDIR";
   # ====================
 fi
 }
