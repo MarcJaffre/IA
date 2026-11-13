@@ -17,7 +17,7 @@ fi
 }
 
 CHECK_WORKDIR_FILE(){
-if [ -d "$WORKDIR" ]; then
-  touch "$WORKDIR/Demo.txt";
-    ls -la $WORKDIR;
+if [ -d  "$WORKDIR" ]; then
+  touch  "$WORKDIR/Demo.txt";
+  ls -la "$WORKDIR";
 }
