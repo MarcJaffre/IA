@@ -18,32 +18,32 @@ echo "╚═══════════════════════�
 echo "";
 }
 # =====================================================================================
-MESSAGE═LOADING═GLOBAL(){
+MESSAGE_LOADING_GLOBAL(){
 echo "╔════════════════════════════════════════════════════╗";
 echo "║ - Phase 0 - Chargement de la configuration Globale ║";
 }
 
 # =====================================================================================
-MESSAGE═LLAMA═PURGE═GIT(){
+MESSAGE_LLAMA_PURGE_GIT(){
 echo "║ - Phase 1 - Purge du dossier WORKDIR               ║";
 }
 
 # =====================================================================================
-MESSAGE═LLAMA═GIT═CLONE(){
+MESSAGE_LLAMA_GIT_CLONE(){
 echo "║ - Phase 2 - Téléchargement des sources de LLAMA    ║";
 }
 
 # =====================================================================================
-MESSAGE═LLAMA═BUILD(){
+MESSAGE_LLAMA_BUILD(){
 echo "║ - Phase 3 - Construction du projet LLAMA           ║";
 }
 # =====================================================================================
-MESSAGE═LLAMA═END(){
+MESSAGE_LLAMA_END(){
 echo "║ - Phase 4 - Construction de LLAMA terminee         ║";
 }
 # =====================================================================================
 # =====================================================================================
-MESSAGE═BOT(){
+MESSAGE_BOT(){
 echo "║                                                    ║";
 echo "║                 Version Alpha 0.1                  ║";
 echo "║                                                    ║";
