@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------------------
 ## I. Déploiement IA
 ### A. Présentation
-Ce projet à pour objectif de déployer de manière automatique tout ce qui est nécessaire pour construire une IA.
+Ce projet à pour objectif de déployer des applications IA sur une distribution Debian. 
 
 ### B. Prérequis
 ```bash
