@@ -2,12 +2,11 @@
 # Creation du Dossier LLAMA #
 #############################
 LLAMA_MAKE_DIR(){
-echo "ok"
-#if [ -d  "$WORKDIR\src\llama.cpp" ]; then 
-#  rm -rf "$WORKDIR\src\llama.cpp" 2>/dev/null;
-#else
-# mkdir -p "$WORKDIR\src\llama.cpp";
-#fi
+if [ -d  "$WORKDIR\src\llama.cpp" ]; then 
+  rm -rf "$WORKDIR\src\llama.cpp" 2>/dev/null;
+else
+ mkdir -p "$WORKDIR\src\llama.cpp";
+fi
 }
 
 ########################################################################################################################
