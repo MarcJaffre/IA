@@ -3,15 +3,14 @@
 set -e # Arrête le script immédiatement en cas d'erreur
 
 # ======================================================================================
-CONFIG_FILE_1="./config/llama.conf"
-CONFIG_FILE_2="./config/openwebui.conf"
-CONFIG_FILE_3="./config/stablediffusion.conf"
+CONFIG_FILE='./config/globale.conf'
+
 
 # ======================================================================================
-if [ -f "$CONFIG_FILE_1" ]; then
-  source "$CONFIG_FILE_1" 
+if [ -f "$CONFIG_FILE" ]; then
+  source "$CONFIG_FILE" 
 else
-  echo "Erreur : Le fichier $CONFIG_FILE_1 est introuvable."; 
+  echo "Erreur : Le fichier $CONFIG_FILE est introuvable."; 
   exit 1;
 fi
 
@@ -19,3 +18,5 @@ fi
 if [ ! -d "$WORKDIR" ]; then
  mkdir -p "$WORKDIR";
 fi
+
+
