@@ -1,4 +1,4 @@
-########################################################################################################################
+e########################################################################################################################
 # Creation du Dossier LLAMA #
 #############################
 LLAMA_PURGE_DIR(){
@@ -22,5 +22,15 @@ cmake -B build -DGGML_CUDA=ON
 LLAMA_BUILD_02(){
 cd "$WORKDIR/src/llama.cpp"
 cmake --build build --config Release -j $BUILD_CPUS;
+}
+
+
+########################################################################################################################
+# Déplacement de la Source vers output #
+########################################
+LLAMA_BIN_MV(){
+if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
+ mkdir    "$WORKDIR/output/llama.cpp";
+ mv       "$WORKDIR/llama.cpp/build/bin/*" "$WORKDIR/output/llama.cpp"
 }
 
