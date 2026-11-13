@@ -23,5 +23,5 @@ fi
 echo " ____________________________________________________ ";
 echo "|                                                    |";
 echo "| Phase 0 - Chargement de la configuration Globale   |";
-
-#CHECK_ROOT_BUILD;
+echo "";
+CHECK_ROOT_BUILD;
