@@ -3,7 +3,7 @@ CHECK_ROOT_BUILD(){
 
 if [ -d "/tmp/IA" ]; then
   cd /tmp/IA;
-  tree;
+  tree | grep -iv "*.md";
 fi
 }
 
