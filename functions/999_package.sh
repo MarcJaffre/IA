@@ -1,4 +1,5 @@
 HOST_DEBIAN_APT(){
+echo "1"
 if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            fi
 if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      fi
 if [ ! -d /usr/share/doc/curl                ]; then apt install -y curl;                       fi
@@ -10,6 +11,7 @@ echo "" > /tmp/1;
 }
 
 HOST_DEBIAN_BLACKLIST_NOUVEAU(){
+echo "2"
 cat > /etc/modprobe.d/blacklist-nouveau.conf << EOF
 blacklist nouveau
 options nouveau modeset=0
@@ -18,12 +20,14 @@ EOF
 }
 
 HOST_DEBIAN_NVIDIA(){
+echo "3"
 if [ ! -d /usr/share/bug/nvidia-detect           ]; then apt install -y nvidia-detect;           fi
 if [ ! -d /usr/share/doc/nvidia-driver           ]; then apt install -y nvidia-driver;           fi
 if [ ! -d /usr/share/doc/nvidia-settings         ]; then apt install -y nvidia-settings;         fi
 }
 
 HOST_DEBIAN_NVIDIA_CUDA(){
+echo "4"
 if [ ! -d /usr/lib/nvidia-cuda-toolkit           ]; then apt install -y nvidia-cuda-toolkit;     fi
 if [ ! -d /usr/share/doc/nvidia-cuda-toolkit-gcc ]; then apt install -y nvidia-cuda-toolkit-gcc; fi
 #apt install -y apt nvidia-cuda-dev
