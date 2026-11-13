@@ -10,7 +10,7 @@ fi
 ########################################################################################################################
 LLAMA_GIT_CLONE(){
 if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
-  git clone --quiet https://github.com/ggerganov/llama.cpp.git "$WORKDIR/src/llama.cpp";
+  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
 else
   echo "La fonction LLAMA_GIT_CLONE est en erreur ou lancer LLAMA_PURGE_DIR avant.";
 fi
