@@ -27,7 +27,7 @@ bash test.sh
 ```
 
 
-### C Arborscence
+### C. Arborscence
 ```
 ├── config
 │   ├── docker.conf              # Variables utilisés pour le projet Docker
@@ -41,7 +41,7 @@ bash test.sh
 │   ├── 010_ollama.sh           # Fonctions liées à Git (clonage, mise à jour)
 │   ├── 011_openwebui.sh        # Fonctions liées à la compilation (make, cmake)
 │   ├── 012_stablediffusion.sh  # Fonctions liées à la compilation (make, cmake)
-│   └── 100_docker.sh           # Fonctions pour installer Docker
+│   ├── 100_docker.sh           # Fonctions pour installer Docker
 │   └── 999_package.sh          # Fonctions pour installer les dépendances, pilotes
 │
 ├── globale.conf                # Variables utilisés pour tout le système
@@ -53,4 +53,28 @@ bash test.sh
 ├── start.sh                    # Script principal qui charge tout et exécute
 │
 └── workspaces/                 # Dépôts téléchargés (ignoré par Git)
+```
+
+### D. Fonctionnement
+```
+Bash                                                   │
+ ├──> Phase 1 Load globale.conf                        V
+ │            ├──> Load ./functions/*                  |
+ │            │    ├──> 000_Message.sh                 │
+ │            │    ├──> 001_check.sh                   │
+ │            │    ├──> 010_ollama.sh                  │
+ │            │    ├──> 011_openwebui.sh               │
+ │            │    ├──> 012_stablediffusion.sh         │
+ │            │    ├──> 100_docker.sh                  │
+ │            │    └──> 999_package.sh                 │
+ │            |    └──> ....                           |
+ |            |                                        |
+ │            └──> Load ./config/*                     V
+ │                 ├──> docker.conf                    |
+ │                 ├──> llama.conf                     |
+ │                 ├──> openwebui.conf                 |
+ │                 ├──> stablediffusion.conf           |
+ │                 └──> ....                           |
+ │                                                     |
+ └──> Phase 2 Load Functions                           V
 ```
