@@ -55,5 +55,6 @@ fi
 ################################
 LLAMA_RUN_APPZ(){
 cd "$WORKDIR/output/llama.cpp";
-llama-server --host "0.0.0.0" --port "3000"
+find . -type f -iname "llama*" -exec chmod +x {} \;
+./llama-server --host "0.0.0.0" --port "3000"
 }
