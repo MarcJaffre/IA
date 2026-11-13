@@ -39,10 +39,8 @@ LLAMA_PURGE_DIR;
 MESSAGE_LLAMA_GIT;
 LLAMA_GIT_CLONE;
 # ---------------------------------------
-MESSAGE_LLAMA_BUILD;
-echo "Marqueur 1 - Build"
-LLAMA_BUILD_01 1>/dev/null 2>/dev/null;
-echo "Marqueur 2 - Build"
+MESSAGE_LLAMA_BUILD; 
+LLAMA_BUILD_01; # Verbeux
 LLAMA_BUILD_02 1>/dev/null;
 # ---------------------------------------
 # ============================================================================================================================================================
