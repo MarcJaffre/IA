@@ -29,9 +29,11 @@ if [ -d /tmp/IA 2>/dev/null ]; then
   echo "Téléchargement du dépôt IA";
   git clone --quiet https://github.com/MarcJaffre/IA.git /tmp/IA;
   cd /tmp/IA;
+  bash build.sh;
 else
   echo "Téléchargement du dépôt IA";
   git clone --quiet https://github.com/MarcJaffre/IA.git /tmp/IA;
   cd /tmp/IA;
+  bash build.sh;
 fi
 ```
