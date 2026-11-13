@@ -15,9 +15,10 @@ KO:
  - Déplacement code Source
 
 Amélioration:
- - Batch de lancement
- - Liens symbolique
- - Service systemd
+ - Compilation trop verbeux
+ - Batch de lancement de llama-server
+ - Liens symbolique llama-server vers /usr/bin/llama-server
+ - Service systemd /etc/systemd/system/llama-server.service
 ```
 
 
