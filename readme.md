@@ -14,6 +14,18 @@ apt install -y git;
 ```bash
 clear;
 cat > test.sh << 'EOF'
+
+# ===================================================================
+# Installation de la dépendance minimal #
+# ===================================== #
+if [ ! -f /usr/bin/git ]; then
+  apt update;
+  apt install -y git;
+fi
+
+# ===================================================================
+# Lancement de la Construction #
+# ============================ #
 if [ -d /tmp/IA 2>/dev/null ]; then
   cd $HOME;
   rm -rf /tmp/IA;
@@ -25,6 +37,7 @@ else
   cd /tmp/IA;
   bash start.sh;
 fi
+# ===================================================================
 EOF
 bash test.sh
 ```
