@@ -41,10 +41,10 @@ fi
 # Déplacement de la Source vers output #
 ########################################
 LLAMA_BUILD_MV_BIN(){
-if [ ! -d    "$WORKDIR/output/llama.cpp" ]; then
-  echo "mkdir $WORKDIR/output/llama.cpp";
-  echo "cd    $WORKDIR/src/llama.cpp/build/bin/"
-  echo "mv *  $WORKDIR/output/llama.cpp";
+if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
+  mkdir   "$WORKDIR/output/llama.cpp";
+  cd      "$WORKDIR/src/llama.cpp/build/bin/"
+  mv *    "$WORKDIR/output/llama.cpp";
 else
   echo "Le script est en erreur ls $WORKDIR/output/llama.cpp)";
 fi
@@ -53,7 +53,6 @@ fi
 ########################################################################################################################
 # Lancement pour démonstration #
 ################################
-
 LLAMA_RUN_APPZ(){
 cd "$WORKDIR/output/llama.cpp";
 llama-server --host "0.0.0.0" --port "3000"
