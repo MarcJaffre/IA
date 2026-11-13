@@ -4,18 +4,19 @@
 # ╚ ═══ ╝
 
 MESSAGE_TOP(){
-echo "╔══════════════════════════════════════════════════════╗";
-echo "║                                                      ║";
-echo "║         ════ Intelligence Artificielle ════          ║";
-echo "║                                                      ║";
-echo "║    ════ BIENVENUE SUR LE SCRIPT DE DÉPLOIEMENT ════  ║";
-echo "║                                                      ║";
-echo "║                   Par Marc JAFFRE                    ║";
-echo "║                                                      ║";
-echo "║                 Tous droits réservés                 ║";
-echo "║                                                      ║";
-echo "╚══════════════════════════════════════════════════════╝";
-echo "";
+echo "
+╔══════════════════════════════════════════════════════╗
+║                                                      ║
+║         ════ Intelligence Artificielle ════          ║
+║                                                      ║
+║    ════ BIENVENUE SUR LE SCRIPT DE DÉPLOIEMENT ════  ║
+║                                                      ║
+║                   Par Marc JAFFRE                    ║
+║                                                      ║
+║                 Tous droits réservés                 ║
+║                                                      ║
+╚══════════════════════════════════════════════════════╝
+"
 }
 # =====================================================================================
 MESSAGE_LOADING_GLOBAL(){
