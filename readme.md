@@ -80,9 +80,18 @@ Bash                                                   │
  │                                                     |
  └──> Phase 2 Load Functions                           V
               |
-              ├──> 
+              ├──> [999_package.sh] Installation des dépendances
               ├──>
+              ├──> [999_package.sh] Blackliste pilote Libre Nouveau
               ├──>
+              ├──> [999_package.sh] Installation du pilote Nvidia
+              ├──> [999_package.sh] Installation de paquet Nvidia-Cuda-Toolkit 
+              ├──>
+              ├──> [010_ollama.sh]  Suppression    de llama dans le dossier src 
+              ├──> [010_ollama.sh]  Téléchargement de Llama dans le dossier src
+              ├──> [010_ollama.sh]  Construction du projet LLAMA
+              ├──> [010_ollama.sh]  Déplacement de src vers output pour la recette LLAMA  
+              ├──> [010_ollama.sh]  Test de fonctionnement (Port 3000)
               ├──>
               └──>
 ```
