@@ -15,7 +15,7 @@
 │   ├── 010_ollama.sh           # Fonctions liées à Git (clonage, mise à jour)
 │   ├── 011_openwebui.sh        # Fonctions liées à la compilation (make, cmake)
 │   ├── 012_stablediffusion.sh  # Fonctions d'affichage (messages colorés, erreurs)
-│   ├── 100_docker.sh
+│   └── 100_docker.sh
 │
 ├── globale.conf                # Variables utilisés pour tout le système
 │
