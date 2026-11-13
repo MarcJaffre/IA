@@ -1,18 +1,23 @@
 
 # ===========================================================================================================
-# Dossier de Travail #
-# ================== #
+
 CHECK_WORKDIR_EXIST(){
-if [ !  -d "$WORKDIR" ]; then
-  mkdir -p "$WORKDIR";
-  cd       "$WORKDIR";
+if [ !   -d "$WORKDIR" ]; then
+  # ====================
+  mkdir  -p "$WORKDIR";
+  cd        "$WORKDIR";
+  # ====================
 else
-  rm   -rf "$WORKDIR";
-  mkdir -p "$WORKDIR";
-  cd       "$WORKDIR";
-  touch    "$WORKDIR/Demo.txt";
-  ls -la .;
+  # ====================
+  rm    -rf "$WORKDIR";
+  mkdir -p  "$WORKDIR";
+  cd        "$WORKDIR";
+  # ====================
 fi
 }
 
-
+CHECK_WORKDIR_FILE(){
+if [ -d "$WORKDIR" ]; then
+  touch "$WORKDIR/Demo.txt";
+    ls -la $WORKDIR;
+}
