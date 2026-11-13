@@ -5,6 +5,7 @@
 ### Arborscence
 ```
 ├── config/
+│   └── docker.conf            # Variables utilisés pour le projet Docker
 │   └── ollama.conf            # Variables utilisés pour le projet LLama
 │   └── openwebui.conf         # Variables utilisés pour le projet OpenWebUI
 │   └── stablediffusion.conf   # Variables utilisés pour le projet Stable-diffusion
