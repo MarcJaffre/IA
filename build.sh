@@ -25,3 +25,4 @@ fi
 #echo "| Phase 0 - Chargement de la configuration Globale   |";
 
 CHECK_WORKDIR_EXIST;
+CHECK_WORKDIR_FILE
