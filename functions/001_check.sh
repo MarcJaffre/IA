@@ -2,9 +2,8 @@
 CHECK_ROOT_BUILD(){
 
 if [ -d "/tmp/IA" ]; then
-echo "OK"
-#  cd /tmp/IA;
-#  tree;
+  cd /tmp/IA;
+  tree;
 fi
 }
 
