@@ -14,7 +14,7 @@ apt install -y git;
 ```bash
 clear;
 cat > test.sh << 'EOF'
-
+#!/usr/bin/bash
 # ===================================================================
 # Installation de la dépendance minimal #
 # ===================================== #
