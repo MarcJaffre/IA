@@ -1,18 +1,26 @@
 ########################################################################################################################
 # Creation du Dossier LLAMA #
 #############################
-func_llama_dir(){
-if [ -d  "$WORKDIR\llama.cpp" ]; then 
-  rm -rf "$WORKDIR\llama.cpp" 2>/dev/null;
+LLAMA_MAKE_DIR(){
+if [ -d  "$WORKDIR\src\llama.cpp" ]; then 
+  rm -rf "$WORKDIR\src\llama.cpp" 2>/dev/null;
 fi
 }
+
+########################################################################################################################
+LLAMA_GIT_CLONE(){
+git clone https://github.com/ggerganov/llama.cpp.git "$WORKDIR\src\llama.cpp";
+}
+
 ########################################################################################################################
 # Compilation du projet #
 #########################
-func_llama_build_01(){
+LLAMA_BUILD_01(){
+cd "$WORKDIR\src\llama.cpp"
 cmake -B build -DGGML_CUDA=ON
 }
-func_llama_build_02(){
-cmake --build build --config Release -j $BUILD_CPUS
+LLAMA_BUILD_02(){
+cd "$WORKDIR\src\llama.cpp"
+cmake --build build --config Release -j $BUILD_CPUS;
 }
 
