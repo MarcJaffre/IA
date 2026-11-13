@@ -26,6 +26,9 @@ if [ -d /tmp/IA 2>/dev/null ]; then
   echo "Suppression du dépôt IA";
   cd $HOME;
   rm -rf /tmp/IA;
+  echo "Téléchargement du dépôt IA";
+  git clone --quiet https://github.com/MarcJaffre/IA.git /tmp/IA;
+  cd /tmp/IA;
 else
   echo "Téléchargement du dépôt IA";
   git clone --quiet https://github.com/MarcJaffre/IA.git /tmp/IA;
