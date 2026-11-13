@@ -4,8 +4,6 @@
 LLAMA_PURGE_DIR(){
 if [ -d  "$WORKDIR/src/llama.cpp" ]; then 
   rm -rf "$WORKDIR/src/llama.cpp";
-else
-  echo "La fonction LLAMA_PURGE_DIR est en erreur";
 fi
 }
 
