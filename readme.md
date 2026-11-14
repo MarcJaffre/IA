@@ -76,6 +76,8 @@ if [ -d /srv/IA ]; then
 fi
 ```
 
+
+
 #### 5. Installer l'application
 ```bash
 clear;
