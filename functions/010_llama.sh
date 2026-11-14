@@ -41,7 +41,8 @@ LLAMA_CONFIG_BUILD(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   # ==============================================================================
   cd    "$WORKDIR/src/llama.cpp";
-  cmake -B build $CMAKE_ARGS --log-level=ERROR > /dev/null;
+  cmake -B build $CMAKE_ARGS
+   # --log-level=ERROR > /dev/null;
   # ==============================================================================
 #else
   #echo "La fonction LLAMA_CONFIG_BUILD est en erreur";
@@ -54,7 +55,8 @@ LLAMA_MAKE_BUILD(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   # ==============================================================================
   cd    "$WORKDIR/src/llama.cpp";
-  cmake --build build --config Release -j "$BUILD_CPUS" > /dev/null;
+  cmake --build build --config Release -j "$BUILD_CPUS" 
+  # /dev/null;
   # ==============================================================================
 #else
   #echo "La fonction LLAMA_MAKE_BUILD est en erreur";
@@ -160,7 +162,8 @@ if [ $(systemctl is-enabled llama-server.service) == "disabled" ]; then
   echo "Activation du service llama-server";
   # ==============================================================================
   systemctl daemon-reload;
-  systemctl enable --now llama-server.service 2>/dev/null;
+  systemctl enable --now llama-server.service
+  #2>/dev/null;
   # ==============================================================================
 fi
 }
@@ -171,7 +174,8 @@ LLAMA_SYSTEMD_DISABLED(){
 if [ $(systemctl is-enabled llama-server.service) == "enabled" ]; then
   echo "Désactivation du service llama-server";
   systemctl daemon-reload;
-  systemctl disable --now llama-server.service 2>/dev/null;
+  systemctl disable --now llama-server.service
+  #2>/dev/null;
 fi
 }
 ########################################################################################################################
