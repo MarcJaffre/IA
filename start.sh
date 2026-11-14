@@ -41,6 +41,7 @@ LLAMA_PURGE_DIR_SRC;
 # ---------------------------------------
 MESSAGE_LLAMA_PURGE_OUTPUT;
 LLAMA_PURGE_DIR_OUTPUT;
+read -p "Voulez-vous continer ? (o/n) : "  -n 1 -r
 # ---------------------------------------
 MESSAGE_LLAMA_GIT_CLONE;
 LLAMA_GIT_CLONE;
