@@ -2,41 +2,48 @@
 # echo "" > /srv/IA/workspaces/demo.sh; nano /srv/IA/workspaces/demo.sh; bash /srv/IA/workspaces/demo.sh
 # bash 
 
-# ========================================================================
+# ========================================================================================
 # Configuration du script #
 # ======================= #
 WORKDIR="/srv/IA"
-SRC="$WORKDIR/src/llama.cpp/build/bin/"
-OUT="$WORKDIR/output/llama.cpp"
 
-# ========================================================================
+# ========================================================================================
 # Configuration de LLAMA #
 # ====================== #
-OPTIONS=(
-  --host "0.0.0.0"
-  --port "8080"
-  --api-key "admin"
-)
 LISTE_MODEL="Qwen/Qwen3-VL-8B-Instruct-GGUF:Q4_K_M"
 
-
-# ========================================================================
-if [ -f "$OUT/llama-server" ]; then
-  # -------------------------------------------------------------------
-  cd "$OUT";
-  echo "Utilisation du dossier $OUT"
-  for model in $LISTE_MODEL; do ./llama download -hf $model; done
-  ./llama-server ${OPTIONS[@]};
-  # -------------------------------------------------------------------
+# ========================================================================================
+# Dossier de Travail #
+# ================== #
+if   [ -d "$WORKDIR/output/llama.cpp" ]; then
+     # ==========================================
+     cd   "$WORKDIR/output/llama.cpp";
+     # ==========================================
+elif [ -d "$WORKDIR/src/llama.cpp/build/bin" ]; then
+     # ==========================================
+     cd   "$WORKDIR/src/llama.cpp/build/bin";
+     # ==========================================
 fi
 
-
-# ========================================================================
-if   [ -f "$SRC/llama-server" ]; then
-  # -------------------------------------------------------------------
-  cd "$SRC";
-  echo "Utilisation du dossier $SRC";
-  for model in $LISTE_MODEL; do ./llama download -hf $model; done
-  ./llama-server ${OPTIONS[@]};
-  # -------------------------------------------------------------------
+# ========================================================================================
+# Téléchargement des modèles #
+##############################
+if [ -f llama ]; then
+ # ------------------------------------------------------------------
+ MODELS_DIR="$(pwd)/models";
+ export LLAMA_CACHE="$MODELS_DIR";
+ # ------------------------------------------------------------------
+ mkdir -p "$MODELS_DIR";
+ # ------------------------------------------------------------------
+ OPTIONS=(
+   --host "0.0.0.0"
+   --port "8080"
+   --api-key "admin"
+   --models-dir "$MODELS_DIR"
+ )
+ # ------------------------------------------------------------------
+ for model in $LISTE_MODEL; do ./llama download -hf "$model"; done
+ # ------------------------------------------------------------------
+ ./llama-server "${OPTIONS[@]}";
 fi
+ 
