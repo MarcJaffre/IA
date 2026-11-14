@@ -37,40 +37,40 @@ echo "
 # =====================================================================================
 MESSAGE_LOADING_GLOBAL(){
 echo "╔══════════════════════════════════════════════════════╗";
-echo "║ - Phase 0 - Chargement de la configuration Globale   ║";
+echo "║ [0/7] Initialisation de l'environnement global       ║";
 }
 
 # =====================================================================================
 MESSAGE_LLAMA_PURGE_SRC(){
-echo "║ - Phase 1 - Suppression du dossier sources\llama.cpp ║";
+echo "║ [1/7] Suppression de l'ancien dossier sources llama  ║";
 }
 
 # =====================================================================================
 MESSAGE_LLAMA_GIT_CLONE(){
-echo "║ - Phase 2 - Téléchargement dans sources\llama.cpp    ║";
+echo "║ [2/7] Clonage des sources depuis GitHub              ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_PURGE_OUTPUT(){
-echo "║ - Phase 3 - Purge du dossier output                  ║";
+echo "║ [3/7] Vidage complet du répertoire output            ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_CONFIG_BUILD(){
-echo "║ - Phase 4 - Configuration de la Build llama.cpp      ║";
+echo "║ [4/7] Préparation de la compilation CMake            ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_MAKE_BUILD(){
-echo "║ - Phase 5 - Compilation de la build  ollama.cpp      ║";
+echo "║ [5/7] Compilation complète de llama.cpp              ║";
 }
 
 # =====================================================================================
 MESSAGE_LLAMA_BUILD_OUTPUT(){
-echo "║ - Phase 5 - Déplacement des binaires dans output     ║";
+echo "║ [6/7] Exportation des binaires vers output           ║";
 }
 
 # =====================================================================================
 
 MESSAGE_LLAMA_END(){
-echo "║ - Phase 5 - Fin de la construction de llama.cpp      ║";
+echo "║ [7/7] Construction de llama.cpp terminée             ║";
 }
 # =====================================================================================
 MESSAGE_BOT(){
