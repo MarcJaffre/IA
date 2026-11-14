@@ -42,7 +42,7 @@ echo "║ - Phase 0 - Chargement de la configuration Globale   ║";
 
 # =====================================================================================
 MESSAGE_LLAMA_PURGE_SRC(){
-echo "║ - Phase 1 - Purge du dossier sources\llama.cpp       ║";
+echo "║ - Phase 1 - Suppression du dossier sources\llama.cpp ║";
 }
 
 # =====================================================================================
