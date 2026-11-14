@@ -14,7 +14,6 @@ if [ ! -d "$WORKDIR/openwebui" ]; then
  mkdir    "$WORKDIR/openwebui";
  mkdir    "$WORKDIR/openwebui/download";
  mkdir    "$WORKDIR/openwebui/.cache";
- ls -la   "$WORKDIR/openwebui";
 fi
 }
 
@@ -24,7 +23,7 @@ fi
 OPENWEBUI_PYTHON_MAKE_ENV(){
 if [ -d "$WORKDIR/openwebui" ]; then
    cd   "$WORKDIR/openwebui";
-   python${PYTHON_VERSION} -m venv "$ENV_NAME"
+   echo "python${PYTHON_VERSION} -m venv $ENV_NAME"
 fi
 }
 # ====================================================================================
@@ -41,7 +40,7 @@ fi
 OPENWEBUI_PYTHON_PIP_PACKAGE(){
 if [ -d   "$WORKDIR/openwebui" ]; then
    cd     "$WORKDIR/openwebui";
-   pip install --no-cache-dir -U "$PACKAGE" --cache-dir "$PIP_DOWNLOAD_DIR"
+  echo "pip install --no-cache-dir -U $PACKAGE --cache-dir $PIP_DOWNLOAD_DIR"
 fi
 }
 
