@@ -16,6 +16,8 @@ if [ ! -d "$WORKDIR/IA/openwebui" ]; then
  echo mkdir "$WORKDIR/IA/openwebui";
  echo mkdir "$WORKDIR/IA/openwebui/download";
  echo mkdir "$WORKDIR/IA/openwebui/.cache";
+else
+ echo "KO"; 
 fi
 }
 #====================================================================================
