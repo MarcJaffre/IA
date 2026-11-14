@@ -35,28 +35,13 @@ clear;
 if [ ! -d "$WORKDIR" ]; then
   git clone --quiet "$GITHUB_IA" "$WORKDIR";
   cd "$WORKDIR";
+  sed -i -e "s/XXXXXX/$WORKDIR/g" "$WORKDIR/globale.conf";
 else
   cd "$WORKDIR";
   git fetch --all
   git reset --hard origin/main
   git clean -fd
 fi
-
-# =============================================================================
-# Purge du dossier WORKDIR #
-############################
-#if [ -d $WORKDIR ]; then
-  # -----------------------------
-  #cd "$HOME";
-  # -----------------------------
-  #echo 'Suppression WORKDIR';
-  #rm -rf "$WORKDIR";
-  # -----------------------------
-#else
-  # -----------------------------
-  #echo 'WORKDIR absent';
-  # -----------------------------
-#fi
 
 # =============================================================================
 # LANCEMENT PROJET #
