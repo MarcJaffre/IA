@@ -26,5 +26,6 @@ fi
 # Lancement du script #
 #######################
 OPENWEBUI_PURGE_FOLDER;
-
 OPENWEBUI_MAKE_FOLDER;
+
+OPENWEBUI_PYTHON_MAKE_ENV;
