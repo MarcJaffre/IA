@@ -4,6 +4,7 @@
 # Configuration du script #
 # ======================= #
 WORKDIR="/tmp/IA"
+SUBDIR="src"
 PARM_1="--host 0.0.0.0"
 PARM_2="--port 8080"
 PARM_3="--api-key admin"
@@ -16,7 +17,7 @@ OPTIONS="$PARM_1 $PARM_2 $PARM_3"
 # ========================================================================
 # Dossier de Travail #
 # ================== #
-cd "$WORKDIR/src/llama.cpp/build/bin/";
+cd "$WORKDIR/$SUBDIR/llama.cpp/build/bin/";
 
 # ========================================================================
 # Lancement #
