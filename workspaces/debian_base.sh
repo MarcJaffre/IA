@@ -12,8 +12,6 @@ if [ -f  $WORKDIR/IA/functions/999_package.sh ]; then
   source $WORKDIR/IA/functions/999_package.sh;
 fi
 
-ls $WORKDIR/IA/functions/999_package.sh;
-
 # =================================================================================================
 # Charger fichier Debian #
 # ====================== #
@@ -22,7 +20,7 @@ if [ -f /etc/os-release ]; then
 fi
 
 # =================================================================================================
-if [ $ID = Debian ]; then
+if [ $ID = debian ]; then
  HOST_DEBIAN_APT_REPO;
  HOST_DEBIAN_APT_UPDATE;
  HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
