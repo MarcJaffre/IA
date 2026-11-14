@@ -3,7 +3,6 @@
 # Arrête le script immédiatement en cas d'erreur #
 # ============================================== #
 set -e
-
 # =================================================================================================
 # Générer le fichier  #
 # =================== #
@@ -13,14 +12,12 @@ cp        "$WORKDIR/IA/globale.conf.exemple" "$WORKDIR/IA/globale.conf";
 else
  echo "Deja crée";
 fi
-
 # =================================================================================================
 # Configuration du WORKDIR #
 # ======================== #
 if [ -f "$WORKDIR/IA/globale.conf" ]; then
   sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" "$WORKDIR/IA/globale.conf";
 fi
-
 # =================================================================================================
 # Chargement de la configuration du WORKDIR #
 # ========================================= #
@@ -31,6 +28,7 @@ else
 fi
 
 
+
 # =================================================================================================
 # Dossier output llama #
 # ==================== #
@@ -39,7 +37,13 @@ if [ -d "$WORKDIR/IA/output/llama.cpp/bin" ]; then
 else
   echo "Le dossier $WORKDIR/IA/output/llama.cpp/bin est absent";
   exit;
-#fi
+fi
+
+
+
+
+
+
 
 # =================================================================================================
 # Suppression du service #
