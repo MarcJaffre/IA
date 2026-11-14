@@ -1,6 +1,11 @@
 #====================================================================================
 # Dossier de Travail #
 # ================== #
+OPENWEBUI_DEMO(){
+echo "DEMO";
+}
+
+
 OPENWEBUI_PURGE(){
 if [ -d "$WORKDIR/IA/openwebui" ]; then
  echo "Suppression de openwebui";
