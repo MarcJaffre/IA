@@ -5,7 +5,6 @@ OPENWEBUI_MAKE_DIR(){
 # ----------------------------------------------------------
 echo "Création des dossiers Openwebui, Download et Cache";
 # ----------------------------------------------------------
-# ----------------------------------------------------------
 if [ ! -d  "./openwebui" ]; then
   mkdir -p "./openwebui";
   cd       "./openwebui";
@@ -15,15 +14,11 @@ fi
 # ----------------------------------------------------------
 if [ !  -d "./openwebui/download" ]; then
   mkdir -p "./openwebui/download";
-else
-  echo "KO 2";
 fi
 
 # ----------------------------------------------------------
 if [ ! -d "./openwebui/.cache" ]; then
   mkdir -p "./openwebui/.cache";
-else
-  echo "KO 3";
 fi
 # ----------------------------------------------------------
 echo "Création de l'environnement Virtuel";
