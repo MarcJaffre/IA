@@ -11,7 +11,7 @@ fi
 ##########################
 OPENWEBUI_CREATE_DIR(){
 if [ ! -d "$WORKDIR/IA/openwebui" ]; then
- echo "Dossier à delete";
+ echo "Dossier à créer";
 fi
 }
 
