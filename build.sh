@@ -19,11 +19,14 @@ source ./globale.conf;
 # =================================================================================================
 # Git Hub #
 ###########
-GIT_LLAMA_REMOVE_REPO;
-GIT_LLAMA_CLONE_REPO;
+LLAMA_PURGE_DIR_SRC;
+LLAMA_GIT_CLONE;
 
 # =================================================================================================
 # Build #
 #########
-LLAMA_CONFIG_BUILD;
+LLAMA_PURGE_DIR_OUTPUT
+LLAMA_CONFIG_BUILD
+LLAMA_MAKE_BUILD
 LLAMA_BUILD_OUTPUT
+LLAMA_BUILD_MV_BIN
