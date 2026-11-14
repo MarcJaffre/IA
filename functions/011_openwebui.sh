@@ -3,7 +3,7 @@
 # ================== #
 OPENWEBUI_PURGE(){
 if [ "$WORKDIR/IA/openwebui" ]; then
- echok "Dossier à delete";
+ echo "Dossier à delete";
 fi
 }
 #====================================================================================
