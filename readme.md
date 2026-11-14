@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------------------
 # <p align='center'> Construction des outils pour l'Intelligence Artificielle </p>
 --------------------------------------------------------------------------------------------
-## I. Déploiement IA
+## I. Préparation du système
 ### A. Présentation
 Ce projet à pour objectif de déployer des applications IA sur une distribution Debian.
 
