@@ -47,10 +47,10 @@ if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
   # ===================================================================
   cd      "$WORKDIR/src/llama.cpp/build/bin/"
   # ===================================================================
-  mkdir   "/root/llama.cpp";
-  mv *    "/root/llama.cpp";
+  mkdir   "$WORKDIR_FINAL/llama.cpp";
+  mv *    "$WORKDIR_FINAL/llama.cpp";
   # ===================================================================
-  find "/root/llama.cpp" -type f -iname "llama*" -exec chmod +x {} \;
+  find "$WORKDIR_FINAL/llama.cpp" -type f -iname "llama*" -exec chmod +x {} \;
   # ===================================================================
 fi
 }
@@ -80,7 +80,7 @@ if [ -f /etc/systemd/system/llama-server.service ]; then
   rm -f /etc/systemd/system/llama-server.service;
 fi
 
-cat > /etc/systemd/system/llama-server.service <<'EOF'
+cat > /etc/systemd/system/llama-server.service <<EOF
 [Unit]
 Description=llama.cpp HTTP server
 After=network-online.target
@@ -88,8 +88,8 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-WorkingDirectory=/root/llama.cpp 
-ExecStart=/root/llama.cpp/llama-server --host 0.0.0.0 --port 8080 --api-key admin
+WorkingDirectory=$WORKDIR_FINAL/llama.cpp 
+ExecStart=$WORKDIR_FINAL/llama.cpp/llama-server --host 0.0.0.0 --port 8080 --api-key admin
 Restart=on-failure
 RestartSec=5
 
