@@ -58,15 +58,15 @@ fi
 --------------------------------------------------------------------------------------------
 ## I. Avancement
 
-| Application       | Etat ou Avancement |
-|-------------------|--------------------|
-| Dépendance        | Opérationnel       |
-| Blacklist         | Opérationnel       |
-| Nvidia Drivers    | Opérationnel       |
-| Nvidia Cuda       | Opérationnel       |
-| LLAMA             | 75% (Build 13 min) |
-| OpenWebui         | 1%                 |
-| Stable-Diffusion  | 1%                 |
-| Open-Terminal     | 0%                 |
-| SearXNG           | 0%                 |
-| Docker            | 0%                 |
+| Application       | Etat ou Avancement | Prise de note                   |
+|-------------------|--------------------|---------------------------------|
+| Dépendance        | Opérationnel       |                                 |
+| Blacklist         | Opérationnel       |                                 |
+| Nvidia Drivers    | Opérationnel       |                                 |
+| Nvidia Cuda       | Opérationnel       |                                 |
+| LLAMA             | 95% (Build 13 min) | Il manque a ajouter les modèles |
+| OpenWebui         | 1%                 |                                 |
+| Stable-Diffusion  | 1%                 |                                 |
+| Open-Terminal     | 0%                 |                                 |
+| SearXNG           | 0%                 |                                 |
+| Docker            | 0%                 |                                 |
