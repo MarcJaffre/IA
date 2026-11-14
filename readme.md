@@ -43,7 +43,7 @@ clear;
 if [ -d $WORKDIR/IA ]; then
  # ----------------------------------------------------------------
   cd $WORKDIR/IA;
-  bash dependances.sh;
+  bash ./workspaces/debian_base.sh;
 else
  echo "Le fichier dependances.sh est absent";
  # ----------------------------------------------------------------
@@ -57,7 +57,7 @@ clear;
 if [ -d $WORKDIR/IA ]; then
  # ---------------------------------
  cd $WORKDIR/IA;
- bash build.sh;
+  bash ./workspaces/llama_build.sh;
  # ---------------------------------
 else
  # ---------------------------------
@@ -71,7 +71,7 @@ clear;
 if [ -d $WORKDIR/IA ]; then
  # ----------------------
  cd $WORKDIR/IA;
- bash run.sh
+  bash ./workspaces/llama_start.sh;
  # ----------------------
 fi
 ```
@@ -82,7 +82,7 @@ clear;
 if [ -d $WORKDIR/IA ]; then
  # ----------------------
  cd   $WORKDIR/IA;
- bash install.sh;
+  bash ./workspaces/llama_service_install.sh;
  # ----------------------
 fi
 ```
@@ -94,7 +94,7 @@ clear;
 if [ -d $WORKDIR/IA ]; then
  # ----------------------
  cd   $WORKDIR/IA;
- bash uninstall.sh;
+  bash ./workspaces/llama_service_uninstall.sh;
  # ----------------------
 fi
 ```
