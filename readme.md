@@ -68,9 +68,9 @@ fi
 #### 4. Lancer l'application
 ```bash
 clear;
-if [ -d /srv/IA ]; then
+if [ -d $WORKDIR/IA ]; then
  # ----------------------
- cd IA;
+ cd $WORKDIR/IA;
  bash run.sh
  # ----------------------
 fi
@@ -83,7 +83,7 @@ fi
 clear;
 if [ -d /srv/IA ]; then
  # ----------------------
- cd IA;
+ cd $WORKDIR/IA;
  bash install.sh;
  # ----------------------
 fi
