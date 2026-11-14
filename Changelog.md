@@ -13,7 +13,7 @@ Fonctionnement
 - [OK] Compilation du dépôt
 - [OK] Test de fonctionnement Appz
 - [OK] Batch de compilation avec "$CMAKE_ARGS"
-- [OK] Compilation en mode silencieux
+- [A activé] Compilation en mode silencieux
 - [OK] Désactivation du CCACHE
 
 Amélioration:
