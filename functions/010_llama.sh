@@ -15,7 +15,7 @@ fi
 GIT_LLAMA_CLONE_REPO(){
 if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
   # ===============================================================================
-  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
+  git clone "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
   # ===============================================================================
 fi
 }
