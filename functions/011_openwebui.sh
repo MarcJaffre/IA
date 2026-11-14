@@ -11,7 +11,9 @@ fi
 # ==================================== #
 OPENWEBUI_MAKE_FOLDER(){
 if [ ! -d "$WORKDIR/openwebui" ]; then
- mkdir    "$WORKDIR/openwebui"  ;
+ mkdir    "$WORKDIR/openwebui";
+ mkdir    "$WORKDIR/openwebui/download";
+ mkdir    "$WORKDIR/openwebui/.cache";
 fi
 }
 
