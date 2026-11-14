@@ -10,7 +10,7 @@ fi
 # Création Environnement #
 # ====================== #
 OPENWEBUI_CREATE_DIR(){
-if [ ! -d "$WORKDIR/IA/openwebui" ]; then
+if [ -d "$WORKDIR/IA/openwebui" ]; then
  echo "Dossier à créer";
  echo mkdir "$WORKDIR/IA/openwebui";
  echo mkdir "$WORKDIR/IA/openwebui/download";
