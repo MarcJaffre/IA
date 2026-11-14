@@ -17,7 +17,7 @@ OPTIONS="$PARM_1 $PARM_2 $PARM_3"
 # ========================================================================
 # Dossier de Travail #
 # ================== #
-cd "$WORKDIR/$SUBDIR/llama.cpp/build/bin/";
+cd "${WORKDIR}/${SUBDIR}/llama.cpp/build/bin/";
 
 # ========================================================================
 # Lancement #
