@@ -10,8 +10,8 @@ fi
 # Création du dossier de l'application #
 # ==================================== #
 OPENWEBUI_MAKE_FOLDER(){
-if [ !  -d "$WORKDIR/openwebui" ]; then
- mkdir -rf "$WORKDIR/openwebui";
+if [ ! -d "$WORKDIR/openwebui" ]; then
+ mkdir    "$WORKDIR/openwebui";
 fi
 }
 
