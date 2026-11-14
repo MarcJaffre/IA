@@ -20,6 +20,17 @@ if [ -f globale.conf ]; then
 fi
 
 # =================================================================================================
+# Chargement de la configuration du WORKDIR #
+# ========================================= #
+if [ -f "./globale.conf" ]; then
+  source "./globale.conf";
+else
+  echo "Le fichier globale.conf n'existe pas";
+fi
+
+
+
+# =================================================================================================
 # Charger fichier Debian #
 # ====================== #
 if [ -f /etc/os-release ]; then
