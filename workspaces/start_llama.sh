@@ -1,3 +1,9 @@
+clear;
+
+if [ -f  /root/start_llama.sh ]; then
+  rm -f /root/start_llama.sh;
+fi
+
 cat > /root/start_llama.sh << 'EOF'
 # -----------------------------------------------------------------------------------------------------
 #!/usr/bin/bash
