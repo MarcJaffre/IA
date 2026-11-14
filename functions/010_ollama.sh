@@ -1,12 +1,11 @@
 ########################################################################################################################
-# Creation du Dossier LLAMA #
-#############################
+# Purge du dossier du dossier output de LLAMA #
+###############################################
 LLAMA_PURGE_DIR(){
-if [ -d  "$WORKDIR/src/llama.cpp" ]; then 
-  rm -rf "$WORKDIR/src/llama.cpp";
+if [ -d  "$WORKDIR/output/llama.cpp" ]; then 
+  rm -rf "$WORKDIR/output/llama.cpp";
 fi
 }
-
 ########################################################################################################################
 LLAMA_GIT_CLONE(){
 if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
