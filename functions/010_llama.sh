@@ -27,7 +27,7 @@ LLAMA_BUILD_01(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   echo "LLAMA_BUILD_01";
   cd    "$WORKDIR/src/llama.cpp";
-  echo cmake -B build \"$CMAKE_ARGS\"
+  echo cmake -B build \" $CMAKE_ARGS \";
   # --log-level=ERROR > /dev/null;
   # cmake -B build -DGGML_CUDA=ON -DLLAMA_OPENSSL=OFF --log-level=ERROR > /dev/null;
 else
