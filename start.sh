@@ -39,11 +39,11 @@ clear;
 MESSAGE_LLAMA_PURGE_SRC;    # OK
 LLAMA_PURGE_DIR_SRC;        # OK
 # ---------------------------------------
-MESSAGE_LLAMA_GIT_CLONE;    # OK
-LLAMA_GIT_CLONE;            # OK
+#MESSAGE_LLAMA_GIT_CLONE;    # OK
+#LLAMA_GIT_CLONE;            # OK
 # ---------------------------------------
-MESSAGE_LLAMA_PURGE_OUTPUT; # OK
-LLAMA_PURGE_DIR_OUTPUT;     # OK
+#MESSAGE_LLAMA_PURGE_OUTPUT; # OK
+#LLAMA_PURGE_DIR_OUTPUT;     # OK
 # ---------------------------------------
 #MESSAGE_LLAMA_BUILD;        # OK
 #LLAMA_BUILD_01;             # ??
