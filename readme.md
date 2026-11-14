@@ -15,8 +15,6 @@ apt install -y git;
 ### C. Télécharger Projet
 ```bash
 clear;
-cd ;
-
 if [ ! -d $HOME/IA ]; then
  # ------------------------------------------------------
   echo "Téléchargement du projet"
