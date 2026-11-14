@@ -4,13 +4,15 @@
 # ============================================== #
 set -e
 
+pwd
+
 
 # =================================================================================================
 # Générer le fichier  #
 # =================== #
 # Github rester globale.conf.exemple mais pas globale.conf
 if [ ! -f globale.conf ]; then 
- cp ./IA/globale.conf.exemple ./IA/globale.conf
+ cp globale.conf.exemple globale.conf
 fi
 
 # =================================================================================================
