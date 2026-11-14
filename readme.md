@@ -33,7 +33,7 @@ WORKDIR="/tmp/IA"
 #########
 if [ -d  $WORKDIR\ ]; then
   rm -rf $WORKDIR;
- fi
+fi
 
 # =============================================================================
 # Télécharger projet #
