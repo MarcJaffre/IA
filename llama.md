@@ -1,25 +1,14 @@
 --------------------------------------------------------------------------------------------
-# <p align='center'> Construction des outils pour l'Intelligence Artificielle </p>
+# <p align='center'> Construction et exploitation de llama.cpp </p>
 --------------------------------------------------------------------------------------------
-## I. Déploiement IA
-### A. Présentation
-Ce projet à pour objectif de déployer des applications IA sur une distribution Debian.
-
-### B. Prérequis
-```bash
-clear;
-apt update;
-apt install -y git;
-```
-
-### C. Exploitation
+## I. llama.cpp
+### A. Exploitation
 #### 0. Définir emplacement du projet
 ```bash
 clear;
 WORKDIR=/srv
 ```
-
-#### 2. Nettoyage
+#### 1. Nettoyage
 ```bash
 clear;
 
@@ -33,8 +22,7 @@ else
 fi
 ```
 
-
-#### 1. Synchroniser le projet
+#### 2. Synchroniser le projet
 ```bash
 clear;
 
@@ -52,7 +40,7 @@ else
  # ----------------------------------------------------------------
 fi
 ```
-#### 2. Installer les dependances
+#### 3. Installer les dependances
 ```bash
 clear;
 
@@ -65,7 +53,6 @@ else
  # ----------------------------------------------------------------
 fi
 ```
-
 
 #### 4. Construire les applications du projet
 ```bash
@@ -81,7 +68,9 @@ else
  # ---------------------------------
 fi
 ```
-#### 4. Lancer l'application
+<br />
+
+#### 6. Lancer ponctuellement l'application
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
@@ -92,7 +81,9 @@ if [ -d $WORKDIR/IA ]; then
 fi
 ```
 
-#### 5. Installer l'application
+<br />
+
+#### 7. Déployer le service Systemd
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
@@ -102,9 +93,9 @@ if [ -d $WORKDIR/IA ]; then
  # ----------------------
 fi
 ```
+<br />
 
-
-#### 6. Désnstaller l'application
+#### 8. Désnstaller le service Systemd
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
@@ -116,8 +107,7 @@ fi
 ```
 
 
-
-<br /> <br /> <br />
+ <br /> <br />
 
 
 --------------------------------------------------------------------------------------------
