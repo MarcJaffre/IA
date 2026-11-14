@@ -15,31 +15,41 @@ apt install -y git;
 ### C. Télécharger Projet
 ```bash
 clear;
-if [ ! -d /srv/IA ]; then
- # ------------------------------------------------------
-  echo "Téléchargement du projet"
+
+WORKDIR=/srv
+
+if [ ! -d $WORKDIR/IA ]; then
+ # ----------------------------------------------------------------
+  echo "Téléchargement du projet";
   git clone --quiet https://github.com/MarcJaffre/IA.git;
-  cd /srv/IA;
- # ------------------------------------------------------
+  cd $WORKDIR/IA;
+ # ----------------------------------------------------------------
 else
- # ------------------------------------------------------
+ # ----------------------------------------------------------------
  echo "Déplacement dans le projet";
- cd /srv/IA;
+ cd $WORKDIR/IA;
  git fetch --all;
  git reset --hard origin/main;
  git clean -fd;
- # ------------------------------------------------------
+ # ----------------------------------------------------------------
 fi
 ```
 
 ### B. Lancer la construction
 ```bash
 clear;
-if [ -d /srv/IA ]; then
- # ----------------------
- cd IA;
- bash build.sh
- # ----------------------
+
+WORKDIR=/srv
+
+if [ -d $WORKDIR/IA ]; then
+ # ---------------------------------
+ cd $WORKDIR/IA;
+ bash build.sh;
+ # ---------------------------------
+else
+ # ---------------------------------
+ echo "Le dossier IA est absent";
+ # ---------------------------------
 fi
 ```
 
