@@ -84,7 +84,7 @@ clear;
 if [ -d /srv/IA ]; then
  # ----------------------
  cd IA;
- bash install.sh
+ bash install.sh;
  # ----------------------
 fi
 ```
