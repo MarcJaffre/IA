@@ -64,6 +64,7 @@ cd /srv/IA/openwebui
 python3.11 -m venv venv
 source "venv/bin/activate";
 pip install --no-cache-dir  open-webui  --cache-dir /srv/IA/openwebui/download
+open-webui serve --port 3000
 ```
 
 
