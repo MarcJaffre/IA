@@ -9,7 +9,6 @@ if [ ! -d "$WORKDIR/IA/openwebui" ]; then
 else
  echo "KO 1";
 fi
-fi
 # ----------------------------------------------------------
 if [ ! -d "$WORKDIR/IA/openwebui/download" ]; then
  mkdir -p "$WORKDIR/IA/openwebui/download";
