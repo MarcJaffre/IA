@@ -119,6 +119,7 @@ Wants=network-online.target
 
 [Service]
 Type=simple
+Environment="LLAMA_CACHE=$MODEL_DIR"
 WorkingDirectory=$WORKDIR/output/llama.cpp/bin
 ExecStart=$WORKDIR/output/llama.cpp/bin/llama-server $LLAMA_SERVICE_OPTION
 Restart=on-failure
