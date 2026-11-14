@@ -25,24 +25,41 @@ fi
 # ============================== #
 source ./globale.conf;
 
+MESSAGE_TOP;
+MESSAGE_LOADING_GLOBAL;
+
 # =================================================================================================
-# Purge du système #
-# ================ #
+# Dossier Source #
+# ============== #
+MESSAGE_LLAMA_PURGE_SRC; # 1
 LLAMA_PURGE_DIR_SRC;
+
+# =================================================================================================
+# Dossier Output #
+# ============== #
+MESSAGE_LLAMA_PURGE_OUTPUT;
 LLAMA_PURGE_DIR_OUTPUT;
 
 # =================================================================================================
 # Telecharger Depots LLAMA #
 # ======================== #
+MESSAGE_LLAMA_GIT_CLONE;
 LLAMA_GIT_CLONE;
 
 # =================================================================================================
-# Configuration et compilation #
-# ============================ #
+# Configuration de la build #
+# ========================= #
+MESSAGE_LLAMA_CONFIG_BUILD;
 LLAMA_BUILD_CONFIG;
+
+# =================================================================================================
+# Compilation de la build #
+# ======================= #
+MESSAGE_LLAMA_MAKE_BUILD
 LLAMA_BUILD_MAKE;
 
 # =================================================================================================
 # Installer la build dans Output #
 # ============================== #
+MESSAGE_LLAMA_BUILD_OUTPUT;
 LLAMA_BUILD_INSTALL;
