@@ -2,6 +2,9 @@
 # Dossier de Travail #
 ######################
 OPENWEBUI_MAKE_DIR(){
+
+echo "Création des dossiers Openwebui, Download et Cache";
+
 if [ ! -d "$WORKDIR/IA/openwebui" ]; then
  mkdir -p "$WORKDIR/IA/openwebui";
 fi
