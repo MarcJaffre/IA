@@ -2,18 +2,16 @@
 # Dossier de Travail #
 # ================== #
 OPENWEBUI_PURGE(){
-if [ -d "$WORKDIR/IA/openwebui" ]; then
+if [ ! -d "$WORKDIR/IA/openwebui" ]; then
  echo "Suppression de openwebui";
  rm -rf $WORKDIR/IA/openwebui;
-else
- echo "KO 1";
 fi
 }
 #====================================================================================
 # Création Environnement #
 # ====================== #
 OPENWEBUI_CREATE_DIR(){
-if [ ! -d "$WORKDIR/IA/openwebui" ]; then
+if [ -d "$WORKDIR/IA/openwebui" ]; then
  echo "Dossier à créer";
  echo mkdir "$WORKDIR/IA/openwebui";
  echo mkdir "$WORKDIR/IA/openwebui/download";
