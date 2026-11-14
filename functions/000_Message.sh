@@ -54,9 +54,19 @@ MESSAGE_LLAMA_PURGE_OUTPUT(){
 echo "║ - Phase 3 - Purge du dossier output                  ║";
 }
 # =====================================================================================
-MESSAGE_LLAMA_BUILD(){
-echo "║ - Phase 4 - Compilation dans output\llama.cpp        ║";
+MESSAGE_LLAMA_CONFIG_BUILD(){
+echo "║ - Phase 4 - Configuration de la Build llama.cpp      ║";
 }
+# =====================================================================================
+MESSAGE_LLAMA_MAKE_BUILD(){
+echo "║ - Phase 5 - Compilation de la build  ollama.cpp      ║";
+}
+
+# =====================================================================================
+MESSAGE_LLAMA_BUILD_OUTPUT(){
+echo "║ - Phase 5 - Déplacement des binaires dans output     ║";
+}
+
 # =====================================================================================
 
 MESSAGE_LLAMA_END(){
