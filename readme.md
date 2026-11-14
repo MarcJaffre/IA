@@ -16,7 +16,7 @@ fi
 # ================================
 ```
 
-### B. Construction de LLAMA
+### B. Construction du Projet
 ```bash
 clear;
 cat > test.sh << 'EOF'
