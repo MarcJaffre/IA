@@ -43,3 +43,6 @@ fi
 # =================== #
 LLAMA_SYSTEMD_ADD;
 LLAMA_SYSTEMD_ENABLED;
+
+
+echo "Fin de l'installation du service;"
