@@ -24,6 +24,17 @@ if [ -d "$WORKDIR/openwebui" ]; then
    python${PYTHON_VERSION} -m venv "$ENV_NAME"
 fi
 }
+# ====================================================================================
+# Charger l'Environnement Virtuel #
+# =============================== #
+if [ -d   "$WORKDIR/openwebui" ]; then
+   cd     "$WORKDIR/openwebui";
+   source "$ENV_NAME/bin/activate";
+   echo "$VIRTUAL_ENV"
+fi
+} 
+
+
 
 #$PROJET_DIR
 #$PYTHON_PACKAGE
