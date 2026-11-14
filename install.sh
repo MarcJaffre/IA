@@ -24,10 +24,16 @@ else
 fi
 
 # =================================================================================================
-# Création du service #
-#######################
-LLAMA_SYSTEMD_ADD
+# Suppression du service #
+# ====================== #
+LLAMA_SYSTEMD_DISABLED;
+LLAMA_SYSTEMD_DEL;
 
+# =================================================================================================
+# Création du service #
+# =================== #
+LLAMA_SYSTEMD_ADD;
+LLAMA_SYSTEMD_ENABLED;
 
 
 
