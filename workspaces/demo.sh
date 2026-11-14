@@ -22,11 +22,15 @@ OPTIONS=(
 # Dossier de Travail #
 # ================== #
 if   [ -f "$SRC/llama-server" ]; then
-  # -------------------------------------------------
-  cd "$SRC" && ./llama-server ${OPTIONS[@]};
-  # -------------------------------------------------
+  # -------------------------------------------------------------------
+  cd "$SRC" 
+  ./llama download -hf Qwen/Qwen3-VL-8B-Instruct-GGUF:Q4_K_M
+  ./llama-server ${OPTIONS[@]};
+  # -------------------------------------------------------------------
 elif [ -f "$OUT/llama-server" ]; then
   # -------------------------------------------------
-  cd "$OUT" && ./llama-server ${OPTIONS[@]};
+  cd "$OUT";
+  ./llama download -hf Qwen/Qwen3-VL-8B-Instruct-GGUF:Q4_K_M
+  ./llama-server ${OPTIONS[@]};
   # -------------------------------------------------
 fi
