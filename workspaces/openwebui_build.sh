@@ -18,8 +18,8 @@ fi
 # ======================================= #
 if [ -f "./globale.conf" ]; then
   sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" "./globale.conf";
-  echo "$WORKDIR";
   source "./globale.conf";
+  echo "$WORKDIR";
 fi
 
 
