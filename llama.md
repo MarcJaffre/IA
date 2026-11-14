@@ -8,20 +8,7 @@
 clear;
 WORKDIR=/srv
 ```
-#### 1. Nettoyage
-```bash
-clear;
-
-if [ -d $WORKDIR/IA ]; then
-  cd $WORKDIR;
-  bash ./IA/workspaces/llama_service_uninstall.sh;
-  rm -rf $WORKDIR/IA;
-else
- echo "Le dossier est déjà purger";
-fi
-```
-
-#### 2. Synchroniser le projet
+#### 1. Synchroniser le projet
 ```bash
 clear;
 
@@ -39,6 +26,21 @@ else
  # ----------------------------------------------------------------
 fi
 ```
+
+#### 2. Nettoyage
+```bash
+clear;
+
+if [ -d $WORKDIR/IA ]; then
+  cd $WORKDIR;
+  bash ./IA/workspaces/llama_service_uninstall.sh;
+  rm -rf $WORKDIR/IA;
+else
+ echo "Le dossier est déjà purger";
+fi
+```
+
+
 #### 3. Construire les applications du projet
 ```bash
 clear;
