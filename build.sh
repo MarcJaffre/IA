@@ -17,18 +17,22 @@ fi
 source ./globale.conf;
 
 # =================================================================================================
+# Purge du système #
+####################
+LLAMA_PURGE_DIR_SRC
+LLAMA_PURGE_DIR_OUTPUT
+
+# =================================================================================================
 # Git Hub #
 ###########
-LLAMA_PURGE_DIR_SRC;
-LLAMA_GIT_CLONE;
+LLAMA_GIT_CLONE
 
 # =================================================================================================
 # Build #
 #########
-LLAMA_PURGE_DIR_OUTPUT
 LLAMA_CONFIG_BUILD
 LLAMA_MAKE_BUILD
-LLAMA_BUILD_OUTPUT
+LLAMA_INSTALL_BUILD
 
 # =================================================================================================
 # Build vers output #
