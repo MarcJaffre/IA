@@ -69,3 +69,4 @@ LLAMA_BUILD_OUTPUT;            #
 #LLAMA_SYSTEMD_DISABLED
 #LLAMA_SYSTEMD_DEL
 # =========================================================================================
+# read -p "Voulez-vous continer ? (o/n) : "  -n 1 -r
