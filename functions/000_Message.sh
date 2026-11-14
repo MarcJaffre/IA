@@ -76,7 +76,7 @@ echo "    ║ [4/7] Préparation de la compilation CMake            ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_MAKE_BUILD(){
-echo "    ║ [5/7] Compilation complète de llama.cpp     ($(date +"%H:%M"))  ║";
+echo "    ║ [5/7] Compilation complète de llama.cpp     [$(date +"%H:%M")]  ║";
 }
 
 # =====================================================================================
@@ -87,7 +87,7 @@ echo "    ║ [6/7] Exportation des binaires vers output           ║";
 
 # =====================================================================================
 MESSAGE_LLAMA_END(){
-echo "    ║ [7/7] Construction de llama.cpp terminée    ($(date +"%H:%M"))  ║";
+echo "    ║ [7/7] Construction de llama.cpp terminée    [$(date +"%H:%M")]  ║";
 }
 
 
