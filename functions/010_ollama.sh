@@ -3,8 +3,9 @@
 #################
 LLAMA_PURGE_GLOBAL(){
 if [ ! -d "$WORKDIR" ]; then
- cd $HOME;
- rm -f "$WORKDIR";
+  cd $HOME;
+  rm -f "$WORKDIR";
+fi
 }
 
 
