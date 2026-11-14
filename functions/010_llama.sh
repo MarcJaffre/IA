@@ -1,26 +1,4 @@
 ########################################################################################################################
-# Purge llama.cpp du dossier src
-LLAMA_PURGE_DIR_SRC(){
-if [ -d  "$WORKDIR/src/llama.cpp" ]; then
-  rm -rf "$WORKDIR/src/llama.cpp";
-fi
-}
-
-########################################################################################################################
-# Purge llama.cpp du dossier output
-LLAMA_PURGE_DIR_OUTPUT(){
-if [ -d  "$WORKDIR/output/llama.cpp" ]; then
-  rm -rf "$WORKDIR/output/llama.cpp";
-fi
-}
-########################################################################################################################
-LLAMA_GIT_CLONE(){
-if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
-  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
-fi
-}
-
-########################################################################################################################
 # Configuration de la compilation #
 ###################################
 LLAMA_BUILD_01(){
@@ -47,6 +25,49 @@ fi
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+########################################################################################################################
+# Purge llama.cpp du dossier src
+LLAMA_PURGE_DIR_SRC(){
+if [ -d  "$WORKDIR/src/llama.cpp" ]; then
+  rm -rf "$WORKDIR/src/llama.cpp";
+fi
+}
+########################################################################################################################
+# Purge llama.cpp du dossier output
+LLAMA_PURGE_DIR_OUTPUT(){
+if [ -d  "$WORKDIR/output/llama.cpp" ]; then
+  rm -rf "$WORKDIR/output/llama.cpp";
+fi
+}
+########################################################################################################################
+LLAMA_GIT_CLONE(){
+if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
+  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
+fi
+}
+
+
+
+
+
+
+
+
+
+
 ########################################################################################################################
 # Déplacement de la Source vers output #
 ########################################
@@ -64,7 +85,6 @@ if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
   # =================================================================================
 fi
 }
-
 ########################################################################################################################
 # Déplacement de la Source vers output #
 ########################################
@@ -82,7 +102,6 @@ else
   echo "Le script est en erreur ls $WORKDIR/output/llama.cpp)";
 fi
 }
-
 ########################################################################################################################
 # Creation du Service #
 #######################
@@ -110,11 +129,9 @@ RestartSec=5
 [Install]
 WantedBy=multi-user.target
 EOF
-
 # ==============================================================================
 systemctl daemon-reload;
 }
-
 ########################################################################################################################
 # Suppression du Service #
 ##########################
@@ -135,8 +152,6 @@ else
  echo "La fonction LLAMA_SYSTEMD_DEL est en anomalie";
 fi
 }
-
-
 ########################################################################################################################
 # Activation du service #
 #########################
@@ -147,7 +162,6 @@ if [ $(systemctl is-enabled llama-server.service) == "disabled" ]; then
   systemctl enable --now llama-server.service 2>/dev/null;
 fi
 }
-
 ########################################################################################################################
 # Désactivation du service #
 ############################
@@ -158,8 +172,6 @@ if [ $(systemctl is-enabled llama-server.service) == "enabled" ]; then
   systemctl disable --now llama-server.service 2>/dev/null;
 fi
 }
-
-
 ########################################################################################################################
 # Lancement pour démonstration #
 ################################
@@ -169,3 +181,4 @@ echo "";
 find . -type f -iname "llama*" -exec chmod +x {} \;
 ./llama-server --host "0.0.0.0" --port "3000"
 }
+########################################################################################################################
