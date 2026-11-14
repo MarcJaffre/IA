@@ -14,7 +14,7 @@ else
 fi
 
 if [ -f /etc/os-release ];
-  source /etc/os-release
+  source /etc/os-release;
 fi
 
 # =================================================================================================
@@ -24,6 +24,9 @@ if [ $ID = debian ]; then
  HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
  HOST_DEBIAN_BLACKLIST_NOUVEAU;
  HOST_DEBIAN_NVIDIA;
- HOST_DEBIAN_NVIDIA_CUDA; 
+ HOST_DEBIAN_NVIDIA_CUDA;
+else
+ echo "Ce projet est conçus exclusivement pour Debian."
+ echo "Le fichier des dépendances se trouve IA/functions/999_package.sh";
 fi
 
