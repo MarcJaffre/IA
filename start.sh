@@ -37,11 +37,9 @@ HOST_DEBIAN_NVIDIA_CUDA;
 # ---------------------------------------
 MESSAGE_LLAMA_PURGE_SRC;       # Phase 1
 LLAMA_PURGE_DIR_SRC;           # OK
-read -p "Voulez-vous continer ? (o/n) : "  -n 1 -r
 # ---------------------------------------
 MESSAGE_LLAMA_GIT_CLONE;       # Phase 2
 LLAMA_GIT_CLONE;               # OK
-read -p "Voulez-vous continer ? (o/n) : "  -n 1 -r
 # ---------------------------------------
 MESSAGE_LLAMA_PURGE_OUTPUT;    # Phase 3
 LLAMA_PURGE_DIR_OUTPUT;        # OK
