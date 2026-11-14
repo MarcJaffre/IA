@@ -20,14 +20,14 @@ else
 fi
 
 # ----------------------------------------------------------
-if [ ! -d "./IA/openwebui/.cache" ]; then
-  mkdir -p "./IA/openwebui/.cache";
+if [ ! -d "./openwebui/.cache" ]; then
+  mkdir -p "./openwebui/.cache";
 else
   echo "KO 3";
 fi
 # ----------------------------------------------------------
 echo "Création de l'environnement Virtuel";
-if [ -d "./IA/openwebui" ]; then
+if [ -d "./openwebui" ]; then
   python$PYTHON_VERSION -m venv "$ENV_NAME"
 fi
 }
