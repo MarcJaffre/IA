@@ -13,29 +13,13 @@ apt install -y git;
 ```
 
 ### B. Construction du Projet
-#### 1. Purge
-```bash
-clear;
-cd $HOME;
-rm -rf /srv/IA;
-```
-#### 2. Télécharger le Template
 ```bash
 clear;
 cd /srv
 git clone --quiet  https://github.com/MarcJaffre/IA.git;
 cd IA;
+bash build.sh;
 ```
-
-#### 3. Start.sh
-```bash
-clear;
-git fetch --all
-git reset --hard origin/main
-git clean -fd
-bash start.sh;
-```
-
 
 --------------------------------------------------------------------------------------------
 ## I. Avancement
