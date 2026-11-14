@@ -27,13 +27,20 @@ fi
 # ====================================================================================
 # Charger l'Environnement Virtuel #
 # =============================== #
+# Check: echo "$VIRTUAL_ENV"
 OPENWEBUI_PYTHON_LOAD_ENV(){
 if [ -d   "$WORKDIR/openwebui" ]; then
    cd     "$WORKDIR/openwebui";
    source "$ENV_NAME/bin/activate";
-   echo "$VIRTUAL_ENV"
 fi
 } 
+
+OPENWEBUI_PYTHON_PIP_PACKAGE(){
+if [ -d   "$WORKDIR/openwebui" ]; then
+   cd     "$WORKDIR/openwebui";
+   pip install --no-cache-dir -U "$PACKAGE"  --cache-dir "$PIP_DOWNLOAD_DIR";
+fi
+}
 
 
 
