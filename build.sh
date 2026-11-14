@@ -32,8 +32,10 @@ LLAMA_GIT_CLONE
 #########
 LLAMA_CONFIG_BUILD;   # Configuration
 LLAMA_MAKE_BUILD;     # Compilation
-LLAMA_INSTALL_BUILD;  # BUild in output
 
 # =================================================================================================
 # Build vers output #
 #####################
+LLAMA_INSTALL_BUILD;
+
+
