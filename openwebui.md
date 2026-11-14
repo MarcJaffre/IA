@@ -8,7 +8,17 @@
 clear;
 WORKDIR=/srv
 ```
-#### 1. Synchroniser le projet
+
+
+#### 1. Nettoyer
+```bash
+clear;
+if [ ! -d $WORKDIR/IA ]; then
+ cd $WORKDIR/IA;
+fi
+```
+
+#### 2. Synchroniser le projet
 ```bash
 clear;
 if [ ! -d $WORKDIR/IA ]; then
