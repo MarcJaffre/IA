@@ -29,11 +29,12 @@ fi
 # ====================================================================================
 # Charger l'Environnement Virtuel #
 # =============================== #
-# Check: echo "$VIRTUAL_ENV"
+# Check: 
 OPENWEBUI_PYTHON_LOAD_ENV(){
 if [ -d   "$WORKDIR/openwebui" ]; then
    cd     "$WORKDIR/openwebui";
    source "$ENV_NAME/bin/activate";
+   echo "$VIRTUAL_ENV"
 fi
 } 
 
