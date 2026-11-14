@@ -5,6 +5,7 @@
 # ============================================== #
 set -e
 
+
 # =================================================================================================
 # Générer le fichier  #
 # =================== #
@@ -21,9 +22,18 @@ if [ -f globale.conf ]; then
 fi
 
 # =================================================================================================
-# Chargement de la configuration #
-# ============================== #
-source ./globale.conf;
+# Chargement de la configuration du WORKDIR #
+# ========================================= #
+if [ -f "./globale.conf" ]; then
+  source "./globale.conf";
+else
+  echo "Le fichier globale.conf n'existe pas";
+fi
+
+
+
+
+
 
 MESSAGE_TOP;
 MESSAGE_LOADING_GLOBAL;
