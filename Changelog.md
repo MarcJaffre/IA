@@ -4,9 +4,9 @@
 ## I. Fondamentaux
 ### A. Version
 #### Alpha 0.1 (13-11-2026)
-Cette Release ne concerne que les dépendances, nvidia, nvidia cuda Toolkit et LLAMA.
+
 ```
-Fonctionnement
+LLAMA:
  - [OK] Installation des dépendances
  - [OK] Installation du pilote Nvidia
  - [OK] Téléchargement du dépôt LLAMA
@@ -19,9 +19,19 @@ Fonctionnement
  - [Ponctuellement] Téléchargement de modèle
  - [OK] Batch de lancement de llama-server
 
+OpenWebui:
+ - [XX] Installation des dépendances
+ - [XX] Téléchargement du dépôt 
+ - [XX]  
+ - [XX]  
+ - [XX]  
+ - [XX]  
+ - [XX]  
+
+
 Amélioration:
  - [XXXXXX] GPU Unlock
- - [XXXXXX] Liens symbolique llama-server vers /usr/bin/llama-server
+ - [XXXXXX] Liens symbolique llama-server vers /usr/bin/XXXX-server
 ```
 
 <img width="504" height="419" alt="image" src="https://github.com/user-attachments/assets/4fc4c94f-0d1c-4da3-ace2-b365748ebe58" />
