@@ -11,6 +11,7 @@ HOST_DEBIAN_APT_UPDATE(){
 HOST_DEBIAN_APT_INSTALL_DEPENDANCE(){
 if [ ! -d /usr/share/doc/btop                ]; then apt install -y btop;                       fi
 if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            fi
+if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     fi
 if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      fi
 if [ ! -d /usr/share/doc/curl                ]; then apt install -y curl;                       fi
 if [ ! -d /usr/share/doc/gnupg2              ]; then apt install -y gnupg2;                     fi
@@ -20,6 +21,7 @@ if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev; 
 if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y pciutils;                   fi
 if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;                       fi
 if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget;                       fi
+
 # Bypass Erreur
 echo "" > $WORKDIR/Test;
 }
