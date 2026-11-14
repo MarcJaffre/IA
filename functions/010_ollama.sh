@@ -3,12 +3,14 @@
 ###############################
 LLAMA_PURGE_DIR_SRC(){
 if [ -d "$WORKDIR\src\llama.cpp" ]; then
+  echo "LLAMA_PURGE_DIR_SRC";
   rm -f "$WORKDIR\src\llama.cpp";
 fi
 }
 # --------------------------------------------------
 LLAMA_PURGE_DIR_OUTPUT(){
 if [ -d "$WORKDIR\output\llama.cpp" ]; then
+  echo "LLAMA_PURGE_DIR_OUTPUT";
   rm -f "$WORKDIR\output\llama.cpp";
 fi
 }
@@ -17,6 +19,7 @@ fi
 ##############################
 LLAMA_GIT_CLONE(){
 if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
+  echo "LLAMA_GIT_CLONE";
   git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
 fi
 }
@@ -25,6 +28,7 @@ fi
 ###############################
 LLAMA_BUILD_01(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
+  echo "LLAMA_BUILD_01";
   cd    "$WORKDIR/src/llama.cpp";
   echo cmake -B build $CMAKE_ARGS --log-level=ERROR > /dev/null;
   # cmake -B build -DGGML_CUDA=ON -DLLAMA_OPENSSL=OFF --log-level=ERROR > /dev/null;
