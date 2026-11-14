@@ -45,8 +45,8 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-WorkingDirectory=$WORKDIR_FINAL/llama.cpp 
-ExecStart=$WORKDIR_FINAL/llama.cpp/llama-server $LLAMA_SERVICE_OPTION
+WorkingDirectory=$WORKDIR/llama.cpp 
+ExecStart=$$WORKDIR/llama.cpp/llama-server $LLAMA_SERVICE_OPTION
 Restart=on-failure
 RestartSec=5
 
