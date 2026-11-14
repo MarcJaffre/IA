@@ -23,7 +23,7 @@ WORKDIR=/srv
 ```bash
 clear;
 
-if [ ! -d $WORKDIR/IA ]; then
+if [ -d $WORKDIR/IA ]; then
   cd $WORKDIR;
   bash IA/workspaces/llama_service_uninstall.sh;
   rm -rf $WORKDIR/IA;
