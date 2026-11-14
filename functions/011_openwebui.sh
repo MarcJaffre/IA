@@ -4,6 +4,7 @@
 OPENWEBUI_PURGE_FOLDER(){
 if [ -d "$WORKDIR/openwebui" ]; then
  rm -rf "$WORKDIR/openwebui"  ;
+ ls -l   $WORKDIR;
 fi
 }
 # ====================================================================================
