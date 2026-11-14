@@ -149,11 +149,8 @@ if [ -f /etc/systemd/system/llama-server.service ]; then
     systemctl daemon-reload;
   fi
   # ==============================================================================
-  echo "Suppression du service llama-server";
   rm -f /etc/systemd/system/llama-server.service;
   # ==============================================================================
-else
- echo "Le service llama-server a déjà été supprimé.";
 fi
 }
 ########################################################################################################################
