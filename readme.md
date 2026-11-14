@@ -32,9 +32,10 @@ WORKDIR="/tmp/IA"
 # Purge du dossier WORKDIR #
 ############################
 # rm -rf $WORKDIR 2>/dev/null;
-
 if [ -d $WORKDIR ]; then
+ cd $HOME
  echo "OK";
+ rm -rf $WORKDIR
 fi
 
 # =============================================================================
