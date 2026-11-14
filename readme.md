@@ -15,16 +15,18 @@ apt install -y git;
 ### C. Télécharger Projet
 ```bash
 clear;
-if [ ! -d IA ]; then
+cd ;
+
+if [ ! -d $HOME/IA ]; then
  # ------------------------------------------------------
   echo "Téléchargement du projet"
   git clone --quiet https://github.com/MarcJaffre/IA.git;
-  cd IA;
+  cd $HOME/IA;
  # ------------------------------------------------------
 else
  # ------------------------------------------------------
  echo "Déplacement dans le projet";
- cd IA;
+ cd $HOME/IA;
  # ------------------------------------------------------
 fi
 ```
@@ -32,22 +34,22 @@ fi
 ### B. Lancer la construction
 ```bash
 clear;
-if [ -d IA ]; then
- # ----------------
+if [ -d $HOME/IA ]; then
+ # ----------------------
  cd IA;
  bash build.sh
- # ----------------
+ # ----------------------
 fi
 ```
 
 ### B. Lancer l'application
 ```bash
 clear;
-if [ -d IA ]; then
- # ----------------
+if [ -d $HOME/IA ]; then
+ # ----------------------
  cd IA;
  bash run.sh
- # ----------------
+ # ----------------------
 fi
 ```
 
