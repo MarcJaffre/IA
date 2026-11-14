@@ -2,20 +2,14 @@
 # Purge Dossier src et Output #
 ###############################
 LLAMA_PURGE_DIR_SRC(){
-if [ -d "$WORKDIR/src/llama.cpp" ]; then
-  #echo "Dossier src purgé";
+if [ -d  "$WORKDIR/src/llama.cpp" ]; then
   rm -rf "$WORKDIR/src/llama.cpp";
-#else
- #echo "Dossier src vide";
 fi
 }
 # --------------------------------------------------
 LLAMA_PURGE_DIR_OUTPUT(){
-if [ -d "$WORKDIR/output/llama.cpp" ]; then
-  #echo "Dossier output purgé";
+if [ -d  "$WORKDIR/output/llama.cpp" ]; then
   rm -rf "$WORKDIR/output/llama.cpp";
-#else
- #echo "Dossier output vide";
 fi
 }
 ########################################################################################################################
@@ -23,7 +17,6 @@ fi
 ##############################
 LLAMA_GIT_CLONE(){
 if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
-  echo "LLAMA_GIT_CLONE";
   git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
 fi
 }
