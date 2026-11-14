@@ -14,7 +14,6 @@ clear;
 # Vérification et chargement du fichier Configuration #
 # =================================================== #
 if [ -f   "./globale.conf" 1>/dev/null ]; then
-   echo "Chargement de Globale.conf";
    source "./globale.conf";
 else
   echo "Erreur : Le fichier /globale.conf est introuvable.";
