@@ -56,8 +56,8 @@ MESSAGE_LLAMA_MAKE_BUILD;      #
 LLAMA_MAKE_BUILD;              # ??
 # ---------------------------------------
 # Phase 6
-MESSAGE_LLAMA_BUILD_OUTPUT;    #
-LLAMA_BUILD_OUTPUT;            # 
+#MESSAGE_LLAMA_BUILD_OUTPUT;    #
+#LLAMA_BUILD_OUTPUT;            # 
 # ---------------------------------------
 #MESSAGE_LLAMA_END;
 #LLAMA_BUILD_MV_BIN;
