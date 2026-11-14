@@ -4,7 +4,7 @@
 # ============================================== #
 set -e
 
-ls $(pwd)/IA
+ls
 
 
 # =================================================================================================
@@ -12,7 +12,7 @@ ls $(pwd)/IA
 # =================== #
 # Github rester globale.conf.exemple mais pas globale.conf
 if [ ! -f globale.conf ]; then 
- cp globale.conf.exemple globale.conf
+ cp  $(pwd)/IA/globale.conf.exemple $(pwd)/IA/globale.conf;
 fi
 
 # =================================================================================================
