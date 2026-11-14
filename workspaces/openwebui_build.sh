@@ -11,26 +11,17 @@ set -e
 # Si fichier absent, je le copie
 if [ ! -f "./globale.conf" ]; then
  cp "./globale.conf.exemple" "./globale.conf";
-else
- echo "Fichier globale.conf présent";
 fi
 
 # =================================================================================================
-# Configuration du WORKDIR #
-# ======================== #
+# Configuration et chargement du WORKDIR #
+# ======================================= #
 if [ -f "./globale.conf" ]; then
   sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" "./globale.conf";
+  echo "$WORKDIR";
+  source "./globale.conf";
 fi
 
-# =================================================================================================
-# Chargement de la configuration du WORKDIR #
-# ========================================= #
-if [ -f  "./globale.conf" ]; then
-  source "./globale.conf";
-  echo "$WORKDIR";
-else
-  echo "Le fichier globale.conf n'existe pas";
-fi
 
 
 
