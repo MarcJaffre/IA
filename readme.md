@@ -25,16 +25,19 @@ cat > test.sh << 'EOF'
 # Variables #
 # ========= #
 WORKDIR=/tmp/IA
+git clone --quiet https://github.com/MarcJaffre/IA.git "$WORKDIR";
+cd "$WORKDIR";
+  bash start.sh;
 
 # ================================================================================
 # Lancement de la Construction #
 # ============================ #
 #if [ -d /tmp/IA 2>/dev/null ]; then
-  #cd $HOME;
-  #rm -rf "$WORKDIR";
-  git clone --quiet https://github.com/MarcJaffre/IA.git "$WORKDIR";
-  cd "$WORKDIR";
-  bash start.sh;
+#  cd $HOME;
+#  rm -rf "$WORKDIR";
+#  git clone --quiet https://github.com/MarcJaffre/IA.git "$WORKDIR";
+#  cd "$WORKDIR";
+#  bash start.sh;
 #else
 #  git clone --quiet https://github.com/MarcJaffre/IA.git "$WORKDIR";
 #  cd /tmp/IA;
