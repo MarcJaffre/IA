@@ -35,7 +35,8 @@ clear;
 if [ ! -d "$WORKDIR" ]; then
   git clone --quiet "$GITHUB_IA" "$WORKDIR";
   cd "$WORKDIR";
-  sed -i -e "s/XXXXXX/$WORKDIR/g" "$WORKDIR/globale.conf";
+  # XXXXXX 
+  cat "$WORKDIR/globale.conf";
 else
   cd "$WORKDIR";
   git fetch --all
