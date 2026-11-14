@@ -36,8 +36,8 @@ clear;
 #HOST_DEBIAN_NVIDIA;
 #HOST_DEBIAN_NVIDIA_CUDA;
 # ---------------------------------------
-MESSAGE_LLAMA_PURGE_SRC;    # OK
-LLAMA_PURGE_DIR_SRC;        # OK
+#MESSAGE_LLAMA_PURGE_SRC;    # OK
+#LLAMA_PURGE_DIR_SRC;        # OK
 # ---------------------------------------
 #MESSAGE_LLAMA_GIT_CLONE;    # OK
 #LLAMA_GIT_CLONE;            # OK
