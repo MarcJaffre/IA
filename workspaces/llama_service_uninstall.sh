@@ -6,11 +6,9 @@ set -e
 # =================================================================================================
 # Générer le fichier  #
 # =================== #
-# Github rester globale.conf.exemple mais pas globale.conf
+# Github met à jour globale.conf.exemple mais pas le fichier globale.conf
 if [ ! -f "./globale.conf" ]; then 
 cp        "./globale.conf.exemple" "./globale.conf";
-else
- echo "Deja crée";
 fi
 # =================================================================================================
 # Configuration du WORKDIR #
