@@ -16,7 +16,7 @@ apt install -y git;
 #### 0. Définir emplacement du projet
 ```bash
 clear;
-WORKDIR=/srv
+export WORKDIR=/srv
 ```
 
 #### 1. Synchroniser le projet
