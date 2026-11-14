@@ -8,7 +8,7 @@ fi
 }
 #====================================================================================
 # Création Environnement #
-##########################
+# ====================== #
 OPENWEBUI_CREATE_DIR(){
 if [ ! -d "$WORKDIR/IA/openwebui" ]; then
  echo "Dossier à créer";
@@ -17,6 +17,15 @@ if [ ! -d "$WORKDIR/IA/openwebui" ]; then
  echo mkdir "$WORKDIR/IA/openwebui/.cache";
 fi
 }
+#====================================================================================
+# Dosser Environnement #
+# ====================== #
+OPENWEBUI_CREATE_DIR(){
+if [ -d "$WORKDIR/IA/openwebui" ]; then
+ cd $WORKDIR/IA/openwebui;
+fi
+}
+
 
 
 
