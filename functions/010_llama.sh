@@ -2,13 +2,16 @@
 # Etape 0: Nettoyer le depot #
 ##############################
 GIT_LLAMA_REMOVE_REPO(){
-if [ -d $WORKDIR\src\ollama.cpp ]; then
- rm -rf $WORKDIR\src\ollama.cpp;
+if [ -d "$WORKDIR/src/llama.cpp" ]; then
+ rm -rf "$WORKDIR/src/llama.cpp";
+fi
 }
 
 #################################################################################################################################################################
 # Etape 1: Télécharger le Dépôt #
 #################################
 GIT_LLAMA_CLONE_REPO(){
- git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
+if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
+  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
+fi
 }
