@@ -27,10 +27,20 @@ cat > test.sh << 'EOF'
 GITHUB_IA="https://github.com/MarcJaffre/IA.git"
 WORKDIR="/srv/IA"
 
+
+# =============================================================================
+# Nettoyage Console #
+# ================= #
+clear;
+
+# =============================================================================
+# Purge Projet #
+# ============ #
+if [ -d $WORKDIR ]; then rm -rf $WORKDIR; fi
+ 
 # =============================================================================
 # Télécharger ou mettre à jour  projet #
 # ==================================== #
-clear;
 if [ ! -d "$WORKDIR" ]; then
   git clone --quiet "$GITHUB_IA" "$WORKDIR";
   cd "$WORKDIR";
