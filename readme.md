@@ -31,9 +31,9 @@ WORKDIR="/tmp/IA"
 # =============================================================================
 # Purge du dossier sortie #
 # ======================= #
-#if [ -d  $WORKDIR\output ]; then
-#  rm -rf $WORKDIR\output;
-#fi
+if [ -d  $WORKDIR ]; then
+  rm -rf $WORKDIR;
+fi
 
 # =============================================================================
 # Télécharger projet #
