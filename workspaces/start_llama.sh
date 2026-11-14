@@ -1,6 +1,6 @@
 clear;
 
-if [ -f  /root/start_llama.sh ]; then
+if [ -f /root/start_llama.sh ]; then
   rm -f /root/start_llama.sh;
 fi
 
