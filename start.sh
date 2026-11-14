@@ -40,33 +40,33 @@ MESSAGE_LOADING_GLOBAL;        # Phase 0
 # ---------------------------------------
 # Phase 1
 MESSAGE_LLAMA_PURGE_SRC;       # 
-#LLAMA_PURGE_DIR_SRC;           # OK
+LLAMA_PURGE_DIR_SRC;           # OK
 # ---------------------------------------
 # Phase 2
 MESSAGE_LLAMA_GIT_CLONE;       # 
-#LLAMA_GIT_CLONE;               # OK
+LLAMA_GIT_CLONE;               # OK
 # ---------------------------------------
 # Phase 3
 MESSAGE_LLAMA_PURGE_OUTPUT;    # 
-#LLAMA_PURGE_DIR_OUTPUT;        # OK
+LLAMA_PURGE_DIR_OUTPUT;        # OK
 # ---------------------------------------
 # Phase 4
 MESSAGE_LLAMA_CONFIG_BUILD;    # 
-#LLAMA_CONFIG_BUILD;            # ??
+LLAMA_CONFIG_BUILD;            # ??
 # ---------------------------------------
 # Phase 5
 MESSAGE_LLAMA_MAKE_BUILD;      # 
-#LLAMA_MAKE_BUILD;              # ??
+LLAMA_MAKE_BUILD;              # ??
 # ---------------------------------------
 # Phase 6
 MESSAGE_LLAMA_BUILD_OUTPUT;    #
-#LLAMA_BUILD_OUTPUT;            # 
+LLAMA_BUILD_OUTPUT;            # 
 # ---------------------------------------
 MESSAGE_LLAMA_END;
-#LLAMA_BUILD_MV_BIN;
+LLAMA_BUILD_MV_BIN;
 # ---------------------------------------
 MESSAGE_BOT;
-#echo "";
+echo "";
 #LLAMA_SYSTEMD_ADD
 #LLAMA_SYSTEMD_ENABLED
 #LLAMA_SYSTEMD_DISABLED
