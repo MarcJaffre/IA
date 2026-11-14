@@ -36,6 +36,9 @@ clear;
 WORKDIR="/srv/IA"
 # -------------------------------------------
 cd $WORKDIR;
+git fetch --all;
+git reset --hard origin/main;
+git clean -fd;
 bash run.sh;
 # -------------------------------------------
 ```
