@@ -7,6 +7,15 @@ if [ "$WORKDIR/IA/openwebui" ]; then
 fi
 }
 #====================================================================================
+# Création Environnement #
+##########################
+OPENWEBUI_CREATE_DIR(){
+if [ ! "$WORKDIR/IA/openwebui" ]; then
+ echo "Dossier à delete";
+fi
+}
+
+
 
 #$PROJET_DIR
 #$PYTHON_PACKAGE
