@@ -29,10 +29,10 @@ GITHUB_IA="https://github.com/MarcJaffre/IA.git"
 WORKDIR="/tmp/IA"
 
 # =============================================================================
-# Purge #
-#########
-if [ -d "$WORKDIR" ]; then
-  rm -f "$WORKDIR";
+# Purge du dossier WORKDIR #
+############################
+if [ -d $WORKDIR ]; then
+ rm $WORKDIR;
 fi
 
 # =============================================================================
