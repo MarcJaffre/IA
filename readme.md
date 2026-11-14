@@ -17,11 +17,13 @@ apt install -y git;
 clear;
 if [ ! -d IA ]; then
  # ------------------------------------------------------
+  echo "Téléchargement du projet"
   git clone --quiet https://github.com/MarcJaffre/IA.git;
   cd IA;
  # ------------------------------------------------------
 else
  # ------------------------------------------------------
+ echo "Déplacement dans le projet";
  cd IA;
  # ------------------------------------------------------
 fi
