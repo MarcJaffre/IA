@@ -23,7 +23,7 @@ fi
 OPENWEBUI_PYTHON_MAKE_ENV(){
 if [ -d "$WORKDIR/openwebui" ]; then
    cd   "$WORKDIR/openwebui";
-   echo "python${PYTHON_VERSION} -m venv $ENV_NAME"
+   python${PYTHON_VERSION} -m venv $ENV_NAME
 fi
 }
 # ====================================================================================
