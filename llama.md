@@ -28,7 +28,7 @@ else
 fi
 ```
 
-#### 3. Construire les applications du projet
+#### 2. Construire les applications du projet
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
@@ -44,7 +44,7 @@ fi
 ```
 <br />
 
-#### 4. Lancer ponctuellement l'application
+#### 3. Lancer ponctuellement l'application
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
@@ -57,7 +57,7 @@ fi
 
 <br />
 
-#### 5. Déployer le service Systemd
+#### 4. Déployer le service Systemd
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
@@ -69,7 +69,7 @@ fi
 ```
 <br />
 
-#### 6. Désnstaller le service Systemd
+#### 5. Désnstaller le service Systemd
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
@@ -80,8 +80,7 @@ if [ -d $WORKDIR/IA ]; then
 fi
 ```
 
-
-#### 2. Nettoyage
+#### 6. Nettoyage
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
