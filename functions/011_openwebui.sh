@@ -5,6 +5,8 @@ OPENWEBUI_PURGE(){
 if [ -d "$WORKDIR/IA/openwebui" ]; then
  echo "Suppression de openwebui";
  rm -rf $WORKDIR/IA/openwebui;
+else
+ echo "KO 1";
 fi
 }
 #====================================================================================
