@@ -29,22 +29,18 @@ GITHUB_IA="https://github.com/MarcJaffre/IA.git"
 WORKDIR="/tmp/IA"
 
 # =============================================================================
-# Télécharger projet #
-# ================== #
-git clone --quiet "$GITHUB_IA" "$WORKDIR";
-
-# =============================================================================
-# DOSSIER PROJET #
-# ============== #
-cd "$WORKDIR";
-
-# =============================================================================
-# Mise à jour du Github #
-#########################
-git fetch --all
-git reset --hard origin/main
-git clean -fd
-
+# Télécharger ou mettre à jour  projet #
+# ==================================== #
+clear;
+if [ ! -d "$WORKDIR" ]; then
+  git clone --quiet "$GITHUB_IA" "$WORKDIR";
+  cd "$WORKDIR";
+else
+  cd "$WORKDIR";
+  git fetch --all
+  git reset --hard origin/main
+  git clean -fd
+fi
 
 # =============================================================================
 # Purge du dossier WORKDIR #
