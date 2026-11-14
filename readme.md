@@ -52,7 +52,7 @@ cd "$WORKDIR";
 bash start.sh;
 EOF
 
-bash test.sh
+bash test.sh;
 ```
 
 ### C. Arborscence
