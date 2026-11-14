@@ -43,6 +43,7 @@ LLAMA_PURGE_DIR_SRC
 MESSAGE_LLAMA_PURGE_OUTPUT;
 LLAMA_PURGE_DIR_OUTPUT;
 # ---------------------------------------
+MESSAGE_LLAMA_GIT_CLONE;
 LLAMA_GIT_CLONE;
 
 # =========================================================================================
