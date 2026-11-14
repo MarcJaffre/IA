@@ -31,18 +31,18 @@ WORKDIR="/tmp/IA"
 # =============================================================================
 # Purge du dossier WORKDIR #
 ############################
-if [ -d $WORKDIR ]; then
+#if [ -d $WORKDIR ]; then
   # -----------------------------
-  cd "$HOME";
+  #cd "$HOME";
   # -----------------------------
-  echo 'Suppression WORKDIR';
-  rm -rf "$WORKDIR";
+  #echo 'Suppression WORKDIR';
+  #rm -rf "$WORKDIR";
   # -----------------------------
-else
+#else
   # -----------------------------
-  echo 'WORKDIR absent';
+  #echo 'WORKDIR absent';
   # -----------------------------
-fi
+#fi
 
 # =============================================================================
 # Télécharger projet #
@@ -53,6 +53,10 @@ git clone --quiet "$GITHUB_IA" "$WORKDIR";
 # DOSSIER PROJET #
 # ============== #
 cd "$WORKDIR";
+
+git fetch --all
+git reset --hard origin/main
+git clean -fd
 
 # =============================================================================
 # LANCEMENT PROJET #
