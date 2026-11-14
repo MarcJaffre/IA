@@ -4,6 +4,8 @@
 OPENWEBUI_PURGE_FOLDER(){
 if [ -d "$WORKDIR/openwebui" ]; then
  rm -rf "$WORKDIR/openwebui";
+else
+ echo "Dossier $WORKDIR/openwebui absent";
 fi
 }
 #====================================================================================
@@ -12,6 +14,8 @@ fi
 OPENWEBUI_MAKE_FOLDER(){
 if [ ! -d "$WORKDIR/openwebui" ]; then
  mkdir    "$WORKDIR/openwebui";
+else
+ echo "Dossier $WORKDIR/openwebui déjà crée";
 fi
 }
 
