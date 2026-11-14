@@ -73,7 +73,8 @@ echo "    ║ [3/7] Vidage complet du répertoire output            ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_CONFIG_BUILD(){
-echo "    ║ [4/7] Préparation de la compilation CMake            ║";
+echo "    ║ [4/7] Préparation de la compilation CMake               ║";
+
 }
 # =====================================================================================
 MESSAGE_LLAMA_MAKE_BUILD(){
