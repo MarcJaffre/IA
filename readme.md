@@ -29,13 +29,6 @@ GITHUB_IA="https://github.com/MarcJaffre/IA.git"
 WORKDIR="/tmp/IA"
 
 # =============================================================================
-# Purge du dossier sortie #
-# ======================= #
-if [ -d  $WORKDIR ]; then
-  rm -rf $WORKDIR;
-fi
-
-# =============================================================================
 # Télécharger projet #
 # ================== #
 git clone --quiet $GITHUB_IA "$WORKDIR";
