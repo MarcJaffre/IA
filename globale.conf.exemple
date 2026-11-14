@@ -2,7 +2,7 @@
 # Configuration Globale #
 # ===================== #
 WORKDIR="XXXXXX"
-WORKDIR_FINAL="/root"
+WORKDIR_FINAL="/root/"
 BUILD_CPUS=$(nproc)
 
 #########################################################################################################
@@ -11,9 +11,13 @@ BUILD_CPUS=$(nproc)
 RELEASE_NVIDIA="580.142"
 
 #########################################################################################################
+# Chargement des variables systeme #
+####################################
+source /etc/os-release;
+
+#########################################################################################################
 # Chargement des fichiers (Config, Functions) #
 # =========================================== #
 for file in $(find $WORKDIR/config    -type f); do source $file; done
 for file in $(find $WORKDIR/functions -type f); do source $file; done
 
-#source /etc/os-release;
