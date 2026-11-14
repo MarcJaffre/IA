@@ -25,6 +25,9 @@ fi
 # =============================================================================================
 # Lancement du script #
 #######################
+
+echo $WORKDIR
+
 OPENWEBUI_PURGE_FOLDER;
 
 OPENWEBUI_MAKE_FOLDER;
@@ -33,5 +36,5 @@ OPENWEBUI_PYTHON_MAKE_ENV;
 
 OPENWEBUI_PYTHON_LOAD_ENV
 
-
+echo $WORKDIR
 OPENWEBUI_PYTHON_PIP_PACKAGE
