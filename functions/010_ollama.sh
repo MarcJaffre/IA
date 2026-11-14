@@ -70,6 +70,55 @@ if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
 fi
 }
 
+########################################################################################################################
+# Creation du Service #
+#######################
+LLAMA_SYSTEMD_ADD(){
+
+if [ -f /etc/systemd/system/llama-server.service ]; then
+  rm -f /etc/systemd/system/llama-server.service
+fi
+
+cat > /etc/systemd/system/llama-server.service <<'EOF'
+[Unit]
+Description=llama.cpp HTTP server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/llama.cpp 
+ExecStart=/root/llama.cpp/llama-server --host 0.0.0.0 --port 8080 --api-key admin
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl daemon-reload;
+}
+
+########################################################################################################################
+# Gestion du service #
+######################
+# ---------------------------------------------------------------------------
+LLAMA_SYSTEMD_ENABLED(){
+if [ $(systemctl is-enabled llama-server.service) == "disabled" ]; then
+  echo "Activation du service llama-server";
+  systemctl daemon-reload;
+  systemctl enable --now llama-server.service 2>/dev/null;
+fi
+}
+
+
+LLAMA_SYSTEMD_DISABLED(){
+if [ $(systemctl is-enabled llama-server.service) == "enabled" ]; then
+  echo "Désactivation du service llama-server";
+  systemctl daemon-reload;
+  systemctl disable --now llama-server.service 2>/dev/null;
+fi
+}
 
 ########################################################################################################################
 # Lancement pour démonstration #
