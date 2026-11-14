@@ -46,14 +46,16 @@ fi
 ########################################
 LLAMA_BUILD_MV_BIN(){
 if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
-  # ===================================================================
+  # =================================================================================
+  echo "Déplacement des binaires llama.cpp";
+  # =================================================================================
   cd      "$WORKDIR/src/llama.cpp/build/bin/"
-  # ===================================================================
+  # =================================================================================
   mkdir   "$WORKDIR_FINAL/llama.cpp";
   mv *    "$WORKDIR_FINAL/llama.cpp";
-  # ===================================================================
+  # =================================================================================
   find "$WORKDIR_FINAL/llama.cpp" -type f -iname "llama*" -exec chmod +x {} \;
-  # ===================================================================
+  # =================================================================================
 fi
 }
 
@@ -62,6 +64,8 @@ fi
 ########################################
 LLAMA_BUILD_MV_BIN2(){
 if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
+  # ============================================
+  echo "Déplacement des binaires llama.cpp";
   # ============================================
   cd      "$WORKDIR/src/llama.cpp/build/bin/"
   # ============================================
@@ -77,9 +81,13 @@ fi
 # Creation du Service #
 #######################
 LLAMA_SYSTEMD_ADD(){
+# ==============================================================================
+echo "Création du service llama-server.service";
+# ==============================================================================
 if [ -f /etc/systemd/system/llama-server.service ]; then
   rm -f /etc/systemd/system/llama-server.service;
 fi
+# ==============================================================================
 cat > /etc/systemd/system/llama-server.service <<EOF
 [Unit]
 Description=llama.cpp HTTP server
@@ -96,6 +104,8 @@ RestartSec=5
 [Install]
 WantedBy=multi-user.target
 EOF
+
+# ==============================================================================
 systemctl daemon-reload;
 }
 
@@ -108,12 +118,12 @@ if [ -f etc/systemd/system/llama-server.service ]; then
   # --------------------------------------------------------------------------------
   if [ $(systemctl is-enabled llama-server.service) == "enabled" ]; then
     echo "Désactivation du service llama-server";
-    systemctl daemon-reload;
     systemctl disable --now llama-server.service 2>/dev/null;
-   systemctl daemon-reload;
+    systemctl daemon-reload;
   fi
   # --------------------------------------------------------------------------------
-  rm -f /etc/systemd/system/llama-server.service:
+  echo "Suppression du service llama-server";
+  rm -f /etc/systemd/system/llama-server.service;
   # --------------------------------------------------------------------------------
 else
  echo "La fonction LLAMA_SYSTEMD_DEL est en anomalie";
