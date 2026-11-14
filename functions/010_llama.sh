@@ -38,6 +38,7 @@ fi
 ###############################################
 LLAMA_BUILD_02(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
+  cd    "$WORKDIR/src/llama.cpp";
   mkdir "$WORKDIR/output/llama.cpp";
   cmake --install build --prefix "$WORKDIR/output/llama.cpp";
 else
