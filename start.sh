@@ -28,30 +28,30 @@ fi
 #HOST_DEBIAN_APT_UPDATE 1>/dev/null;
 #HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
 # ---------------------------------------
-MESSAGE_TOP;
+MESSAGE_TOP;                   # Phase X
 # ---------------------------------------
-MESSAGE_LOADING_GLOBAL;
+MESSAGE_LOADING_GLOBAL;        # Phase 0
 HOST_DEBIAN_BLACKLIST_NOUVEAU;
 HOST_DEBIAN_NVIDIA;
 HOST_DEBIAN_NVIDIA_CUDA;
 # ---------------------------------------
-MESSAGE_LLAMA_PURGE_SRC;    # OK
-LLAMA_PURGE_DIR_SRC;        # OK
+MESSAGE_LLAMA_PURGE_SRC;       # Phase 1
+LLAMA_PURGE_DIR_SRC;           # OK
 # ---------------------------------------
-MESSAGE_LLAMA_GIT_CLONE;    # OK
-LLAMA_GIT_CLONE;            # OK
+MESSAGE_LLAMA_GIT_CLONE;       # Phase 2
+LLAMA_GIT_CLONE;               # OK
 # ---------------------------------------
-MESSAGE_LLAMA_PURGE_OUTPUT; # OK
-LLAMA_PURGE_DIR_OUTPUT;     # OK
+MESSAGE_LLAMA_PURGE_OUTPUT;    # Phase 3
+LLAMA_PURGE_DIR_OUTPUT;        # OK
 # ---------------------------------------
-MESSAGE_LLAMA_CONFIG_BUILD; # ??
-LLAMA_CONFIG_BUILD;         # ??
+MESSAGE_LLAMA_CONFIG_BUILD;    # Phase 4
+LLAMA_CONFIG_BUILD;            # ??
 # ---------------------------------------
-MESSAGE_LLAMA_MAKE_BUILD;   # ??
-LLAMA_MAKE_BUILD;           # ??
+MESSAGE_LLAMA_MAKE_BUILD;      # Phase 5
+LLAMA_MAKE_BUILD;              # ??
 # ---------------------------------------
-MESSAGE_LLAMA_BUILD_OUTPUT; # ??
-LLAMA_BUILD_OUTPUT;         # ??
+MESSAGE_LLAMA_BUILD_OUTPUT;    # Phase 6
+LLAMA_BUILD_OUTPUT;            # 
 
 # ---------------------------------------
 #MESSAGE_LLAMA_END;
