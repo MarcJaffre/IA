@@ -12,10 +12,11 @@ Fonctionnement
 - [OK] Téléchargement du dépôt LLAMA
 - [OK] Compilation du dépôt
 - [OK] Test de fonctionnement Appz
+- [OK] Batch de compilation avec "$CMAKE_ARGS"
 - [OK] Compilation en mode silencieux
 
 Amélioration:
- - [XXXXXX] Batch de compilation avec "$CMAKE_ARGS"
+ - [XXXXXX] GPU Unlock
  - [XXXXXX] Téléchargement de modèle
  - [XXXXXX] Batch de lancement de llama-server
  - [XXXXXX] Liens symbolique llama-server vers /usr/bin/llama-server
