@@ -1,9 +1,12 @@
 #====================================================================================
 # Dossier de Travail #
 # ================== #
-OPENWEBUI_PURG(){
- echo "";
+OPENWEBUI_PURGE_FOLDER(){
+if [ -d "$WORKDIR/openwebui" ]; then
+ rm -rf "$WORKDIR/openwebui";
+fi
 }
+
 
 
 
