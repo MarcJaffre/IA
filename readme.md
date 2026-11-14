@@ -35,14 +35,18 @@ clear;
 if [ ! -d "$WORKDIR" ]; then
   git clone --quiet "$GITHUB_IA" "$WORKDIR";
   cd "$WORKDIR";
-  # XXXXXX 
-  ls;
 else
   cd "$WORKDIR";
   git fetch --all
   git reset --hard origin/main
   git clean -fd
-#fi
+fi
+
+# =============================================================================
+# Remplacer la valeur de WORKDIR par celle défini #
+###################################################
+sed -i -e "s|XXXXXX|${WORKDIR}|g" "$WORKDIR/globale.conf"
+cat "$WORKDIR/globale.conf"
 
 # =============================================================================
 # LANCEMENT PROJET #
