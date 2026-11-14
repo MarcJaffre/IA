@@ -8,11 +8,12 @@ set -e
 # =================================================================================================
 # Charger fichier Debian #
 # ====================== #
-if [ -f $WORKDIR/IA/functions/999_packages.sh ]; then
+if [ -f  $WORKDIR/IA/functions/999_packages.sh ]; then
   source $WORKDIR/IA/functions/999_packages.sh;
 fi
 
 pwd
+echo "$WORKDIR/IA"
 
 # =================================================================================================
 # Charger fichier Debian #
