@@ -11,14 +11,22 @@ else
 fi
 }
 
+
+
+
 ########################################################################################################################
 # Compiler et sortir les binaires dans output #
 ###############################################
 LLAMA_BUILD_02(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
-  cd    "$WORKDIR/src/llama.cpp";
-  mkdir "$WORKDIR/output/llama.cpp";
-  cmake --install build --prefix "$WORKDIR/output/llama.cpp";
+ # ===========================================================================
+   cd "$WORKDIR/src/llama.cpp";
+ # ===========================================================================
+   if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
+      mkdir  "$WORKDIR/output/llama.cpp";
+      cmake --install build --prefix "$WORKDIR/output/llama.cpp";
+   fi
+ # ===========================================================================
 else
   echo "La fonction LLAMA_BUILD_02 est en erreur";
 fi
