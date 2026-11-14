@@ -149,7 +149,7 @@ Bash                                                   │
 | Blacklist         | Opérationnel       |
 | Nvidia Drivers    | Opérationnel       |
 | Nvidia Cuda       | Opérationnel       |
-| LLAMA             | 90%                |
+| LLAMA             | 90% (Build 10min)  |
 | OpenWebui         | 1%                 |
 | Stable-Diffusion  | 1%                 |
 | Open-Terminal     | 0%                 |
