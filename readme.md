@@ -42,7 +42,7 @@ else
   git fetch --all
   git reset --hard origin/main
   git clean -fd
-fi
+#fi
 
 # =============================================================================
 # LANCEMENT PROJET #
