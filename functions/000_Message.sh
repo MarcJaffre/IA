@@ -52,6 +52,7 @@ echo "";
 # =====================================================================================
 MESSAGE_LOADING_GLOBAL(){
 echo "    ╔══════════════════════════════════════════════════════╗";
+echo "    ║                      LLLAMA.CPP                      ║";
 echo "    ║                                                      ║";
 echo "    ║ [0/7] Initialisation de l'environnement global       ║";
 }
