@@ -28,9 +28,9 @@ else
  # ----------------------------------------------------------------
  echo "Déplacement dans le projet";
  cd $WORKDIR/IA;
- git fetch --all;
- git reset --hard origin/main;
- git clean -fd;
+ git fetch --all               1>/dev/null;
+ git reset --hard origin/main  1>/dev/null;
+ git clean -fd                 1>/dev/null;
  # ----------------------------------------------------------------
 fi
 ```
