@@ -24,4 +24,7 @@ if [ -f "./globale.conf" ]; then
   source "./globale.conf";
 fi
 
-
+# =================================================================================================
+# Lancement de la construction #
+# ============================ #
+OPENWEBUI_MAKE_DIR
