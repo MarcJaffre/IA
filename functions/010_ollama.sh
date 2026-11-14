@@ -1,7 +1,7 @@
 ########################################################################################################################
 # Purge Globale #
 #################
-LLAMA_PURGE_OUTPUT(){
+LLAMA_PURGE_DIR_OUTPUT(){
 if [ -d "$WORKDIR\output\llama.cpp" ]; then
   rm -f "$WORKDIR\output\llama.cpp";
 fi
@@ -10,7 +10,7 @@ fi
 ########################################################################################################################
 # Purge Globale #
 #################
-LLAMA_PURGE_SRC(){
+LLAMA_PURGE_DIR_SRC(){
 if [ -d "$WORKDIR\src\llama.cpp" ]; then
   rm -f "$WORKDIR\src\llama.cpp";
 fi
