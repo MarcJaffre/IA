@@ -87,12 +87,12 @@ if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
   # ==============================================================================
   echo "Déplacement des binaires llama.cpp";
   # ==============================================================================
-  cd      "$WORKDIR/src/llama.cpp/build/bin/"
+  cd       "$WORKDIR/src/llama.cpp/build/bin/"
   # ==============================================================================
-  mkdir   "$WORKDIR_FINAL/llama.cpp";
-  mv *    "$WORKDIR_FINAL/llama.cpp";
+  mkdir -p "$WORKDIR_FINAL/llama.cpp";
+  mv *     "$WORKDIR_FINAL/llama.cpp";
   # ==============================================================================
-  find    "$WORKDIR_FINAL/llama.cpp" \
+  find     "$WORKDIR_FINAL/llama.cpp" \
   -type f \
   -iname "llama*" \
   -exec chmod +x {} \;
