@@ -5,6 +5,8 @@ LLAMA_PURGE_DIR_SRC(){
 if [ -d "$WORKDIR\src\llama.cpp" ]; then
   echo "LLAMA_PURGE_DIR_SRC";
   rm -f "$WORKDIR\src\llama.cpp";
+else
+ echo "$WORKDIR\src\llama.cpp";
 fi
 }
 # --------------------------------------------------
