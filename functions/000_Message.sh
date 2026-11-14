@@ -78,12 +78,12 @@ echo "   ║ [5/7] Compilation complète de llama.cpp              ║";
 
 # =====================================================================================
 MESSAGE_LLAMA_BUILD_OUTPUT(){
-echo "   ║ [6/7] Exportation des binaires vers output $(date +"%H H %M")   ║";
+echo "   ║ [6/7] Exportation des binaires vers output ($(date +"%HH%M"))   ║";
 }
 
 # =====================================================================================
 MESSAGE_LLAMA_END(){
-echo "   ║ [7/7] Construction de llama.cpp terminée   $(date +"%H H %M")   ║";
+echo "   ║ [7/7] Construction de llama.cpp terminée   ($(date +"%HH%M"))   ║";
 
 }
 
