@@ -7,7 +7,13 @@ Ce projet à pour objectif de déployer des applications IA sur une distribution
 
 ### B. Prérequis
 ```bash
-apt install -y git;
+clear;
+# ================================
+if [ ! -f /usr/bin/git ]; then
+  apt update;
+  apt install -y git;
+fi
+# ================================
 ```
 
 ### B. Utilisation
@@ -15,15 +21,6 @@ apt install -y git;
 clear;
 cat > test.sh << 'EOF'
 #!/usr/bin/bash
-# ===================================================================
-# Installation de la dépendance minimal #
-# ===================================== #
-if [ ! -f /usr/bin/git ]; then
-  apt update;
-  apt install -y git;
-fi
-
-
 # ================================================================================
 # Variables #
 # ========= #
