@@ -14,7 +14,7 @@ clear;
 
 if [ -d $WORKDIR/IA ]; then
   cd $WORKDIR/IA;
-  bash IA/workspaces/llama_service_uninstall.sh;
+  bash $WORKDIR/IA/workspaces/llama_service_uninstall.sh;
   cd $WORKDIR;
   rm -rf $WORKDIR/IA;
 else
