@@ -10,7 +10,7 @@ set -e
 # =================== #
 # Github rester globale.conf.exemple mais pas globale.conf
 if [ ! -f globale.conf ]; then 
- cp globale.conf.exemple globale.conf
+ cp ./IA/globale.conf.exemple ./IA/globale.conf
 fi
 
 # =================================================================================================
