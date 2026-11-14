@@ -1,18 +1,20 @@
 ########################################################################################################################
-# Purge du dossier du dossier output de LLAMA #
-###############################################
-LLAMA_PURGE_DIR(){
-if [ -d  "$WORKDIR/output/llama.cpp" ]; then 
-  rm -rf "$WORKDIR/output/llama.cpp";
-fi
+# Purge Globale #
+#################
+LLAMA_PURGE_GLOBAL(){
+if [ ! -d "$WORKDIR" ]; then
+ cd $HOME;
+ rm -f "$WORKDIR";
 }
+
 
 ########################################################################################################################
 LLAMA_GIT_CLONE(){
-if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
+if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
   git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
 else
-  echo "La fonction LLAMA_GIT_CLONE est en erreur ou lancer LLAMA_PURGE_DIR avant.";
+  rm -r "$WORKDIR/src/llama.cpp";
+  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
 fi
 }
 
