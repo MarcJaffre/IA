@@ -8,7 +8,8 @@ set -e
 # =============================================================================================
 # Global.conf #
 # =========== #
-if [ ! -f ./globale.conf ]; then
+# Si fichier absent, je le copie
+if [ ! -f "./globale.conf" ]; then
  cp "./globale.conf.exemple" "./globale.conf";
 else
  echo "Fichier globale.conf présent";
