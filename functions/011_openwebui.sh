@@ -11,11 +11,10 @@ if [ ! -d  "./openwebui" ]; then
   mkdir -p "./openwebui/.cache";
 fi
 # ----------------------------------------------------------
-if [ -d  "./openwebui" ]; then
-  cd -p  "./openwebui";
-  python$PYTHON_VERSION -m venv "$ENV_NAME"
-fi
-
+#if [ -d  "./openwebui" ]; then
+#  cd -p  "./openwebui";
+#  python$PYTHON_VERSION -m venv "$ENV_NAME"
+#fi
 
 #$PROJET_DIR
 #$PYTHON_PACKAGE
