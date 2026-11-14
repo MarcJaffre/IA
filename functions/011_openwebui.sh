@@ -6,9 +6,10 @@ OPENWEBUI_MAKE_DIR(){
 echo "Création des dossiers Openwebui, Download et Cache";
 # ----------------------------------------------------------
 if [ ! -d  "./openwebui" ]; then
-  mkdir -p "./openwebui";
-  mkdir -p "./openwebui/download";
-  mkdir -p "./openwebui/.cache";
+ echo "OK";
+#  mkdir -p "./openwebui";
+#  mkdir -p "./openwebui/download";
+#  mkdir -p "./openwebui/.cache";
 fi
 # ----------------------------------------------------------
 
