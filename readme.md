@@ -21,7 +21,6 @@ fi
 clear;
 cat > test.sh << 'EOF'
 #!/usr/bin/bash
-
 # =============================================================================
 # Variables #
 # ========= #
@@ -51,7 +50,8 @@ cat "$WORKDIR/globale.conf"
 # =============================================================================
 # LANCEMENT PROJET #
 # ================ #
-bash start.sh;
+# bash start.sh;
+
 EOF
 
 bash test.sh;
