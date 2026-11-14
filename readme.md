@@ -81,9 +81,9 @@ fi
 #### 5. Installer l'application
 ```bash
 clear;
-if [ -d /srv/IA ]; then
+if [ -d $WORKDIR/IA ]; then
  # ----------------------
- cd $WORKDIR/IA;
+ cd   $WORKDIR/IA;
  bash install.sh;
  # ----------------------
 fi
