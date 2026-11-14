@@ -13,7 +13,7 @@ echo "
   ║ \                                                        / ║
   ║  ╔══════════════════════════════════════════════════════╗  ║
   ║  ║                                                      ║  ║
-  ║  ║        ════ Intelligence Artificielle ════           ║  ║
+  ║  ║         ════ Intelligence Artificielle ════          ║  ║
   ║  ║                                                      ║  ║
   ║  ║   ════ BIENVENUE SUR LE SCRIPT DE DÉPLOIEMENT ════   ║  ║
   ║  ║                                                      ║  ║
