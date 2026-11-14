@@ -45,9 +45,9 @@ LLAMA_GIT_CLONE;            # OK
 MESSAGE_LLAMA_PURGE_OUTPUT; # OK
 LLAMA_PURGE_DIR_OUTPUT;     # OK
 # ---------------------------------------
-MESSAGE_LLAMA_BUILD;        # OK
-LLAMA_BUILD_01;             # ??
-LLAMA_BUILD_02;             # ??
+#MESSAGE_LLAMA_BUILD;        # OK
+#LLAMA_BUILD_01;             # ??
+#LLAMA_BUILD_02;             # ??
 
 # ---------------------------------------
 #MESSAGE_LLAMA_END;
