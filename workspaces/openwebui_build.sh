@@ -28,5 +28,5 @@ fi
 # Lancement de la construction #
 # ============================ #
 OPENWEBUI_PURGE;
-#OPENWEBUI_CREATE_DIR;
+OPENWEBUI_CREATE_DIR;
 
