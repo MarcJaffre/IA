@@ -113,8 +113,6 @@ fi
 #######################
 LLAMA_SYSTEMD_ADD(){
 # ================================================================================
-echo "Création du service llama-server.service";
-# ================================================================================
 if [ -f /etc/systemd/system/llama-server.service ]; then
   rm -f /etc/systemd/system/llama-server.service;
 fi
@@ -144,11 +142,9 @@ systemctl daemon-reload;
 ##########################
 LLAMA_SYSTEMD_DEL(){
 # Check fichier si il existe
-clear;
 if [ -f /etc/systemd/system/llama-server.service ]; then
   # ==============================================================================
   if [ $(systemctl is-enabled llama-server.service) == "enabled" ]; then
-    echo "Désactivation du service llama-server";
     systemctl disable --now llama-server.service 2>/dev/null;
     systemctl daemon-reload;
   fi
