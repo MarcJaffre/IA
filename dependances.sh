@@ -13,7 +13,7 @@ else
   echo "Le fichier globale.conf n'existe pas";
 fi
 
-if [ -f /etc/os-release ];
+if [ -f /etc/os-release ]; then
   source /etc/os-release;
 fi
 
