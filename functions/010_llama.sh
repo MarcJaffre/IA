@@ -1,27 +1,37 @@
 ########################################################################################################################
-# Purge llama.cpp du dossier src
+# Purge llama.cpp du dossier src #
+##################################
 LLAMA_PURGE_DIR_SRC(){
 if [ -d  "$WORKDIR/src/llama.cpp" ]; then
+  # ====================================================================
   rm -rf "$WORKDIR/src/llama.cpp";
-else
-  echo "La fonction LLAMA_PURGE_DIR_SRC est en erreur";
+  # ====================================================================
+#else
+#  echo "La fonction LLAMA_PURGE_DIR_SRC est en erreur";
 fi
 }
 ########################################################################################################################
+# Telechargement du depot LLAMA #
+#################################
 LLAMA_GIT_CLONE(){
 if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
+  # ====================================================================
   git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
-else
-  echo "La fonction LLAMA_GIT_CLONE est en erreur";
+  # ====================================================================
+#else
+#  echo "La fonction LLAMA_GIT_CLONE est en erreur";
 fi
 }
 ########################################################################################################################
-# Purge llama.cpp du dossier output
+# Purge llama.cpp du dossier output #
+#####################################
 LLAMA_PURGE_DIR_OUTPUT(){
 if [ -d  "$WORKDIR/output/llama.cpp" ]; then
+  # ====================================================================
   rm -rf "$WORKDIR/output/llama.cpp";
-else
-  echo "La fonction LLAMA_PURGE_DIR_OUTPUT est en erreur";
+  # ====================================================================
+#else
+  #echo "La fonction LLAMA_PURGE_DIR_OUTPUT est en erreur";
 fi
 }
 ########################################################################################################################
@@ -29,14 +39,12 @@ fi
 ###################################
 LLAMA_CONFIG_BUILD(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
+  # ====================================================================
   cd    "$WORKDIR/src/llama.cpp";
-  # ===================================================
   cmake -B build $CMAKE_ARGS --log-level=ERROR > /dev/null;
-  # ===================================================
-else
-  # ===================================================
-  echo "La fonction LLAMA_CONFIG_BUILD est en erreur";
-  # ===================================================
+  # ====================================================================
+#else
+  #echo "La fonction LLAMA_CONFIG_BUILD est en erreur";
 fi
 }
 ########################################################################################################################
@@ -44,14 +52,12 @@ fi
 ###############################
 LLAMA_MAKE_BUILD(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
+  # ====================================================================
   cd    "$WORKDIR/src/llama.cpp";
-  # ===================================================
   cmake --build build  --config Release -j "$BUILD_CPUS" > /dev/null;
-  # ===================================================
-else
-  # ===================================================
-  echo "La fonction LLAMA_MAKE_BUILD est en erreur";
-  # ===================================================
+  # ====================================================================
+#else
+  #echo "La fonction LLAMA_MAKE_BUILD est en erreur";
 fi
 }
 ########################################################################################################################
@@ -59,16 +65,16 @@ fi
 ###############################################
 LLAMA_BUILD_OUTPUT(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
- # ===========================================================================
+  # ====================================================================
    cd "$WORKDIR/src/llama.cpp";
- # ===========================================================================
+  # ====================================================================
    if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
       mkdir  "$WORKDIR/output/llama.cpp";
       cmake --install build --prefix "$WORKDIR/output/llama.cpp";
    fi
- # ===========================================================================
-else
-  echo "La fonction LLAMA_BUILD_02 est en erreur";
+  # ====================================================================
+#else
+  #echo "La fonction LLAMA_BUILD_02 est en erreur";
 fi
 }
 
