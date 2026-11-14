@@ -10,20 +10,25 @@ set -e
 RUN_LLAMA="1"
 
 # =================================================================================================
+# WORKDIR #
+###########
+WORKDIR="/srv/IA"
+
+# =================================================================================================
 # Chargement de la configuration du WORKDIR #
 # ========================================= #
-if [ -f globale.conf ]; then
- source globale.conf;
+if [ -f "$WORKDIR/globale.conf" ]; then
+ source "$WORKDIR/globale.conf";
 fi
 
 # =================================================================================================
 # Dossier output llama #
 # ==================== #
 if [ $RUN_LLAMA = "1" ]; then
-      if [ -d "$WORKDIR/output/llama.cpp" ]; then
-        cd    "$WORKDIR/output/llama.cpp"  ;
+      if [ -d "$WORKDIR/output/llama.cpp/bin" ]; then
+        cd    "$WORKDIR/output/llama.cpp/bin"  ;
       else
-        echo "Le dossier output/llama.cpp est absent";
+        echo "Le dossier output/llama.cpp/bin est absent";
         exit;
       fi
       find . -type f -iname "llama*" -exec chmod +x {} \;
