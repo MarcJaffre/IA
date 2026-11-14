@@ -31,8 +31,8 @@ WORKDIR="/tmp/IA"
 # =============================================================================
 # Purge du dossier WORKDIR #
 ############################
-if [ -d $WORKDIR ]; then
- rm $WORKDIR;
+if [ -d "$WORKDIR" ]; then
+ rm -rf $WORKDIR;
  sleep 5;
 fi
 
