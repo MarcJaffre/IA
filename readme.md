@@ -31,7 +31,7 @@ WORKDIR="/tmp/IA"
 # =============================================================================
 # Purge #
 #########
-if [ -d  $WORKDIR\ ]; then
+if [ -d  $WORKDIR ]; then
   rm -rf $WORKDIR;
 fi
 
