@@ -27,8 +27,6 @@ fi
 # =================================================================================================
 # Lancement de la construction #
 # ============================ #
-echo "1";
-OPENWEBUI_PURGE
-echo "2";
-OPENWEBUI_CREATE_DIR
+OPENWEBUI_PURGE;
+#OPENWEBUI_CREATE_DIR;
 
