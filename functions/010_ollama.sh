@@ -7,13 +7,18 @@ if [ -d "$WORKDIR\output\llama.cpp" ]; then
 fi
 }
 
+########################################################################################################################
+# Purge Globale #
+#################
+LLAMA_PURGE_SRC(){
+if [ -d "$WORKDIR\src\llama.cpp" ]; then
+  rm -f "$WORKDIR\src\llama.cpp";
+fi
+}
 
 ########################################################################################################################
 LLAMA_GIT_CLONE(){
-if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
-  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
-else
-  rm -r "$WORKDIR/src/llama.cpp";
+if [ -d "$WORKDIR/src/llama.cpp" ]; then
   git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
 fi
 }
