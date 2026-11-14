@@ -27,4 +27,4 @@ fi
 # Suppression du service #
 # ====================== #
 LLAMA_SYSTEMD_DISABLED;
-LLAMA_SYSTEMD_DEL;
+#LLAMA_SYSTEMD_DEL;
