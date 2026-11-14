@@ -36,19 +36,21 @@ MESSAGE_LOADING_GLOBAL;
 #HOST_DEBIAN_NVIDIA;
 #HOST_DEBIAN_NVIDIA_CUDA;
 # ---------------------------------------
-MESSAGE_LLAMA_PURGE_SRC
-LLAMA_PURGE_DIR_SRC
-
+MESSAGE_LLAMA_PURGE_SRC;
+LLAMA_PURGE_DIR_SRC;
 # ---------------------------------------
 MESSAGE_LLAMA_PURGE_OUTPUT;
 LLAMA_PURGE_DIR_OUTPUT;
 # ---------------------------------------
 MESSAGE_LLAMA_GIT_CLONE;
 LLAMA_GIT_CLONE;
+
+
+
 # ---------------------------------------
-MESSAGE_LLAMA_BUILD;
-LLAMA_BUILD_01; 
-LLAMA_BUILD_02 1>/dev/null;
+#MESSAGE_LLAMA_BUILD;
+#LLAMA_BUILD_01; 
+#LLAMA_BUILD_02 1>/dev/null;
 # ---------------------------------------
 #MESSAGE_LLAMA_END;
 #LLAMA_BUILD_MV_BIN;
