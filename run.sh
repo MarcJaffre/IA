@@ -23,7 +23,7 @@ if [ $RUN_LLAMA = "1" ]; then
       if [ -d "$WORKDIR/output/llama.cpp" ]; then
         cd    "$WORKDIR/output/llama.cpp"  ;
       else
-        echo "Le dossier output/llama.cpp est absent"; 
+        echo "Le dossier output/llama.cpp est absent";
         exit;
       fi
       find . -type f -iname "llama*" -exec chmod +x {} \;
