@@ -15,5 +15,13 @@ else
  echo "Fichier globale.conf présent";
 fi
 
+# =================================================================================================
+# Configuration du WORKDIR #
+# ======================== #
+if [ -f "./globale.conf" ]; then
+  sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" "./globale.conf";
+  cat "./globale.conf"
+fi
+
 # =============================================================================================
 
