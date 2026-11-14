@@ -26,39 +26,7 @@ fi
 # =================================================================================================
 # Création du service #
 #######################
-# LLAMA_SYSTEMD_ADD
-
-# ================================================================================
-#echo "Création du service llama-server.service";
-
-# ================================================================================
-#if [ -f /etc/systemd/system/llama-server.service ]; then
-#  rm -f /etc/systemd/system/llama-server.service;
-#fi
-# ================================================================================
-cat > /etc/systemd/system/llama-server.service <<EOF
-[Unit]
-Description=llama.cpp HTTP server
-After=network-online.target
-Wants=network-online.target
-
-[Service]
-Type=simple
-WorkingDirectory=$WORKDIR/output/llama.cpp/bin/
-ExecStart=$WORKDIR/output/llama.cpp/bin/llama-server $LLAMA_SERVICE_OPTION
-Restart=on-failure
-RestartSec=5
-
-[Install]
-WantedBy=multi-user.target
-EOF
-# ================================================================================
-systemctl daemon-reload;
-systemctl restart llama-server.service;
-systemctl status llama-server.service;
-# ================================================================================
-
-
+LLAMA_SYSTEMD_ADD
 
 
 
