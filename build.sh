@@ -19,19 +19,19 @@ source ./globale.conf;
 # =================================================================================================
 # Purge du système #
 # ================ #
-LLAMA_PURGE_DIR_SRC;
-LLAMA_PURGE_DIR_OUTPUT;
+#LLAMA_PURGE_DIR_SRC;
+#LLAMA_PURGE_DIR_OUTPUT;
 
 # =================================================================================================
 # Telecharger Depots LLAMA #
 # ======================== # 
-LLAMA_GIT_CLONE;
+#LLAMA_GIT_CLONE;
 
 # =================================================================================================
 # Configuration et compilation #
 # ============================ # 
-LLAMA_BUILD_CONFIG;
-LLAMA_BUILD_MAKE;
+#LLAMA_BUILD_CONFIG;
+#LLAMA_BUILD_MAKE;
 
 # =================================================================================================
 # Installer la build dans Output #
