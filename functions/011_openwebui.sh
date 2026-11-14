@@ -14,7 +14,6 @@ if [ ! -d "$WORKDIR/openwebui" ]; then
  mkdir    "$WORKDIR/openwebui";
  mkdir    "$WORKDIR/openwebui/download";
  mkdir    "$WORKDIR/openwebui/.cache";
- ls -la $WORKDIR/openwebui;
 fi
 }
 
