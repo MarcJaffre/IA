@@ -33,8 +33,8 @@ fi
 clear;
 
 if [ -d $WORKDIR/IA ]; then
-  cd $WORKDIR;
-  bash ./IA/workspaces/llama_service_uninstall.sh;
+  cd $WORKDIR/IA;
+  bash ./workspaces/llama_service_uninstall.sh;
   #rm -rf $WORKDIR/IA;
 else
  echo "Le dossier est déjà purger";
