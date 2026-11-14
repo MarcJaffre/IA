@@ -1,20 +1,18 @@
 ########################################################################################################################
-# Purge Globale #
-#################
+# Purge Dossier src et Output #
+###############################
+LLAMA_PURGE_DIR_SRC(){
+if [ -d "$WORKDIR\src\llama.cpp" ]; then
+  rm -f "$WORKDIR\src\llama.cpp";
+fi
+}
+
 LLAMA_PURGE_DIR_OUTPUT(){
 if [ -d "$WORKDIR\output\llama.cpp" ]; then
   rm -f "$WORKDIR\output\llama.cpp";
 fi
 }
 
-########################################################################################################################
-# Purge Globale #
-#################
-LLAMA_PURGE_DIR_SRC(){
-if [ -d "$WORKDIR\src\llama.cpp" ]; then
-  rm -f "$WORKDIR\src\llama.cpp";
-fi
-}
 
 ########################################################################################################################
 LLAMA_GIT_CLONE(){
