@@ -17,8 +17,8 @@ fi
 }
 
 ########################################################################################################################
-# Compilation du projet #
-#########################
+# Compilation du projet (1/2) #
+###############################
 LLAMA_BUILD_01(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   cd    "$WORKDIR/src/llama.cpp";
@@ -28,6 +28,10 @@ else
   echo "La fonction LLAMA_BUILD_01 est en erreur";
 fi
 }
+
+########################################################################################################################
+# Compilation du projet (2/2) #
+###############################
 LLAMA_BUILD_02(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   cd    "$WORKDIR/src/llama.cpp";
@@ -75,11 +79,9 @@ fi
 # Creation du Service #
 #######################
 LLAMA_SYSTEMD_ADD(){
-
 if [ -f /etc/systemd/system/llama-server.service ]; then
   rm -f /etc/systemd/system/llama-server.service;
 fi
-
 cat > /etc/systemd/system/llama-server.service <<EOF
 [Unit]
 Description=llama.cpp HTTP server
@@ -89,7 +91,7 @@ Wants=network-online.target
 [Service]
 Type=simple
 WorkingDirectory=$WORKDIR_FINAL/llama.cpp 
-ExecStart=$WORKDIR_FINAL/llama.cpp/llama-server --host 0.0.0.0 --port 8080 --api-key admin
+ExecStart=$WORKDIR_FINAL/llama.cpp/llama-server $OLLAMA_SERVICE_OPTION
 Restart=on-failure
 RestartSec=5
 
