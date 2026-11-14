@@ -4,7 +4,41 @@
 
 
 ############################################################################################################################
-# Fondamentaux
+# Fondamentaux #
+################
+HOST_DEBIAN_APT_REPO(){
+# trixie-updates, to get updates before a point release is made
+if [[ $VERSION_CODENAME == "trixie" || $VERSION_CODENAME == "bookworm"  ]]; then
+cat > /etc/apt/sources.list << EOF
+# =======================================================================================================
+# https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_updates_and_backport                #
+# =======================================================================================================
+deb http://ftp.fr.debian.org/debian/            $VERSION_CODENAME          main non-free non-free-firmware contrib #
+# =======================================================================================================
+deb http://ftp.fr.debian.org/debian/            $VERSION_CODENAME-updates  main non-free non-free-firmware contrib #
+# =======================================================================================================
+deb http://security.debian.org/debian-security  $VERSION_CODENAME-security main non-free non-free-firmware contrib #
+# =======================================================================================================
+EOF
+fi
+
+if [[ $VERSION_CODENAME == "bullseye" ]]; then
+cat > /etc/apt/sources.list << EOF
+# =======================================================================================================
+deb http://ftp.fr.debian.org/debian/            $VERSION_CODENAME          main non-free contrib                 #
+# =======================================================================================================
+deb http://ftp.fr.debian.org/debian/            $VERSION_CODENAME-updates  main non-free contrib                 #
+# =======================================================================================================
+deb http://security.debian.org/debian-security  $VERSION_CODENAME-security main non-free contrib                 #
+# =======================================================================================================
+# https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_updates_and_backport                #
+# =======================================================================================================
+EOF
+fi
+
+}
+
+
 HOST_DEBIAN_APT_UPDATE(){
 /usr/bin/apt update 1>/dev/null;
 }
