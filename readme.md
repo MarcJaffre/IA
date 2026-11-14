@@ -26,7 +26,7 @@ cat > test.sh << 'EOF'
 # Variables #
 # ========= #
 GITHUB_IA="https://github.com/MarcJaffre/IA.git"
-WORKDIR="/tmp/IA"
+WORKDIR="/srv/IA"
 
 # =============================================================================
 # Télécharger ou mettre à jour  projet #
