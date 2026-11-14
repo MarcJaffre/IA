@@ -19,7 +19,6 @@ fi
 LLAMA_GIT_CLONE(){
 if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
   git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
-  git pull origin main 1>/dev/null
 fi
 }
 
