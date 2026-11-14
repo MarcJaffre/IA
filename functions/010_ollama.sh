@@ -41,8 +41,6 @@ else
 fi
 }
 
-
-
 ########################################################################################################################
 # Déplacement de la Source vers output #
 ########################################
@@ -101,7 +99,6 @@ EOF
 systemctl daemon-reload;
 }
 
-
 ########################################################################################################################
 # Suppression du Service #
 ##########################
@@ -123,12 +120,10 @@ else
 fi
 }
 
+
 ########################################################################################################################
-# Gestion du service #
-######################
-
-
-# ---------------------------------------------------------------------------
+# Activation du service #
+#########################
 LLAMA_SYSTEMD_ENABLED(){
 if [ $(systemctl is-enabled llama-server.service) == "disabled" ]; then
   echo "Activation du service llama-server";
@@ -137,7 +132,9 @@ if [ $(systemctl is-enabled llama-server.service) == "disabled" ]; then
 fi
 }
 
-
+########################################################################################################################
+# Désactivation du service #
+############################
 LLAMA_SYSTEMD_DISABLED(){
 if [ $(systemctl is-enabled llama-server.service) == "enabled" ]; then
   echo "Désactivation du service llama-server";
@@ -145,6 +142,7 @@ if [ $(systemctl is-enabled llama-server.service) == "enabled" ]; then
   systemctl disable --now llama-server.service 2>/dev/null;
 fi
 }
+
 
 ########################################################################################################################
 # Lancement pour démonstration #
