@@ -4,7 +4,6 @@
 OPENWEBUI_PURGE_FOLDER(){
 if [ -d "$WORKDIR/openwebui" ]; then
  rm -rf "$WORKDIR/openwebui"  ;
- ls -l   $WORKDIR;
 fi
 }
 # ====================================================================================
@@ -15,6 +14,7 @@ if [ ! -d "$WORKDIR/openwebui" ]; then
  mkdir    "$WORKDIR/openwebui";
  mkdir    "$WORKDIR/openwebui/download";
  mkdir    "$WORKDIR/openwebui/.cache";
+ ls -la $WORKDIR/openwebui;
 fi
 }
 
