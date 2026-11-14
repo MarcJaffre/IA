@@ -8,6 +8,14 @@ else
 fi
 }
 ########################################################################################################################
+LLAMA_GIT_CLONE(){
+if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
+  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
+else
+  echo "La fonction LLAMA_GIT_CLONE est en erreur";
+fi
+}
+########################################################################################################################
 # Purge llama.cpp du dossier output
 LLAMA_PURGE_DIR_OUTPUT(){
 if [ -d  "$WORKDIR/output/llama.cpp" ]; then
@@ -17,26 +25,13 @@ else
 fi
 }
 ########################################################################################################################
-LLAMA_GIT_CLONE(){
-if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
-  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
-else
-  echo "La fonction LLAMA_GIT_CLONE est en erreur";
-fi
-}
-
-########################################################################################################################
 # Configuration de la compilation #
 ###################################
 LLAMA_CONFIG_BUILD(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   cd    "$WORKDIR/src/llama.cpp";
   # ===================================================
-  cmake \
-  -B build \
-  $CMAKE_ARGS \
-  --log-level=ERROR \
-  > /dev/null;
+  cmake -B build $CMAKE_ARGS --log-level=ERROR > /dev/null;
   # ===================================================
 else
   # ===================================================
@@ -44,7 +39,6 @@ else
   # ===================================================
 fi
 }
-
 ########################################################################################################################
 # Lancement de la compilation #
 ###############################
@@ -52,11 +46,7 @@ LLAMA_MAKE_BUILD(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   cd    "$WORKDIR/src/llama.cpp";
   # ===================================================
-  cmake \
-  --build build \
-  --config Release \
-  -j "$BUILD_CPUS" \
-  > /dev/null;
+  cmake --build build  --config Release -j "$BUILD_CPUS" > /dev/null;
   # ===================================================
 else
   # ===================================================
