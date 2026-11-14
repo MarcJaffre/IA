@@ -13,13 +13,13 @@ echo "
   ║ \                                                        / ║
   ║  ╔══════════════════════════════════════════════════════╗  ║
   ║  ║                                                      ║  ║
-  ║  ║         ════ Intelligence Artificielle ════          ║  ║
+  ║  ║        ════ Intelligence Artificielle ════           ║  ║
   ║  ║                                                      ║  ║
-  ║  ║    ════ BIENVENUE SUR LE SCRIPT DE DÉPLOIEMENT ════  ║  ║
+  ║  ║   ════ BIENVENUE SUR LE SCRIPT DE DÉPLOIEMENT ════   ║  ║
   ║  ║                                                      ║  ║
-  ║  ║                   Par Marc JAFFRE                    ║  ║
+  ║  ║                  Par Marc JAFFRE                     ║  ║
   ║  ║                                                      ║  ║
-  ║  ║                 Tous droits réservés                 ║  ║
+  ║  ║                Tous droits réservés                  ║  ║
   ║  ║                                                      ║  ║
   ║  ╚══════════════════════════════════════════════════════╝  ║
   ║ /════════\|║|/═════════════\|║|/═════════════\|║|/═══════\ ║
