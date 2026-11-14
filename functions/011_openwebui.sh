@@ -2,7 +2,7 @@
 # Dossier de Travail #
 # ================== #
 OPENWEBUI_PURGE(){
-if [ "$WORKDIR/IA/openwebui" ]; then
+if [ -d "$WORKDIR/IA/openwebui" ]; then
  echo "Dossier à delete";
 fi
 }
@@ -10,7 +10,7 @@ fi
 # Création Environnement #
 ##########################
 OPENWEBUI_CREATE_DIR(){
-if [ ! "$WORKDIR/IA/openwebui" ]; then
+if [ ! -d "$WORKDIR/IA/openwebui" ]; then
  echo "Dossier à delete";
 fi
 }
