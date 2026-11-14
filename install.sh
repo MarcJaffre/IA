@@ -28,7 +28,7 @@ fi
 # Création du service #
 # =================== #
 LLAMA_SYSTEMD_ADD;
-LLAMA_SYSTEMD_ENABLED;
+#LLAMA_SYSTEMD_ENABLED;
 
 
 
