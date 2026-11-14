@@ -34,11 +34,11 @@ fi
 # =================================================================================================
 # Dossier output llama #
 # ==================== #
-#if [ -d "$WORKDIR/IA/output/llama.cpp/bin" ]; then
-#  cd    "$WORKDIR/IA/output/llama.cpp/bin";
-#else
-#  echo "Le dossier output/llama.cpp/bin est absent";
-#  exit;
+if [ -d "$WORKDIR/IA/output/llama.cpp/bin" ]; then
+  cd    "$WORKDIR/IA/output/llama.cpp/bin";
+else
+  echo "Le dossier $WORKDIR/IA/output/llama.cpp/bin est absent";
+  exit;
 #fi
 
 # =================================================================================================
