@@ -63,6 +63,7 @@ echo "    ║ [1/7] Suppression de l'ancien dossier sources llama  ║";
 
 # =====================================================================================
 MESSAGE_LLAMA_GIT_CLONE(){
+echo "    ║                                                      ║";
 echo "    ║ [2/7] Clonage des sources depuis GitHub     [$(date +"%H:%M")]  ║";
 }
 # =====================================================================================
