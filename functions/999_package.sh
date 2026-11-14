@@ -55,6 +55,7 @@ if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-header
 if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    fi
 if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev;                 fi
 if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y pciutils;                   fi
+if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                fi
 if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;                       fi
 if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget;                       fi
 
