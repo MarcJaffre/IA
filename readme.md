@@ -20,17 +20,15 @@ WORKDIR=/srv
 
 if [ ! -d $WORKDIR/IA ]; then
  # ----------------------------------------------------------------
-  echo "Téléchargement du projet";
   git clone --quiet https://github.com/MarcJaffre/IA.git;
   cd $WORKDIR/IA;
  # ----------------------------------------------------------------
 else
  # ----------------------------------------------------------------
- echo "Déplacement dans le projet";
  cd $WORKDIR/IA;
- git fetch --all               >/dev/null;
- git reset --hard origin/main  >/dev/null;
- git clean -fd                 >/dev/null;
+ git fetch --all               2>/dev/null;
+ git reset --hard origin/main  1>/dev/null;
+ git clean -fd                 2>/dev/null;
  # ----------------------------------------------------------------
 fi
 ```
