@@ -76,8 +76,6 @@ if [ -d $WORKDIR/IA ]; then
 fi
 ```
 
-
-
 #### 5. Installer l'application
 ```bash
 clear;
@@ -89,6 +87,17 @@ if [ -d $WORKDIR/IA ]; then
 fi
 ```
 
+
+#### 6. Désnstaller l'application
+```bash
+clear;
+if [ -d $WORKDIR/IA ]; then
+ # ----------------------
+ cd   $WORKDIR/IA;
+ bash i,install.sh;
+ # ----------------------
+fi
+```
 
 
 
