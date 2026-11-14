@@ -1,28 +1,28 @@
 ########################################################################################################################
-# Purge Dossier src et Output #
-###############################
+# Purge ollama.cpp du dossier src
 LLAMA_PURGE_DIR_SRC(){
 if [ -d  "$WORKDIR/src/llama.cpp" ]; then
   rm -rf "$WORKDIR/src/llama.cpp";
 fi
 }
-# --------------------------------------------------
+
+########################################################################################################################
+# Purge ollama.cpp du dossier output
 LLAMA_PURGE_DIR_OUTPUT(){
 if [ -d  "$WORKDIR/output/llama.cpp" ]; then
   rm -rf "$WORKDIR/output/llama.cpp";
 fi
 }
 ########################################################################################################################
-# Telecharger le depot LLAMA #
-##############################
 LLAMA_GIT_CLONE(){
 if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
   git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
 fi
 }
+
 ########################################################################################################################
-# Compilation du projet (1/2) #
-###############################
+# Configuration de la compilation #
+###################################
 LLAMA_BUILD_01(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   echo "LLAMA_BUILD_01";
@@ -33,9 +33,10 @@ else
   echo "La fonction LLAMA_BUILD_01 est en erreur";
 fi
 }
+
 ########################################################################################################################
-# Compilation du projet (2/2) #
-###############################
+# Compiler et sortir les binaires dans output #
+###############################################
 LLAMA_BUILD_02(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   cd    "$WORKDIR/src/llama.cpp";
@@ -44,6 +45,7 @@ else
   echo "La fonction LLAMA_BUILD_02 est en erreur";
 fi
 }
+
 
 
 
