@@ -12,32 +12,19 @@ apt update;
 apt install -y git;
 ```
 
-### C. Définir variable
+### C. Télécharger Projet
 ```bash
 clear;
-WORKDIR="/srv/IA"
-GIT="https://github.com/MarcJaffre/IA.git"
-```
-
-### D. Build
-```bash
-clear;
-cd $HOME;
-rm -rf $WORKDIR 2>/dev/null;
-git clone --quiet $GIT $WORKDIR;
-cd $WORKDIR;
-bash build.sh;
+if [ ! -d IA ]; the
+  git clone https://github.com/MarcJaffre/IA.git
+else
+ cd IA;
+fi
 ```
 
 ### B. Lancer l'application
 ```bash
 clear;
-cd $WORKDIR;
-git fetch --all;
-git reset --hard origin/main;
-git clean -fd;
-bash run.sh;
-# -------------------------------------------
 ```
 
 --------------------------------------------------------------------------------------------
