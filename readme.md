@@ -47,17 +47,17 @@ fi
 # =============================================================================
 # Télécharger projet #
 # ================== #
-git clone --quiet $GITHUB_IA "$WORKDIR";
+git clone --quiet "$GITHUB_IA" "$WORKDIR";
 
 # =============================================================================
 # DOSSIER PROJET #
 # ============== #
-#cd "$WORKDIR";
+cd "$WORKDIR";
 
 # =============================================================================
 # LANCEMENT PROJET #
 # ================ #
-#bash start.sh;
+bash start.sh;
 EOF
 
 bash test.sh;
