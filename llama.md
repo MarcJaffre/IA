@@ -28,21 +28,6 @@ else
 fi
 ```
 
-#### 2. Nettoyage
-```bash
-clear;
-
-if [ -d $WORKDIR/IA ]; then
-  cd $WORKDIR/IA;
-  bash ./workspaces/llama_service_uninstall.sh;
-  cd ..;
-  rm -rf $WORKDIR/IA;
-else
- echo "Le dossier est déjà purger";
-fi
-```
-
-
 #### 3. Construire les applications du projet
 ```bash
 clear;
@@ -94,6 +79,20 @@ if [ -d $WORKDIR/IA ]; then
  # ----------------------
 fi
 ```
+
+
+#### 2. Nettoyage
+```bash
+clear;
+if [ -d $WORKDIR/IA ]; then
+  cd $WORKDIR/IA;
+  rm -rf $WORKDIR/IA;
+else
+ echo "Le dossier est déjà purger";
+fi
+```
+
+
 
 <br /> <br />
 
