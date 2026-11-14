@@ -15,15 +15,8 @@ apt install -y git;
 ### B. Construction du Projet
 ```bash
 clear;
-cd $HOME;
-rm -rf /srv/IA 2>/dev/null;
-```
-
-```bash
-clear;
-git clone --quiet  https://github.com/MarcJaffre/IA.git /srv/IA;
-cd /srv/IA;
-bash build.sh;
+cd $HOME; rm -rf /srv/IA 2>/dev/null;
+git clone --quiet  https://github.com/MarcJaffre/IA.git /srv/IA; cd /srv/IA; bash build.sh;
 ```
 
 
