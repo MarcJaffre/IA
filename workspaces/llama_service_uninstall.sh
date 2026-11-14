@@ -4,8 +4,6 @@
 # ============================================== #
 set -e
 
-cat ./globale.conf;
-
 # =================================================================================================
 # Générer le fichier  #
 # =================== #
@@ -32,16 +30,17 @@ else
   echo "Le fichier globale.conf n'existe pas";
 fi
 
+echo $WORKDIR
 
 # =================================================================================================
 # Dossier output llama #
 # ==================== #
-if [ -d "$WORKDIR/output/llama.cpp/bin" ]; then
-  cd    "$WORKDIR/output/llama.cpp/bin";
-else
-  echo "Le dossier output/llama.cpp/bin est absent";
-  exit;
-fi
+#if [ -d "$WORKDIR/output/llama.cpp/bin" ]; then
+#  cd    "$WORKDIR/output/llama.cpp/bin";
+#else
+#  echo "Le dossier output/llama.cpp/bin est absent";
+#  exit;
+#fi
 
 # =================================================================================================
 # Suppression du service #
