@@ -9,21 +9,22 @@ set -e
 # =================== #
 # Github rester globale.conf.exemple mais pas globale.conf
 if [ ! -f $(pwd)/IA/globale.conf ]; then 
- cp  $(pwd)/IA/globale.conf.exemple $(pwd)/IA/globale.conf;
+ echo $(pwd)/IA/globale.conf.exemple $(pwd)/IA/globale.conf;
 fi
 
 # =================================================================================================
 # Configuration du WORKDIR #
 # ======================== #
 if [ -f $(pwd)/IA/globale.conf ]; then
-  sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" $(pwd)/IA/globale.conf;
+ # sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" $(pwd)/IA/globale.conf;
+ ls $(pwd)/IA/globale.conf;
 fi
 
 # =================================================================================================
 # Chargement de la configuration du WORKDIR #
 # ========================================= #
-if [ -f "./globale.conf" ]; then
-  source "./globale.conf";
+if [ -f "$(pwd)/IA/globale.conf" ]; then
+  source "$(pwd)/IA/globale.conf";
 else
   echo "Le fichier globale.conf n'existe pas";
 fi
