@@ -45,4 +45,7 @@ LLAMA_SYSTEMD_ADD;
 LLAMA_SYSTEMD_ENABLED;
 
 
+cat  /etc/systemd/system/llama-server.service;
+
+
 echo "Fin de l'installation du service;"
