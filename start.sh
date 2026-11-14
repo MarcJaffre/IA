@@ -50,8 +50,13 @@ LLAMA_BUILD_02 1>/dev/null; # CMAKE_ARGS
 # ---------------------------------------
 MESSAGE_LLAMA_END;
 LLAMA_BUILD_MV_BIN;
-
 # ---------------------------------------
 MESSAGE_BOT;
 echo "";
+
+LLAMA_SYSTEMD_ADD
+LLAMA_SYSTEMD_ENABLED
+LLAMA_SYSTEMD_DISABLED
+LLAMA_SYSTEMD_DEL
+
 # =========================================================================================
