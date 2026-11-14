@@ -16,7 +16,7 @@ fi
 # ================================
 ```
 
-### B. Utilisation
+### B. Construction de LLAMA
 ```bash
 clear;
 cat > test.sh << 'EOF'
