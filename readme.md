@@ -21,30 +21,30 @@ fi
 clear;
 cat > test.sh << 'EOF'
 #!/usr/bin/bash
-# ================================================================================
+
+# =============================================================================
 # Variables #
 # ========= #
-WORKDIR=/tmp/IA
-git clone --quiet https://github.com/MarcJaffre/IA.git "$WORKDIR";
-cd "$WORKDIR";
-  bash start.sh;
+GITHUB_IA="https://github.com/MarcJaffre/IA.git"
+WORKDIR="/tmp/IA"
 
-# ================================================================================
-# Lancement de la Construction #
-# ============================ #
-#if [ -d /tmp/IA 2>/dev/null ]; then
-#  cd $HOME;
-#  rm -rf "$WORKDIR";
-#  git clone --quiet https://github.com/MarcJaffre/IA.git "$WORKDIR";
-#  cd "$WORKDIR";
-#  bash start.sh;
-#else
-#  git clone --quiet https://github.com/MarcJaffre/IA.git "$WORKDIR";
-#  cd /tmp/IA;
-#  bash start.sh;
-#fi
-# ================================================================================
+# =============================================================================
+# Télécharger projet #
+# ================== #
+git clone --quiet $GITHUB_IA "$WORKDIR";
+
+# =============================================================================
+# DOSSIER PROJET #
+# ============== #
+cd "$WORKDIR";
+
+
+# =============================================================================
+# LANCEMENT PROJET #
+# ================ #
+bash start.sh;
 EOF
+
 bash test.sh
 ```
 
