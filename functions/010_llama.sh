@@ -3,7 +3,9 @@
 ##############################
 GIT_LLAMA_REMOVE_REPO(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
- rm -rf "$WORKDIR/src/llama.cpp";
+  rm -rf "$WORKDIR/src/llama.cpp";
+else
+  echo "Rien à supprimé";
 fi
 }
 
@@ -13,5 +15,7 @@ fi
 GIT_LLAMA_CLONE_REPO(){
 if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
   git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
+else
+  echo "Dépôt lllama déjà présent";
 fi
 }
