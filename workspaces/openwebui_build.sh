@@ -20,8 +20,20 @@ fi
 # ======================== #
 if [ -f "./globale.conf" ]; then
   sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" "./globale.conf";
-  cat "./globale.conf"
 fi
 
-# =============================================================================================
+# =================================================================================================
+# Chargement de la configuration du WORKDIR #
+# ========================================= #
+if [ -f  "./globale.conf" ]; then
+  source "./globale.conf";
+  echo "$WORKDIR";
+else
+  echo "Le fichier globale.conf n'existe pas";
+fi
 
+
+
+# =============================================================================================
+# WORKDIR - DISPONIBLE #
+# ==================== #
