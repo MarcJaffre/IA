@@ -17,8 +17,8 @@ echo "
   ║  ║   ║════════════════════════════════════════════ ║    ║  ║
   ║  ║   ╚═══ BIENVENUE SUR LE SCRIPT DE DÉPLOIEMENT ══╝    ║  ║
   ║  ║                ║        !        ║                   ║  ║
-  ║  ║                ║     //@!@\\     ║                   ║  ║
-  ║  ║                ║    /// ! \\\    ║                   ║  ║
+  ║  ║                ║     //@!@\\      ║                   ║  ║
+  ║  ║                ║    /// ! \\\     ║                   ║  ║
   ║  ║           ╔════╝ Par Marc JAFFRE ╚════╗              ║  ║
   ║  ║           ║     Version Alpha 0.1     ║              ║  ║
   ║  ║           ║ @ Tous droits réservés  @ ║              ║  ║
