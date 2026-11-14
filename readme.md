@@ -55,7 +55,7 @@ fi
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
-  cd $WORKDIR/IA;
+  cd $WORKDIR/;
   rm -rf $WORKDIR/IA;
 else
  echo "Le dossier est déjà purger";
