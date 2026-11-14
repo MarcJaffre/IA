@@ -40,27 +40,26 @@ echo "║ - Phase 0 - Chargement de la configuration Globale   ║";
 }
 
 # =====================================================================================
-MESSAGE_LLAMA_PURGE_OUTPUT(){
-echo "║ - Phase X - Purge du dossier output                  ║";
-}
-
-# =====================================================================================
 MESSAGE_LLAMA_PURGE_SRC(){
-echo "║ - Phase X - Purge du dossier sources\llama.cpp       ║";
+echo "║ - Phase 1 - Purge du dossier sources\llama.cpp       ║";
 }
 
 # =====================================================================================
 MESSAGE_LLAMA_GIT_CLONE(){
-echo "║ - Phase X - Téléchargement dans sources\llama.cpp     ║";
+echo "║ - Phase 2 - Téléchargement dans sources\llama.cpp    ║";
 }
-
+# =====================================================================================
+MESSAGE_LLAMA_PURGE_OUTPUT(){
+echo "║ - Phase 3 - Purge du dossier output                  ║";
+}
 # =====================================================================================
 MESSAGE_LLAMA_BUILD(){
-echo "║ - Phase X - Compilation dans output\llama.cpp        ║";
+echo "║ - Phase 4 - Compilation dans output\llama.cpp        ║";
 }
 # =====================================================================================
+
 MESSAGE_LLAMA_END(){
-echo "║ - Phase X - Fin de la construction de llama.cpp      ║";
+echo "║ - Phase 5 - Fin de la construction de llama.cpp      ║";
 }
 # =====================================================================================
 MESSAGE_BOT(){
