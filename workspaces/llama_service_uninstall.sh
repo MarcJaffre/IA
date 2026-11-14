@@ -24,11 +24,11 @@ fi
 # =================================================================================================
 # Chargement de la configuration du WORKDIR #
 # ========================================= #
-#if [ -f  "$WORKDIR/IA/globale.conf" ]; then
-#  source "$WORKDIR/IA/globale.conf";
-#else
-#  echo "Le fichier globale.conf n'existe pas";
-#fi
+if [ -f  "$WORKDIR/IA/globale.conf" ]; then
+  source "$WORKDIR/IA/globale.conf";
+else
+  echo "Le fichier globale.conf n'existe pas";
+fi
 
 
 # =================================================================================================
