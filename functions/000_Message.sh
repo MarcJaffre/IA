@@ -4,79 +4,79 @@
 # ╚ ═══ ╝
 
 MESSAGE_OLD_TOP(){
-echo "╔══════════════════════════════════════════════════════╗";
-echo "║                                                      ║";
-echo "║         ════ Intelligence Artificielle ════          ║";
-echo "║                                                      ║";
-echo "║    ════ BIENVENUE SUR LE SCRIPT DE DÉPLOIEMENT ════  ║";
-echo "║                                                      ║";
-echo "║                   Par Marc JAFFRE                    ║";
-echo "║                                                      ║";
-echo "║                 Tous droits réservés                 ║";
-echo "║                                                      ║";
-echo "╚══════════════════════════════════════════════════════╝";
+echo " ╔══════════════════════════════════════════════════════╗";
+echo " ║                                                      ║";
+echo " ║         ════ Intelligence Artificielle ════          ║";
+echo " ║                                                      ║";
+echo " ║    ════ BIENVENUE SUR LE SCRIPT DE DÉPLOIEMENT ════  ║";
+echo " ║                                                      ║";
+echo " ║                   Par Marc JAFFRE                    ║";
+echo " ║                                                      ║";
+echo " ║                 Tous droits réservés                 ║";
+echo " ║                                                      ║";
+echo " ╚══════════════════════════════════════════════════════╝";
 echo "";
 }
 
 MESSAGE_TOP(){
 clear;
 echo "
-╔══════════════════════════════════════════════════════╗
-║                                                      ║
-║         ════ Intelligence Artificielle ════          ║
-║                                                      ║
-║    ════ BIENVENUE SUR LE SCRIPT DE DÉPLOIEMENT ════  ║
-║                                                      ║
-║                   Par Marc JAFFRE                    ║
-║                                                      ║
-║                 Tous droits réservés                 ║
-║                                                      ║
-╚══════════════════════════════════════════════════════╝
+ ╔══════════════════════════════════════════════════════╗
+ ║                                                      ║
+ ║         ════ Intelligence Artificielle ════          ║
+ ║                                                      ║
+ ║    ════ BIENVENUE SUR LE SCRIPT DE DÉPLOIEMENT ════  ║
+ ║                                                      ║
+ ║                   Par Marc JAFFRE                    ║
+ ║                                                      ║
+ ║                 Tous droits réservés                 ║
+ ║                                                      ║
+ ╚══════════════════════════════════════════════════════╝
 "
 }
 # =====================================================================================
 MESSAGE_LOADING_GLOBAL(){
-echo "╔══════════════════════════════════════════════════════╗";
-echo "║ [0/7] Initialisation de l'environnement global       ║";
+echo " ╔══════════════════════════════════════════════════════╗";
+echo " ║ [0/7] Initialisation de l'environnement global       ║";
 }
 
 # =====================================================================================
 MESSAGE_LLAMA_PURGE_SRC(){
-echo "║ [1/7] Suppression de l'ancien dossier sources llama  ║";
+echo " ║ [1/7] Suppression de l'ancien dossier sources llama  ║";
 }
 
 # =====================================================================================
 MESSAGE_LLAMA_GIT_CLONE(){
-echo "║ [2/7] Clonage des sources depuis GitHub              ║";
+echo " ║ [2/7] Clonage des sources depuis GitHub              ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_PURGE_OUTPUT(){
-echo "║ [3/7] Vidage complet du répertoire output            ║";
+echo " ║ [3/7] Vidage complet du répertoire output            ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_CONFIG_BUILD(){
-echo "║ [4/7] Préparation de la compilation CMake            ║";
+echo " ║ [4/7] Préparation de la compilation CMake            ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_MAKE_BUILD(){
-echo "║ [5/7] Compilation complète de llama.cpp              ║";
+echo " ║ [5/7] Compilation complète de llama.cpp              ║";
 }
 
 # =====================================================================================
 MESSAGE_LLAMA_BUILD_OUTPUT(){
-echo "║ [6/7] Exportation des binaires vers output           ║";
+echo " ║ [6/7] Exportation des binaires vers output           ║";
 }
 
 # =====================================================================================
 
 MESSAGE_LLAMA_END(){
-echo "║ [7/7] Construction de llama.cpp terminée             ║";
+echo " ║ [7/7] Construction de llama.cpp terminée             ║";
 }
 # =====================================================================================
 MESSAGE_BOT(){
-echo "║                                                      ║";
-echo "║                  Version Alpha 0.1                   ║";
-echo "║                                                      ║";
-echo "╚══════════════════════════════════════════════════════╝";
+echo " ║                                                      ║";
+echo " ║                  Version Alpha 0.1                   ║";
+echo " ║                                                      ║";
+echo " ╚══════════════════════════════════════════════════════╝";
 }
 
