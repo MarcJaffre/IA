@@ -21,7 +21,7 @@ fi
 OPENWEBUI_PYTHON_ENV(){
 if [ -d "$WORKDIR/openwebui" ]; then
    cd   "$WORKDIR/openwebui";
-   python${PYTHON_VERSION} -m venv "%ENV_NAME%"
+   python${PYTHON_VERSION} -m venv "$ENV_NAME"
 fi
 }
 
