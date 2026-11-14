@@ -27,6 +27,11 @@ git clone --quiet  https://github.com/MarcJaffre/IA.git;
 cd IA;
 ```
 
+#### 3. Start.sh
+```bash
+clear;
+bash start.sh
+```
 
 
 --------------------------------------------------------------------------------------------
