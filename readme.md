@@ -13,12 +13,12 @@ apt install -y git;
 ```
 
 ### C. Exploitation
-#### 1. Définir emplacement du projet
+#### 0. Définir emplacement du projet
 ```bash
 clear;
 WORKDIR=/srv
 ```
-#### 2. Synchroniser le projet
+#### 1. Synchroniser le projet
 ```bash
 clear;
 
@@ -36,7 +36,22 @@ else
  # ----------------------------------------------------------------
 fi
 ```
-#### 3. Construire les applications du projet
+#### 2. Installer les dependances
+```bash
+clear;
+
+if [ -d $WORKDIR/IA ]; then
+ # ----------------------------------------------------------------
+  cd $WORKDIR/IA;
+  bash dependances.sh;
+else
+ echo "Le fichier dependances.sh est absent";
+ # ----------------------------------------------------------------
+fi
+```
+
+
+#### 4. Construire les applications du projet
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
