@@ -63,11 +63,11 @@ echo "    ║ [1/7] Suppression de l'ancien dossier sources llama  ║";
 
 # =====================================================================================
 MESSAGE_LLAMA_GIT_CLONE(){
-echo "    ║ [2/7] Clonage des sources depuis GitHub      [$(date +"%H:%M")]  ║";
+echo "    ║ [2/7] Clonage des sources depuis GitHub     [$(date +"%H:%M")]  ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_PURGE_OUTPUT(){
-echo "    ║ [3/7] Vidage complet du répertoire output    [$(date +"%H:%M")]  ║";
+echo "    ║ [3/7] Vidage complet du répertoire output   [$(date +"%H:%M")]  ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_CONFIG_BUILD(){
