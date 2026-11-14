@@ -164,10 +164,8 @@ if [ -f /etc/systemd/system/llama-server.service ]; then
   # ================================================================================
   if [ $(systemctl is-enabled llama-server.service) == "disabled" ]; then
     # ==============================================================================
-    echo "Activation du service llama-server";
-    # ==============================================================================
     systemctl daemon-reload;
-    systemctl enable --now llama-server.service
+    systemctl enable --now llama-server.service 2>/dev/null;
     #2>/dev/null;
     # ==============================================================================
   fi
@@ -181,9 +179,8 @@ LLAMA_SYSTEMD_DISABLED(){
 if [ -f /etc/systemd/system/llama-server.service ]; then
   # ================================================================================
   if [ $(systemctl is-enabled llama-server.service) == "enabled" ]; then
-    echo "Désactivation du service llama-server";
     systemctl daemon-reload;
-    systemctl disable --now llama-server.service
+    systemctl disable --now llama-server.service 2>/dev/null;
     #2>/dev/null;
   fi
   # ================================================================================
