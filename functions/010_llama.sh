@@ -81,9 +81,6 @@ if [ -d "$WORKDIR/src/llama.cpp" ]; then
   #echo "La fonction LLAMA_BUILD_02 est en erreur";
 fi
 }
-
-
-
 ########################################################################################################################
 # Déplacement de la Source vers output #
 ########################################
@@ -104,6 +101,9 @@ if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
   # ==============================================================================
 fi
 }
+
+
+
 
 
 
@@ -144,7 +144,8 @@ systemctl daemon-reload;
 ##########################
 LLAMA_SYSTEMD_DEL(){
 # Check fichier si il existe
-if [ -f etc/systemd/system/llama-server.service ]; then
+clear;
+if [ -f /etc/systemd/system/llama-server.service ]; then
   # ==============================================================================
   if [ $(systemctl is-enabled llama-server.service) == "enabled" ]; then
     echo "Désactivation du service llama-server";
@@ -156,32 +157,40 @@ if [ -f etc/systemd/system/llama-server.service ]; then
   rm -f /etc/systemd/system/llama-server.service;
   # ==============================================================================
 else
- echo "La fonction LLAMA_SYSTEMD_DEL est en anomalie";
+ echo "Le service llama-server a déjà été supprimé.";
 fi
 }
 ########################################################################################################################
 # Activation du service #
 #########################
 LLAMA_SYSTEMD_ENABLED(){
-if [ $(systemctl is-enabled llama-server.service) == "disabled" ]; then
-  # ==============================================================================
-  echo "Activation du service llama-server";
-  # ==============================================================================
-  systemctl daemon-reload;
-  systemctl enable --now llama-server.service
-  #2>/dev/null;
-  # ==============================================================================
+if [ -f /etc/systemd/system/llama-server.service ]; then
+  # ================================================================================
+  if [ $(systemctl is-enabled llama-server.service) == "disabled" ]; then
+    # ==============================================================================
+    echo "Activation du service llama-server";
+    # ==============================================================================
+    systemctl daemon-reload;
+    systemctl enable --now llama-server.service
+    #2>/dev/null;
+    # ==============================================================================
+  fi
+  # ================================================================================
 fi
 }
 ########################################################################################################################
 # Désactivation du service #
 ############################
 LLAMA_SYSTEMD_DISABLED(){
-if [ $(systemctl is-enabled llama-server.service) == "enabled" ]; then
-  echo "Désactivation du service llama-server";
-  systemctl daemon-reload;
-  systemctl disable --now llama-server.service
-  #2>/dev/null;
+if [ -f /etc/systemd/system/llama-server.service ]; then
+  # ================================================================================
+  if [ $(systemctl is-enabled llama-server.service) == "enabled" ]; then
+    echo "Désactivation du service llama-server";
+    systemctl daemon-reload;
+    systemctl disable --now llama-server.service
+    #2>/dev/null;
+  fi
+  # ================================================================================
 fi
 }
 
