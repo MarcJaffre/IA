@@ -37,6 +37,7 @@ MESSAGE_LOADING_GLOBAL;
 #HOST_DEBIAN_NVIDIA_CUDA;
 # ---------------------------------------
 # =========================================================================================
+MESSAGE_LLAMA_PURGE_GIT;
 LLAMA_PURGE_GLOBAL;
 LLAMA_GIT_CLONE;
 
