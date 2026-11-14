@@ -3,19 +3,19 @@
 ###############################
 LLAMA_PURGE_DIR_SRC(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
-  echo "Dossier src purgé";
+  #echo "Dossier src purgé";
   rm -rf "$WORKDIR/src/llama.cpp";
-else
- echo "Dossier src vide";
+#else
+ #echo "Dossier src vide";
 fi
 }
 # --------------------------------------------------
 LLAMA_PURGE_DIR_OUTPUT(){
 if [ -d "$WORKDIR/output/llama.cpp" ]; then
-  echo "Dossier output purgé";
+  #echo "Dossier output purgé";
   rm -rf "$WORKDIR/output/llama.cpp";
-else
- echo "Dossier output vide";
+#else
+ #echo "Dossier output vide";
 fi
 }
 ########################################################################################################################
