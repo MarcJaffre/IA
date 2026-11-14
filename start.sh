@@ -50,18 +50,14 @@ LLAMA_PURGE_DIR_OUTPUT;        # OK
 # Phase 4
 MESSAGE_LLAMA_CONFIG_BUILD;    # 
 LLAMA_CONFIG_BUILD;            # ??
-read -p "Voulez-vous continer ? (o/n) : "  -n 1 -r
 # ---------------------------------------
 # Phase 5
 MESSAGE_LLAMA_MAKE_BUILD;      # 
 LLAMA_MAKE_BUILD;              # ??
-read -p "Voulez-vous continer ? (o/n) : "  -n 1 -r
 # ---------------------------------------
 # Phase 6
 MESSAGE_LLAMA_BUILD_OUTPUT;    #
 LLAMA_BUILD_OUTPUT;            # 
-read -p "Voulez-vous continer ? (o/n) : "  -n 1 -r
-
 # ---------------------------------------
 #MESSAGE_LLAMA_END;
 #LLAMA_BUILD_MV_BIN;
