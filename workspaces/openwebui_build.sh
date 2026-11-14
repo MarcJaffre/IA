@@ -27,7 +27,7 @@ fi
 # =================================================================================================
 # Lancement de la construction #
 # ============================ #
-OPENWEBUI_DEMO
+#OPENWEBUI_DEMO
 #OPENWEBUI_PURGE;
 #OPENWEBUI_CREATE_DIR;
 
