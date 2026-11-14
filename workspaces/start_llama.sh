@@ -55,4 +55,4 @@ EOF
 #######################################################################################################
 chmod +x /root/start_llama.sh;
 
-/root/start_llama.sh;
+bash /root/start_llama.sh;
