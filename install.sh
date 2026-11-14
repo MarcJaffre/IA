@@ -36,8 +36,7 @@ fi
 #  rm -f /etc/systemd/system/llama-server.service;
 #fi
 # ================================================================================
-# cat > /etc/systemd/system/llama-server.service <<EOF
-echo "
+cat > /etc/systemd/system/llama-server.service <<EOF
 [Unit]
 Description=llama.cpp HTTP server
 After=network-online.target
@@ -52,11 +51,10 @@ RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
-"
-
-# EOF
+EOF
 # ================================================================================
-#systemctl daemon-reload;
+systemctl daemon-reload;
+systemctl restart llama-server.service;
 # ================================================================================
 
 
