@@ -1,47 +1,26 @@
-# ==========================================
-# 1. Dossiers générés et binaires lourds
-# ==========================================
-# Ignorer le contenu de output/ (logs, images générées), sauf le readme
+# ========================================================
+# 1. Dossier a ignorer de la synchronisation 
+# ========================================================
 output/*
-!output/readme.md
-
-# Ignorer les binaires et dépôts clonés dans src/ (comme llama.cpp compilé)
 src/*
+
+# ========================================================
+# 3. Fichier a synchronise (Permet de générer le dossier) 
+# ========================================================
+!output/readme.md
 !src/readme.md
 
-# Ignorer les modèles d'IA lourds et poids (GGUF, SafeTensors, etc.)
+# ========================================================
+# 3. Extension de fichier à ignore de la syncronisation
+# ========================================================
 *.gguf
 *.bin
 *.safetensors
 *.ckpt
 *.pt
 *.pth
-
-# ==========================================
-# 2. Configurations et données sensibles
-# ==========================================
-# Ignorer les variables d'environnement locales (clés API, mots de passe)
-.env
-.env.*
-*.local
-
-# Optionnel : décommentez les lignes ci-dessous si vos .conf contiennent des réglages locaux que chaque utilisateur doit personnaliser
-# globale.conf
-# config/*.conf
-
-# ==========================================
-# 3. Fichiers système, logs et éditeurs
-# ==========================================
 *.log
 *.tmp
 *.swp
 *~
 
-# Systèmes d'exploitation (Linux / macOS / Windows)
-.DS_Store
-Thumbs.db
-.directory
-
-# Éditeurs de code / IDE
-.vscode/
-.idea/
