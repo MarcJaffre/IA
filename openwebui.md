@@ -63,10 +63,12 @@ clear;
 cd /srv/IA/openwebui
 python3.11 -m venv venv
 source "venv/bin/activate";
-pip config set global.cache-dir /tmp/pip-cache
 pip install --no-cache-dir  open-webui  --cache-dir /srv/IA/openwebui/download
-pip install -r requirements.txt
 open-webui serve --port 3000
+
+pip install -r requirements.txt
+pip config set global.cache-dir /tmp/pip-cache
+
 ```
 
 
