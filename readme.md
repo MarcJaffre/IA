@@ -30,7 +30,10 @@ cd IA;
 #### 3. Start.sh
 ```bash
 clear;
-bash start.sh
+git fetch --all
+git reset --hard origin/main
+git clean -fd
+bash start.sh;
 ```
 
 
