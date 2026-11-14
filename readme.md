@@ -94,7 +94,7 @@ clear;
 if [ -d $WORKDIR/IA ]; then
  # ----------------------
  cd   $WORKDIR/IA;
- bash i,install.sh;
+ bash uninstall.sh;
  # ----------------------
 fi
 ```
