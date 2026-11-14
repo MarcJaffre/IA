@@ -63,3 +63,11 @@ LLAMA_BUILD_MAKE;
 # ============================== #
 MESSAGE_LLAMA_BUILD_OUTPUT;
 LLAMA_BUILD_INSTALL;
+
+# =================================================================================================
+# Message de fin #
+##################
+MESSAGE_LLAMA_END;
+MESSAGE_BOT;
+
+
