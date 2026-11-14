@@ -1,0 +1,30 @@
+#!/usr/bin/bash
+# =================================================================================================
+# Arrête le script immédiatement en cas d'erreur #
+# ============================================== #
+set -e
+
+# =================================================================================================
+# Chargement de la configuration du WORKDIR #
+# ========================================= #
+if [ -f "./globale.conf" ]; then
+  source "./globale.conf";
+else
+  echo "Le fichier globale.conf n'existe pas";
+fi
+
+# =================================================================================================
+# Dossier output llama #
+# ==================== #
+if [ -d "$WORKDIR/output/llama.cpp/bin" ]; then
+  cd    "$WORKDIR/output/llama.cpp/bin";
+else
+  echo "Le dossier output/llama.cpp/bin est absent";
+  exit;
+fi
+
+# =================================================================================================
+# Suppression du service #
+# ====================== #
+LLAMA_SYSTEMD_DISABLED;
+LLAMA_SYSTEMD_DEL;
