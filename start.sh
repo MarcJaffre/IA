@@ -56,7 +56,9 @@ fi
 #LLAMA_MAKE_BUILD;              # ??
 # ---------------------------------------
 # Phase 6
+read -p "Voulez-vous continer ? (o/n) : "  -n 1 -r
 MESSAGE_LLAMA_BUILD_OUTPUT;    #
+read -p "Voulez-vous continer ? (o/n) : "  -n 1 -r
 LLAMA_BUILD_OUTPUT;            # 
 # ---------------------------------------
 #MESSAGE_LLAMA_END;
