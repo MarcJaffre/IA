@@ -28,8 +28,8 @@ fi
 # Fonctions qui sont Opérationnelles #
 # ================================== #
 # ---------------------------------------
-HOST_DEBIAN_APT_UPDATE 1>/dev/null;
-HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
+#HOST_DEBIAN_APT_UPDATE 1>/dev/null;
+#HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
 # ---------------------------------------
 MESSAGE_TOP;                   # Phase X
 # ---------------------------------------
