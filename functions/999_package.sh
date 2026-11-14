@@ -59,8 +59,8 @@ if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;       
 if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget;                       fi
 
 # OpenWebui
-#if [ ! -d /usr/share/doc/python3.13          ]; then apt install -y python3.13;                 fi
-
+if [ ! -d /usr/share/doc/python3.13          ]; then apt install -y python3.13;                 fi
+if [ ! -d /usr/share/doc/python3.13-venv     ]; then apt install -y python3.13-venv;            fi
 
 # Bypass Erreur
 echo "" > $WORKDIR/Test;
