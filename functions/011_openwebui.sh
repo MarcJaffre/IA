@@ -10,7 +10,7 @@ if [ ! -d "$WORKDIR/IA/openwebui/download" ]; then
  mkdir -p "$WORKDIR/IA/openwebui/download";
 fi
 
-if [ ! -d "$WORKDIR/IA/openwebui/.cache" ]; ten
+if [ ! -d "$WORKDIR/IA/openwebui/.cache" ]; then
  mkdir -p "$WORKDIR/IA/openwebui/.cache";
 fi
 }
