@@ -24,12 +24,12 @@ fi
 # ====================================================================================
 # Creation Environnement Virtuel #
 # ============================== #
+OPENWEBUI_PYTHON_ENV(){
 if [ -d "$WORKDIR/openwebui" ]; then
    cd   "$WORKDIR/openwebui";
-   touch aaa;
-   ls
+   echo "Python New";
 fi
-
+}
 
 #$PROJET_DIR
 #$PYTHON_PACKAGE
