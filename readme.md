@@ -36,7 +36,7 @@ if [ ! -d "$WORKDIR" ]; then
   git clone --quiet "$GITHUB_IA" "$WORKDIR";
   cd "$WORKDIR";
   # XXXXXX 
-  cat "$WORKDIR/globale.conf";
+  ls;
 else
   cd "$WORKDIR";
   git fetch --all
