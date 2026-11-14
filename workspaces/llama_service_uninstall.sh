@@ -8,15 +8,15 @@ set -e
 # Générer le fichier  #
 # =================== #
 # Github rester globale.conf.exemple mais pas globale.conf
-if [ ! -f globale.conf ]; then 
+if [ ! -f $(pwd)/IA/globale.conf ]; then 
  cp  $(pwd)/IA/globale.conf.exemple $(pwd)/IA/globale.conf;
 fi
 
 # =================================================================================================
 # Configuration du WORKDIR #
 # ======================== #
-if [ -f globale.conf ]; then
-  sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" globale.conf;
+if [ -f $(pwd)/IA/globale.conf ]; then
+  sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" $(pwd)/IA/globale.conf;
 fi
 
 # =================================================================================================
