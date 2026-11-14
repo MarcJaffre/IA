@@ -1,4 +1,9 @@
 #########################################################################################################
+# Ce fichier est les paramètres génériques du système 
+# Chaque application a son fichier config dans ./config/<mon appz>.conf
+#########################################################################################################
+
+#########################################################################################################
 # Configuration Globale #
 # ===================== #
 WORKDIR="XXXXXX"
@@ -12,12 +17,12 @@ RELEASE_NVIDIA="580.142"
 
 #########################################################################################################
 # Chargement des variables systeme #
-####################################
+# ================================ #
 source /etc/os-release;
 
 #########################################################################################################
 # Chargement des fichiers (Config, Functions) #
 # =========================================== #
-for file in $(find $WORKDIR/config    -type f); do source $file; done
-for file in $(find $WORKDIR/functions -type f); do source $file; done
+for file in $(find $WORKDIR/config    -type f -name "*.conf"); do source $file; done
+for file in $(find $WORKDIR/functions -type f -name "*.sh"); do source $file; done
 
