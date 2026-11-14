@@ -117,20 +117,20 @@ Bash                                                   │
  └──> Phase 2 Load Functions                           V
               |
               ├──> [999_package.sh] Installation des dépendances
-              ├──>
               ├──> [999_package.sh] Blackliste du pilote vidéo libre (Nouveau)
-              ├──>
               ├──> [999_package.sh] Installation du pilote Nvidia
               ├──> [999_package.sh] Installation de paquet Nvidia-Cuda-Toolkit
               ├──>
-              ├──> [010_ollama.sh] Purge du dossier du dossier output de LLAMA
-              ├──> [010_ollama.sh] Clonage du dépôt LLAMA via Git
-              ├──> [010_ollama.sh] Construction de LLAMA
-              ├──> [010_ollama.sh] Dossier de Sortie configurer pour LLAMA
-              ├──> [010_ollama.sh] Création      du service SYSTEMD pour LLAMA
-              ├──> [010_ollama.sh] Activation    du service SYSTEMD pour LLAMA
-              ├──> [010_ollama.sh] Désactivation du service SYSTEMD pour LLAMA
-              ├──> [010_ollama.sh] Suppression   du service SYSTEMD pour LLAMA
+              ├──> [010_ollama.sh] 
+              ├──> [010_ollama.sh] 
+              ├──> [010_ollama.sh] 
+              ├──> [010_ollama.sh] 
+              ├──> [010_ollama.sh] 
+              ├──> [010_ollama.sh] 
+              ├──> [010_ollama.sh] 
+              ├──> [010_ollama.sh] 
+              ├──> [010_ollama.sh] 
+              ├──> [010_ollama.sh] 
               └──>
 ```
 
