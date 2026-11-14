@@ -16,16 +16,31 @@ apt install -y git;
 ```bash
 clear;
 if [ ! -d IA ]; the
-  git clone https://github.com/MarcJaffre/IA.git
+  git clone https://github.com/MarcJaffre/IA.git;
+  cd IA;
 else
  cd IA;
+fi
+```
+
+### B. Lancer la construction
+```bash
+clear;
+if [ -d IA ]; the
+ cd IA;
+ bash build.sh
 fi
 ```
 
 ### B. Lancer l'application
 ```bash
 clear;
+if [ -d IA ]; the
+ cd IA;
+ bash run.sh
+fi
 ```
+
 
 --------------------------------------------------------------------------------------------
 ## I. Avancement
