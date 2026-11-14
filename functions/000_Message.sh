@@ -51,7 +51,7 @@ echo "   ║ [2/7] Clonage des sources depuis GitHub              ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_PURGE_OUTPUT(){
-echo " ║ [3/7] Vidage complet du répertoire output            ║";
+echo "   ║ [3/7] Vidage complet du répertoire output            ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_CONFIG_BUILD(){
