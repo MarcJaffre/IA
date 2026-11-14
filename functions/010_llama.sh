@@ -16,7 +16,10 @@ fi
 LLAMA_GIT_CLONE(){
 if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
   # ====================================================================
-  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
+  git clone \
+  --quiet \
+  "$GITHUB_LLAMA" \
+  "$WORKDIR/src/llama.cpp";
   # ====================================================================
 #else
 #  echo "La fonction LLAMA_GIT_CLONE est en erreur";
@@ -41,8 +44,10 @@ LLAMA_CONFIG_BUILD(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   # ====================================================================
   cd    "$WORKDIR/src/llama.cpp";
-  cmake -B build $CMAKE_ARGS
-  # --log-level=ERROR > /dev/null;
+  cmake \
+  -B build $CMAKE_ARGS \
+  --log-level=ERROR \
+  > /dev/null;
   # ====================================================================
 #else
   #echo "La fonction LLAMA_CONFIG_BUILD est en erreur";
@@ -55,8 +60,11 @@ LLAMA_MAKE_BUILD(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   # ====================================================================
   cd    "$WORKDIR/src/llama.cpp";
-  cmake --build build  --config Release -j "$BUILD_CPUS"
-  #> /dev/null;
+  cmake \
+  --build build \
+  --config Release \
+  -j "$BUILD_CPUS" \
+  > /dev/null;
   # ====================================================================
 #else
   #echo "La fonction LLAMA_MAKE_BUILD est en erreur";
@@ -97,7 +105,10 @@ if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
   mkdir   "$WORKDIR_FINAL/llama.cpp";
   mv *    "$WORKDIR_FINAL/llama.cpp";
   # =================================================================================
-  find    "$WORKDIR_FINAL/llama.cpp" -type f -iname "llama*" -exec chmod +x {} \;
+  find    "$WORKDIR_FINAL/llama.cpp" \
+  -type f \
+  -iname "llama*" \
+  -exec chmod +x {} \;
   # =================================================================================
 fi
 }
