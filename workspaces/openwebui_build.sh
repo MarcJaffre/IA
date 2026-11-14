@@ -20,13 +20,14 @@ fi
 # =================================================================================================
 # Chargement de la configuration du WORKDIR #
 # ========================================= #
-if [ -f "./globale.conf" ]; then
+if [ -f "./globale.conf" ]; thene
   source "./globale.conf";
 fi
 
 # =================================================================================================
 # Lancement de la construction #
 # ============================ #
-OPENWEBUI_PURGE;
-OPENWEBUI_CREATE_DIR;
+OPENWEBUI_DEMO
+#OPENWEBUI_PURGE;
+#OPENWEBUI_CREATE_DIR;
 
