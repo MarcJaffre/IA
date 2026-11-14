@@ -7,15 +7,13 @@ echo "Création des dossiers Openwebui, Download et Cache";
 # ----------------------------------------------------------
 if [ ! -d  "./openwebui" ]; then
   mkdir -p "./openwebui";
-#  mkdir -p "./openwebui/download";
-#  mkdir -p "./openwebui/.cache";
+  mkdir -p "./openwebui/download";
+  mkdir -p "./openwebui/.cache";
 fi
 # ----------------------------------------------------------
-
-if [ -d  "./openwebui" ]; then
-  cd -p  "./openwebui";
-  python$PYTHON_VERSION -m venv "$ENV_NAME"
-fi
+#if [ -d  "./openwebui" ]; then
+#  python$PYTHON_VERSION -m venv "$ENV_NAME"
+#fi
 # ----------------------------------------------------------
 
 }
