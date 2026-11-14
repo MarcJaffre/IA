@@ -30,3 +30,8 @@ make -j$(nproc);
 clear;
 make altinstall;
 ```
+#### 6. Validation
+```bash
+clear;
+python3.11 --version
+``` 
