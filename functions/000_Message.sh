@@ -63,15 +63,15 @@ echo "    ║ [1/7] Suppression de l'ancien dossier sources llama  ║";
 
 # =====================================================================================
 MESSAGE_LLAMA_GIT_CLONE(){
-echo "    ║ [2/7] Clonage des sources depuis GitHub              ║";
+echo "    ║ [2/7] Clonage des sources depuis GitHub [$(date +"%H:%M")]  ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_PURGE_OUTPUT(){
-echo "    ║ [3/7] Vidage complet du répertoire output            ║";
+echo "    ║ [3/7] Vidage complet du répertoire output [$(date +"%H:%M")]  ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_CONFIG_BUILD(){
-echo "    ║ [4/7] Préparation de la compilation CMake            ║";
+echo "    ║ [4/7] Préparation de la compilation CMake  [$(date +"%H:%M")]  ║";
 
 }
 # =====================================================================================
