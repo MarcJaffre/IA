@@ -1,6 +1,6 @@
 #!/usr/bin/bash
-
-# bash /srv/IA/workspaces/demo.sh
+# echo "" > /srv/IA/workspaces/demo.sh; nano /srv/IA/workspaces/demo.sh; bash /srv/IA/workspaces/demo.sh
+# bash 
 
 # ========================================================================
 # Configuration du script #
@@ -20,17 +20,19 @@ OPTIONS=(
 LISTE_MODEL="Qwen/Qwen3-VL-8B-Instruct-GGUF:Q4_K_M"
 
 # ========================================================================
-# Dossier de Travail #
-# ================== #
 if   [ -f "$SRC/llama-server" ]; then
   # -------------------------------------------------------------------
   cd "$SRC";
+  echo "Utilisation du dossier $SRC";
   for model in $LISTE_MODEL; do ./llama download -hf $model; done
   ./llama-server ${OPTIONS[@]};
   # -------------------------------------------------------------------
-elif [ -f "$OUT/llama-server" ]; then
+fi
+
+if [ -f "$OUT/llama-server" ]; then
   # -------------------------------------------------------------------
   cd "$OUT";
+  echo "Utilisation du dossier $OUT"
   for model in $LISTE_MODEL; do ./llama download -hf $model; done
   ./llama-server ${OPTIONS[@]};
   # -------------------------------------------------------------------
