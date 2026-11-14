@@ -39,21 +39,7 @@ else
  # ----------------------------------------------------------------
 fi
 ```
-#### 3. Installer les dependances
-```bash
-clear;
-
-if [ -d $WORKDIR/IA ]; then
- # ----------------------------------------------------------------
-  cd $WORKDIR/IA;
-  bash ./workspaces/debian_base.sh;
-else
- echo "Le fichier dependances.sh est absent";
- # ----------------------------------------------------------------
-fi
-```
-
-#### 4. Construire les applications du projet
+#### 3. Construire les applications du projet
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
@@ -69,7 +55,7 @@ fi
 ```
 <br />
 
-#### 6. Lancer ponctuellement l'application
+#### 4. Lancer ponctuellement l'application
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
@@ -82,7 +68,7 @@ fi
 
 <br />
 
-#### 7. Déployer le service Systemd
+#### 5. Déployer le service Systemd
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
@@ -94,7 +80,7 @@ fi
 ```
 <br />
 
-#### 8. Désnstaller le service Systemd
+#### 6. Désnstaller le service Systemd
 ```bash
 clear;
 if [ -d $WORKDIR/IA ]; then
@@ -105,8 +91,7 @@ if [ -d $WORKDIR/IA ]; then
 fi
 ```
 
-
- <br /> <br />
+<br /> <br />
 
 
 --------------------------------------------------------------------------------------------
