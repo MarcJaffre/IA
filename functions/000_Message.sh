@@ -81,7 +81,7 @@ echo "    ║ [5/7] Compilation complète de llama.cpp     [$(date +"%H:%M")]  �
 
 # =====================================================================================
 MESSAGE_LLAMA_BUILD_OUTPUT(){
-echo "    ║ [6/7] Exportation des binaires vers output           ║";
+echo "    ║ [6/7] Exportation des binaires vers output     [$(date +"%H:%M")]  ║";
 
 }
 
