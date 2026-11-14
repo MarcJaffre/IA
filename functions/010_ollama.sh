@@ -6,17 +6,18 @@ if [ -d "$WORKDIR\src\llama.cpp" ]; then
   rm -f "$WORKDIR\src\llama.cpp";
 fi
 }
-
+# --------------------------------------------------
 LLAMA_PURGE_DIR_OUTPUT(){
 if [ -d "$WORKDIR\output\llama.cpp" ]; then
   rm -f "$WORKDIR\output\llama.cpp";
 fi
 }
 
-
 ########################################################################################################################
+# Telecharger le depot LLAMA #
+##############################
 LLAMA_GIT_CLONE(){
-if [ -d "$WORKDIR/src/llama.cpp" ]; then
+if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
   git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
   git pull origin main 1>/dev/null
 fi
