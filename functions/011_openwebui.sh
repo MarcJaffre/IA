@@ -1,13 +1,19 @@
 #====================================================================================
-# Dossier de Travail #
-# ================== #
+# Nettoyage du dossier de l'application #
+# ===================================== #
 OPENWEBUI_PURGE_FOLDER(){
 if [ -d "$WORKDIR/openwebui" ]; then
  rm -rf "$WORKDIR/openwebui";
 fi
 }
-
-
+#====================================================================================
+# Création du dossier de l'application #
+# ==================================== #
+OPENWEBUI_MAKE_FOLDER(){
+if [ !  -d "$WORKDIR/openwebui" ]; then
+ mkdir -rf "$WORKDIR/openwebui";
+fi
+}
 
 
 
