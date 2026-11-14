@@ -14,9 +14,6 @@ if [ ! -f $(pwd)/IA/globale.conf ]; then
 cp $(pwd)/IA/globale.conf.exemple $(pwd)/IA/globale.conf;
 fi
 
-cat $(pwd)/IA/globale.conf;
-
-exit
 
 # =================================================================================================
 # Configuration du WORKDIR #
