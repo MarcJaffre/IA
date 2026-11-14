@@ -12,8 +12,7 @@ if [ -f  $WORKDIR/IA/functions/999_packages.sh ]; then
   source $WORKDIR/IA/functions/999_packages.sh;
 fi
 
-pwd
-echo "$WORKDIR/IA"
+cat $WORKDIR/IA/functions/999_packages.sh
 
 # =================================================================================================
 # Charger fichier Debian #
