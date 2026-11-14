@@ -64,7 +64,7 @@ fi
 | Blacklist         | Opérationnel       |                                 |
 | Nvidia Drivers    | Opérationnel       |                                 |
 | Nvidia Cuda       | Opérationnel       |                                 |
-| LLAMA             | 95% (Build 13 min) | Il manque a ajouter les modèles |
+| LLAMA             | 99%                | Il manque a ajouter les modèles |
 | OpenWebui         | 1%                 |                                 |
 | Stable-Diffusion  | 1%                 |                                 |
 | Open-Terminal     | 0%                 |                                 |
