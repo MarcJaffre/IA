@@ -6,28 +6,28 @@ OPENWEBUI_MAKE_DIR(){
 echo "Création des dossiers Openwebui, Download et Cache";
 # ----------------------------------------------------------
 # ----------------------------------------------------------
-if [ ! -d  "$WORKDIR/IA/openwebui" ]; then
-  mkdir -p "$WORKDIR/IA/openwebui";
-  cd       "$WORKDIR/IA/openwebui";
+if [ ! -d  "./openwebui" ]; then
+  mkdir -p "./openwebui";
+  cd       "./openwebui";
 else
-  cd       "$WORKDIR/IA/openwebui";
+  cd       "./openwebui";
 fi
 # ----------------------------------------------------------
-if [ ! -d "$WORKDIR/IA/openwebui/download" ]; then
-  mkdir -p "$WORKDIR/IA/openwebui/download";
+if [ !  -d "./openwebui/download" ]; then
+  mkdir -p "./openwebui/download";
 else
   echo "KO 2";
 fi
 
 # ----------------------------------------------------------
-if [ ! -d "$WORKDIR/IA/openwebui/.cache" ]; then
-  mkdir -p "$WORKDIR/IA/openwebui/.cache";
+if [ ! -d "./IA/openwebui/.cache" ]; then
+  mkdir -p "./IA/openwebui/.cache";
 else
   echo "KO 3";
 fi
 # ----------------------------------------------------------
 echo "Création de l'environnement Virtuel";
-if [ -d "$WORKDIR/IA/openwebui" ]; then
+if [ -d "./IA/openwebui" ]; then
   python$PYTHON_VERSION -m venv "$ENV_NAME"
 fi
 }
