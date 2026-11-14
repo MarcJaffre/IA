@@ -2,7 +2,7 @@
 # Dossier de Travail #
 # ================== #
 OPENWEBUI_PURGE(){
-if [ $$WORKDIR/IA/openwebui ]; then
+if [ "$WORKDIR/IA/openwebui" ]; then
  echok "Dossier à delete";
 fi
 }
