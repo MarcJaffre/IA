@@ -25,7 +25,7 @@ if [ -d $LLAMA_DIR ]; then
   # =======================================
   # Telecharger la liste des Modeles
   for MODEL in $LISTES_MODELES; do
-    echo ./llama download -hf $MODEL;
+    ./llama download -hf $MODEL 1>/dev/null;
   done
   # =======================================
 else
