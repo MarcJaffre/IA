@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# /tmp/IA/workspaces/demo.sh
+# /srv/IA/workspaces/demo.sh
 
 # ========================================================================
 # Configuration du script #
