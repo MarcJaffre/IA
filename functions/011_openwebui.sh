@@ -18,7 +18,7 @@ fi
 # ====================================================================================
 # Creation Environnement Virtuel #
 # ============================== #
-OPENWEBUI_PYTHON_ENV(){
+OPENWEBUI_PYTHON_MAKE_ENV(){
 if [ -d "$WORKDIR/openwebui" ]; then
    cd   "$WORKDIR/openwebui";
    python${PYTHON_VERSION} -m venv "$ENV_NAME"
@@ -27,6 +27,7 @@ fi
 # ====================================================================================
 # Charger l'Environnement Virtuel #
 # =============================== #
+OPENWEBUI_PYTHON_LOAD_ENV(){
 if [ -d   "$WORKDIR/openwebui" ]; then
    cd     "$WORKDIR/openwebui";
    source "$ENV_NAME/bin/activate";
