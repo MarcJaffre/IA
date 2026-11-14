@@ -29,17 +29,17 @@ WORKDIR=/tmp/IA
 # ================================================================================
 # Lancement de la Construction #
 # ============================ #
-if [ -d /tmp/IA 2>/dev/null ]; then
-  cd $HOME;
-  rm -rf "$WORKDIR";
+#if [ -d /tmp/IA 2>/dev/null ]; then
+  #cd $HOME;
+  #rm -rf "$WORKDIR";
   git clone --quiet https://github.com/MarcJaffre/IA.git "$WORKDIR";
   cd "$WORKDIR";
   bash start.sh;
-else
-  git clone --quiet https://github.com/MarcJaffre/IA.git "$WORKDIR";
-  cd /tmp/IA;
-  bash start.sh;
-fi
+#else
+#  git clone --quiet https://github.com/MarcJaffre/IA.git "$WORKDIR";
+#  cd /tmp/IA;
+#  bash start.sh;
+#fi
 # ================================================================================
 EOF
 bash test.sh
