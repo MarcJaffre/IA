@@ -18,11 +18,9 @@ fi
 
 ### B. Utilisation
 ```bash
-
+clear;
 cat > test.sh << 'EOF'
 #!/usr/bin/bash
-
-clear;
 
 # =============================================================================
 # Variables #
