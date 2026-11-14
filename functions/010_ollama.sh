@@ -43,9 +43,12 @@ fi
 ########################################
 LLAMA_BUILD_MV_BIN(){
 if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
-  mkdir   "$WORKDIR/output/llama.cpp";
+  # ============================================
   cd      "$WORKDIR/src/llama.cpp/build/bin/"
+  # ============================================
+  mkdir   "$WORKDIR/output/llama.cpp";
   mv *    "$WORKDIR/output/llama.cpp";
+  # ============================================
 else
   echo "Le script est en erreur ls $WORKDIR/output/llama.cpp)";
 fi
@@ -57,9 +60,9 @@ fi
 LLAMA_BUILD_MV_BIN2(){
 if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
   # ===================================================================
-  mkdir   "/root/llama.cpp";
-  # ===================================================================
   cd      "$WORKDIR/src/llama.cpp/build/bin/"
+  # ===================================================================
+  mkdir   "/root/llama.cpp";
   mv *    "/root/llama.cpp";
   # ===================================================================
   find "/root/llama.cpp" -type f -iname "llama*" -exec chmod +x {} \;
