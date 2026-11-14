@@ -15,3 +15,9 @@ fi
 # Chargement de la configuration #
 # ============================== #
 source ./globale.conf;
+
+# =================================================================================================
+# Git Hub LLAMA #
+#################
+GIT_LLAMA_REMOVE_REPO
+GIT_LLAMA_CLONE_REPO
