@@ -80,10 +80,6 @@ if [ -d "$WORKDIR/src/llama.cpp" ]; then
 fi
 }
 
-
-
-
-
 ########################################################################################################################
 # Déplacement de la Source vers output #
 ########################################
@@ -97,7 +93,7 @@ if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
   mkdir   "$WORKDIR_FINAL/llama.cpp";
   mv *    "$WORKDIR_FINAL/llama.cpp";
   # =================================================================================
-  find "$WORKDIR_FINAL/llama.cpp" -type f -iname "llama*" -exec chmod +x {} \;
+  find    "$WORKDIR_FINAL/llama.cpp" -type f -iname "llama*" -exec chmod +x {} \;
   # =================================================================================
 fi
 }
