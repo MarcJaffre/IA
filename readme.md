@@ -108,12 +108,14 @@ Bash                                                   │
               ├──> [999_package.sh] Installation du pilote Nvidia
               ├──> [999_package.sh] Installation de paquet Nvidia-Cuda-Toolkit
               ├──>
-              ├──> [010_ollama.sh]  Suppression    de llama dans le dossier src
-              ├──> [010_ollama.sh]  Téléchargement de Llama dans le dossier src
-              ├──> [010_ollama.sh]  Construction du projet LLAMA
-              ├──> [010_ollama.sh]  Déplacement de src vers output pour la recette LLAMA
-              ├──> [010_ollama.sh]  Test de fonctionnement (Port 3000)
-              ├──>
+              ├──> [010_ollama.sh] Purge du dossier du dossier output de LLAMA
+              ├──> [010_ollama.sh] Clonage du dépôt LLAMA via Git
+              ├──> [010_ollama.sh] Construction de LLAMA
+              ├──> [010_ollama.sh] Dossier de Sortie configurer pour LLAMA
+              ├──> [010_ollama.sh] Création      du service SYSTEMD pour LLAMA
+              ├──> [010_ollama.sh] Activation    du service SYSTEMD pour LLAMA
+              ├──> [010_ollama.sh] Désactivation du service SYSTEMD pour LLAMA
+              ├──> [010_ollama.sh] Suppression   du service SYSTEMD pour LLAMA
               └──>
 ```
 
