@@ -57,7 +57,7 @@ if [ $(pwd) = "$WORKDIR/output/llama.cpp/bin" ]; then
    for MODEL in $LISTES_MODELES; do 
      echo "Téléchargement du modèle $MODEL";
      $WORKDIR/output/llama.cpp/bin/llama download -hf $MODEL 1>/dev/null;
-    done
+   done
 # -----------------------------------------------------------------------------
 else
   echo "Le dossier output/llama.cpp/bin est absent";
