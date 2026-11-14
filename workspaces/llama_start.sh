@@ -50,6 +50,8 @@ else
 fi
 
 # =================================================================================================
+# Téléchargement de Modèle #
+# ======================== #
 if [ $(pwd) = "$WORKDIR/output/llama.cpp/bin" ]; then
 # -----------------------------------------------------------------------------
    for MODEL in $LISTES_MODELES; do 
@@ -61,7 +63,6 @@ else
   echo "Le dossier output/llama.cpp/bin est absent";
   exit;
 fi
-
 
 # =================================================================================================
 # Lancement de l'application llama #
