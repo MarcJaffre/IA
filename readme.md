@@ -76,6 +76,18 @@ if [ -d /srv/IA ]; then
 fi
 ```
 
+#### 5. Installer l'application
+```bash
+clear;
+if [ -d /srv/IA ]; then
+ # ----------------------
+ cd IA;
+ bash install.sh
+ # ----------------------
+fi
+```
+
+
 
 
 <br /> <br /> <br />
