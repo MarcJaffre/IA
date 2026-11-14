@@ -1,4 +1,31 @@
 ########################################################################################################################
+# Purge llama.cpp du dossier src
+LLAMA_PURGE_DIR_SRC(){
+if [ -d  "$WORKDIR/src/llama.cpp" ]; then
+  rm -rf "$WORKDIR/src/llama.cpp";
+else
+  echo "La fonction LLAMA_PURGE_DIR_SRC est en erreur";
+fi
+}
+########################################################################################################################
+# Purge llama.cpp du dossier output
+LLAMA_PURGE_DIR_OUTPUT(){
+if [ -d  "$WORKDIR/output/llama.cpp" ]; then
+  rm -rf "$WORKDIR/output/llama.cpp";
+else
+  echo "La fonction LLAMA_PURGE_DIR_OUTPUT est en erreur";
+fi
+}
+########################################################################################################################
+LLAMA_GIT_CLONE(){
+if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
+  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
+else
+  echo "La fonction LLAMA_GIT_CLONE est en erreur";
+fi
+}
+
+########################################################################################################################
 # Configuration de la compilation #
 ###################################
 LLAMA_CONFIG_BUILD(){
@@ -37,9 +64,6 @@ else
   # ===================================================
 fi
 }
-
-
-
 ########################################################################################################################
 # Compiler et sortir les binaires dans output #
 ###############################################
@@ -57,46 +81,6 @@ else
   echo "La fonction LLAMA_BUILD_02 est en erreur";
 fi
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-########################################################################################################################
-# Purge llama.cpp du dossier src
-LLAMA_PURGE_DIR_SRC(){
-if [ -d  "$WORKDIR/src/llama.cpp" ]; then
-  rm -rf "$WORKDIR/src/llama.cpp";
-fi
-}
-########################################################################################################################
-# Purge llama.cpp du dossier output
-LLAMA_PURGE_DIR_OUTPUT(){
-if [ -d  "$WORKDIR/output/llama.cpp" ]; then
-  rm -rf "$WORKDIR/output/llama.cpp";
-fi
-}
-########################################################################################################################
-LLAMA_GIT_CLONE(){
-if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
-  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
-fi
-}
-
-
-
-
-
 
 
 
