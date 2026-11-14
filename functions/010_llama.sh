@@ -1,5 +1,5 @@
 ########################################################################################################################
-# Purge ollama.cpp du dossier src
+# Purge llama.cpp du dossier src
 LLAMA_PURGE_DIR_SRC(){
 if [ -d  "$WORKDIR/src/llama.cpp" ]; then
   rm -rf "$WORKDIR/src/llama.cpp";
@@ -7,7 +7,7 @@ fi
 }
 
 ########################################################################################################################
-# Purge ollama.cpp du dossier output
+# Purge llama.cpp du dossier output
 LLAMA_PURGE_DIR_OUTPUT(){
 if [ -d  "$WORKDIR/output/llama.cpp" ]; then
   rm -rf "$WORKDIR/output/llama.cpp";
