@@ -60,7 +60,7 @@ fi
 
 ```bash
 clear;
-
+apt install -y libsqlite3-dev
 mkdir -p /srv/IA/openwebui/{download,.cache};
 cd /srv/IA/openwebui;
 python3.11 -m venv venv;
