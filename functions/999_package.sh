@@ -56,6 +56,7 @@ if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;    
 if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev;                 fi
 if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y pciutils;                   fi
 if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                fi
+if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               fi
 if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;                       fi
 if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget;                       fi
 
