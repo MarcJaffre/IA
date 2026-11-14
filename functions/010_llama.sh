@@ -70,7 +70,8 @@ if [ -d "$WORKDIR/src/llama.cpp" ]; then
   # ==============================================================================
    if [ ! -d   "$WORKDIR/output/llama.cpp" ]; then
       mkdir -p "$WORKDIR/output/llama.cpp";
-      cmake --install build --prefix "$WORKDIR/output/llama.cpp" > /dev/null;
+      cmake --install build --prefix "$WORKDIR/output/llama.cpp"
+      #> /dev/null;
       touch $WORKDIR/output/llama.cpp;
    fi
   # ==============================================================================
