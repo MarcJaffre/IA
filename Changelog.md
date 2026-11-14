@@ -14,7 +14,7 @@ Fonctionnement
 - [OK] Test de fonctionnement Appz
 - [OK] Batch de compilation avec "$CMAKE_ARGS"
 - [A activé] Compilation en mode silencieux
-- [OK] Désactivation du CCACHE
+- [OK] Désactivation du CCACHE (voir config/llama.conf > DGGML_CCACHE=OFF)
 
 Amélioration:
  - [XXXXXX] GPU Unlock
