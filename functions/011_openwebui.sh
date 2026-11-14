@@ -38,7 +38,7 @@ fi
 OPENWEBUI_PYTHON_PIP_PACKAGE(){
 if [ -d   "$WORKDIR/openwebui" ]; then
    cd     "$WORKDIR/openwebui";
-   pip install --no-cache-dir -U "$PACKAGE"  --cache-dir "$PIP_DOWNLOAD_DIR";
+   pip install --no-cache-dir -U "$PACKAGE" --cache-dir "$PIP_DOWNLOAD_DIR"
 fi
 }
 
