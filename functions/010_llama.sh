@@ -48,3 +48,23 @@ if [ -d "$WORKDIR/src/llama.cpp" ]; then
   # ===============================================================================
 fi
 }
+
+###################################################################################
+# Etape 4: Déplacer la Build #
+##############################
+LLAMA_BUILD_OUTPUT(){
+if [ -d "$WORKDIR/src/llama.cpp" ]; then
+  # ==============================================================================
+   cd "$WORKDIR/src/llama.cpp";
+  # ==============================================================================
+   if [ ! -d   "$WORKDIR/output/llama.cpp" ]; then
+      mkdir -p "$WORKDIR/output/llama.cpp";
+      cmake --install build --prefix "$WORKDIR/output/llama.cpp"
+      #> /dev/null;
+      touch $WORKDIR/output/llama_Ready;
+   fi
+  # ==============================================================================
+#else
+  #echo "La fonction LLAMA_BUILD_02 est en erreur";
+fi
+}
