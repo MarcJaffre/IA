@@ -51,6 +51,17 @@ else
 fi
 ```
 
+#### 3. Nettoyage
+```bash
+clear;
+if [ -d $WORKDIR/IA ]; then
+  cd $WORKDIR/IA;
+  rm -rf $WORKDIR/IA;
+else
+ echo "Le dossier est déjà purger";
+fi
+```
+
 
 <br /> <br /> <br />
 
