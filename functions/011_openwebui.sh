@@ -1,24 +1,10 @@
 #====================================================================================
 # Dossier de Travail #
 # ================== #
-OPENWEBUI_MAKE_DIR(){
-# ----------------------------------------------------------
-echo "Création des dossiers Openwebui, Download et Cache";
-# ----------------------------------------------------------
-if [ ! -d  "./openwebui" ]; then
-  mkdir -p "./openwebui";
-  mkdir -p "./openwebui/download";
-  mkdir -p "./openwebui/.cache";
-else
-  rm -r "./openwebui";
+OPENWEBUI_PURGE(){
+if [ $$WORKDIR/IA/openwebui ]; then
+ echok "Dossier à delete";
 fi
-
-# ----------------------------------------------------------
-#if [ -d  "./openwebui" ]; then
-#  python$PYTHON_VERSION -m venv "$ENV_NAME"
-#fi
-# ----------------------------------------------------------
-
 }
 #====================================================================================
 
