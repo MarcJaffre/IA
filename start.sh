@@ -62,6 +62,7 @@ LLAMA_MAKE_BUILD;              # ??
 MESSAGE_LLAMA_BUILD_OUTPUT;    #
 LLAMA_BUILD_OUTPUT;            # 
 # ---------------------------------------
+# Phase 7
 MESSAGE_LLAMA_END;
 LLAMA_BUILD_MV_BIN;
 # ---------------------------------------
