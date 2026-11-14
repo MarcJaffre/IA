@@ -5,7 +5,7 @@
 # ========================================================================
 # Configuration du script #
 # ======================= #
-WORKDIR="/tmp/IA"
+WORKDIR="/srv/IA"
 SRC="$WORKDIR/src/llama.cpp/build/bin/"
 OUT="$WORKDIR/output/llama.cpp"
 
