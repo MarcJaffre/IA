@@ -34,11 +34,9 @@ MESSAGE_LOADING_GLOBAL;
 HOST_DEBIAN_BLACKLIST_NOUVEAU;
 HOST_DEBIAN_NVIDIA;
 HOST_DEBIAN_NVIDIA_CUDA;
-
 # ---------------------------------------
 MESSAGE_LLAMA_PURGE_GIT;
 LLAMA_PURGE_DIR;
-
 # ---------------------------------------
 MESSAGE_LLAMA_GIT_CLONE;
 LLAMA_GIT_CLONE;
@@ -48,15 +46,14 @@ LLAMA_BUILD_01;             # CMAKE_ARGS
 LLAMA_BUILD_02 1>/dev/null; # CMAKE_ARGS
 
 # ---------------------------------------
-MESSAGE_LLAMA_END;
-LLAMA_BUILD_MV_BIN;
+#MESSAGE_LLAMA_END;
+#LLAMA_BUILD_MV_BIN;
 # ---------------------------------------
-MESSAGE_BOT;
-echo "";
-
-LLAMA_SYSTEMD_ADD
-LLAMA_SYSTEMD_ENABLED
-LLAMA_SYSTEMD_DISABLED
-LLAMA_SYSTEMD_DEL
+#MESSAGE_BOT;
+#echo "";
+#LLAMA_SYSTEMD_ADD
+#LLAMA_SYSTEMD_ENABLED
+#LLAMA_SYSTEMD_DISABLED
+#LLAMA_SYSTEMD_DEL
 
 # =========================================================================================
