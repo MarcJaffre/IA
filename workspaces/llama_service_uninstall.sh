@@ -5,7 +5,6 @@
 set -e
 
 
-exit
 
 # =================================================================================================
 # Générer le fichier  #
@@ -15,6 +14,8 @@ if [ ! -f $(pwd)/IA/globale.conf ]; then
  $(pwd)/IA/globale.conf.exemple $(pwd)/IA/globale.conf;
 fi
 
+
+exit
 
 # =================================================================================================
 # Configuration du WORKDIR #
