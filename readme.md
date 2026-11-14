@@ -45,13 +45,10 @@ fi
 # Remplacer la valeur de WORKDIR par celle défini #
 ###################################################
 sed -i -e "s|XXXXXX|${WORKDIR}|g" "$WORKDIR/globale.conf"
-cat "$WORKDIR/globale.conf"
-
 # =============================================================================
 # LANCEMENT PROJET #
 # ================ #
 bash start.sh;
-
 EOF
 
 bash test.sh;
