@@ -1,23 +1,49 @@
 ########################################################################################################################
 # Configuration de la compilation #
 ###################################
-LLAMA_BUILD_01(){
+LLAMA_CONFIG_BUILD(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   cd    "$WORKDIR/src/llama.cpp";
-  cmake -B      build $CMAKE_ARGS     --log-level=ERROR > /dev/null;
-  cmake --build build --config Release -j "$BUILD_CPUS" > /dev/null;
+  # ===================================================
+  cmake \
+  -B build \
+  $CMAKE_ARGS \
+  --log-level=ERROR \
+  > /dev/null;
+  # ===================================================
 else
-  echo "La fonction LLAMA_BUILD_01 est en erreur";
+  # ===================================================
+  echo "La fonction LLAMA_CONFIG_BUILD est en erreur";
+  # ===================================================
 fi
 }
 
+########################################################################################################################
+# Lancement de la compilation #
+###############################
+LLAMA_MAKE_BUILD(){
+if [ -d "$WORKDIR/src/llama.cpp" ]; then
+  cd    "$WORKDIR/src/llama.cpp";
+  # ===================================================
+  cmake \
+  --build build \
+  --config Release \
+  -j "$BUILD_CPUS" \
+  > /dev/null;
+  # ===================================================
+else
+  # ===================================================
+  echo "La fonction LLAMA_MAKE_BUILD est en erreur";
+  # ===================================================
+fi
+}
 
 
 
 ########################################################################################################################
 # Compiler et sortir les binaires dans output #
 ###############################################
-LLAMA_BUILD_02(){
+LLAMA_BUILD_OUTPUT(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
  # ===========================================================================
    cd "$WORKDIR/src/llama.cpp";
