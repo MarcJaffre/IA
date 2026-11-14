@@ -38,26 +38,11 @@ fi
 }
 
 
-########################################################################################################################
-# Déplacement de la Source vers output #
-########################################
-LLAMA_BUILD_MV_BIN(){
-if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
-  # ============================================
-  cd      "$WORKDIR/src/llama.cpp/build/bin/"
-  # ============================================
-  mkdir   "$WORKDIR/output/llama.cpp";
-  mv *    "$WORKDIR/output/llama.cpp";
-  # ============================================
-else
-  echo "Le script est en erreur ls $WORKDIR/output/llama.cpp)";
-fi
-}
 
 ########################################################################################################################
 # Déplacement de la Source vers output #
 ########################################
-LLAMA_BUILD_MV_BIN2(){
+LLAMA_BUILD_MV_BIN(){
 if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
   # ===================================================================
   cd      "$WORKDIR/src/llama.cpp/build/bin/"
@@ -71,12 +56,28 @@ fi
 }
 
 ########################################################################################################################
+# Déplacement de la Source vers output #
+########################################
+LLAMA_BUILD_MV_BIN2(){
+if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
+  # ============================================
+  cd      "$WORKDIR/src/llama.cpp/build/bin/"
+  # ============================================
+  mkdir   "$WORKDIR/output/llama.cpp";
+  mv *    "$WORKDIR/output/llama.cpp";
+  # ============================================
+else
+  echo "Le script est en erreur ls $WORKDIR/output/llama.cpp)";
+fi
+}
+
+########################################################################################################################
 # Creation du Service #
 #######################
 LLAMA_SYSTEMD_ADD(){
 
 if [ -f /etc/systemd/system/llama-server.service ]; then
-  rm -f /etc/systemd/system/llama-server.service
+  rm -f /etc/systemd/system/llama-server.service;
 fi
 
 cat > /etc/systemd/system/llama-server.service <<'EOF'
@@ -95,13 +96,36 @@ RestartSec=5
 [Install]
 WantedBy=multi-user.target
 EOF
-
 systemctl daemon-reload;
+}
+
+
+########################################################################################################################
+# Suppression du Service #
+##########################
+LLAMA_SYSTEMD_DEL(){
+# Check fichier si il existe
+if [ -f etc/systemd/system/llama-server.service ]; then
+  # --------------------------------------------------------------------------------
+  if [ $(systemctl is-enabled llama-server.service) == "enabled" ]; then
+    echo "Désactivation du service llama-server";
+    systemctl daemon-reload;
+    systemctl disable --now llama-server.service 2>/dev/null;
+   systemctl daemon-reload;
+  fi
+  # --------------------------------------------------------------------------------
+  rm -f /etc/systemd/system/llama-server.service:
+  # --------------------------------------------------------------------------------
+else
+ echo "La fonction LLAMA_SYSTEMD_DEL est en anomalie";
+fi
 }
 
 ########################################################################################################################
 # Gestion du service #
 ######################
+
+
 # ---------------------------------------------------------------------------
 LLAMA_SYSTEMD_ENABLED(){
 if [ $(systemctl is-enabled llama-server.service) == "disabled" ]; then
