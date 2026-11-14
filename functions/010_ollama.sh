@@ -1,10 +1,9 @@
 ########################################################################################################################
 # Purge Globale #
 #################
-LLAMA_PURGE_GLOBAL(){
-if [ ! -d "$WORKDIR" ]; then
-  cd $HOME;
-  rm -f "$WORKDIR";
+LLAMA_PURGE_OUTPUT(){
+if [ -d "$WORKDIR\output\llama.cpp" ]; then
+  rm -f "$WORKDIR\output\llama.cpp";
 fi
 }
 
