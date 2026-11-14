@@ -9,12 +9,14 @@ clear;
 WORKDIR=/srv
 ```
 
-
 #### 1. Nettoyer
 ```bash
 clear;
-if [ ! -d $WORKDIR/IA ]; then
- cd $WORKDIR/IA;
+if [ -d $WORKDIR/IA ]; then
+  cd $WORKDIR/;
+  rm -rf $WORKDIR/IA;
+else
+ echo "Le dossier est déjà purger";
 fi
 ```
 
