@@ -1,26 +1,26 @@
 # ========================================================
 # 1. Dossier a ignorer de la synchronisation 
 # ========================================================
-output/*
-src/*
+#output/*
+#src/*
 
 # ========================================================
 # 3. Fichier a synchronise (Permet de générer le dossier) 
 # ========================================================
-!output/readme.md
-!src/readme.md
+#!output/readme.md
+#!src/readme.md
 
 # ========================================================
 # 3. Extension de fichier à ignore de la syncronisation
 # ========================================================
-*.gguf
-*.bin
-*.safetensors
-*.ckpt
-*.pt
-*.pth
-*.log
-*.tmp
-*.swp
-*~
+#*.gguf
+#*.bin
+#*.safetensors
+#*.ckpt
+#*.pt
+#*.pth
+#*.log
+#*.tmp
+#*.swp
+#*~
 
