@@ -44,10 +44,14 @@ LLAMA_GIT_CLONE;            # OK
 MESSAGE_LLAMA_PURGE_OUTPUT; # OK
 LLAMA_PURGE_DIR_OUTPUT;     # OK
 # ---------------------------------------
-MESSAGE_LLAMA_BUILD;        # OK
+MESSAGE_LLAMA_CONFIG_BUILD; # ??
 LLAMA_CONFIG_BUILD;         # ??
+# ---------------------------------------
+MESSAGE_LLAMA_MAKE_BUILD;   # ??
 LLAMA_MAKE_BUILD;           # ??
-LLAMA_BUILD_OUTPUT;         # ..
+# ---------------------------------------
+MESSAGE_LLAMA_BUILD_OUTPUT; # ??
+LLAMA_BUILD_OUTPUT;         # ??
 
 # ---------------------------------------
 #MESSAGE_LLAMA_END;
