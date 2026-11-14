@@ -5,10 +5,11 @@ output/*
 src/*
 
 # ========================================================
-# 3. Fichier a synchronise (Permet de générer le dossier) 
+# 2. Fichier a synchronise (Permet de générer le dossier) 
 # ========================================================
 !output/readme.md
 !src/readme.md
+
 
 # ========================================================
 # 3. Extension de fichier à ignore de la syncronisation
@@ -23,4 +24,4 @@ src/*
 *.tmp
 *.swp
 *~
-
+globale.conf
