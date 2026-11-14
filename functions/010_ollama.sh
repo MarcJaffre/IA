@@ -12,14 +12,12 @@ if [ -d "$WORKDIR\output\llama.cpp" ]; then
   rm -f "$WORKDIR\output\llama.cpp";
 fi
 }
-
 ########################################################################################################################
 # Telecharger le depot LLAMA #
 ##############################
 LLAMA_GIT_CLONE(){
 if [ ! -d "$WORKDIR/src/llama.cpp" ]; then
-  git clone "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
-  #git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
+  git clone --quiet "$GITHUB_LLAMA" "$WORKDIR/src/llama.cpp";
 fi
 }
 
