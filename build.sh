@@ -3,7 +3,7 @@
 # =================================================================================================
 # Configuration du WORKDIR #
 # ======================== #
-if [ -f globale.conf ];
+if [ -f globale.conf ]; then
   sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" globale.conf;
 else
  exit;
