@@ -12,11 +12,15 @@ apt update;
 apt install -y git;
 ```
 
-### C. Télécharger Projet
+### C. Exploitation
+#### 1. Définir emplacement du projet
 ```bash
 clear;
-
 WORKDIR=/srv
+```
+#### 2. Synchroniser le projet
+```bash
+clear;
 
 if [ ! -d $WORKDIR/IA ]; then
  # ----------------------------------------------------------------
@@ -32,13 +36,9 @@ else
  # ----------------------------------------------------------------
 fi
 ```
-
-### B. Lancer la construction
+#### 3. Construire les applications du projet
 ```bash
 clear;
-
-WORKDIR=/srv
-
 if [ -d $WORKDIR/IA ]; then
  # ---------------------------------
  cd $WORKDIR/IA;
@@ -50,8 +50,7 @@ else
  # ---------------------------------
 fi
 ```
-
-### B. Lancer l'application
+#### 4. Lancer l'application
 ```bash
 clear;
 if [ -d /srv/IA ]; then
