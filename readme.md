@@ -18,6 +18,21 @@ apt install -y git;
 clear;
 WORKDIR=/srv
 ```
+
+#### 2. Nettoyage
+```bash
+clear;
+
+if [ ! -d $WORKDIR/IA ]; then
+  cd $WORKDIR;
+  bash IA/workspaces/llama_service_uninstall.sh;
+  rm -rf $WORKDIR/IA;
+else
+ echo "Le dossier est déjà purger";
+fi
+```
+
+
 #### 1. Synchroniser le projet
 ```bash
 clear;
