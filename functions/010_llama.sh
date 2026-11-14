@@ -42,7 +42,7 @@ if [ -d "$WORKDIR/src/llama.cpp" ]; then
   # ===============================================================================
    if [ !   -d "$WORKDIR/output/llama.cpp" ]; then
       mkdir -p "$WORKDIR/output/llama.cpp";
-      cmake --install build --prefix "$WORKDIR/output/llama.cpp"
+     cmake --build build --config Release -j "$BUILD_CPUS";
       #> /dev/null;
    fi
   # ===============================================================================
