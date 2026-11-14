@@ -29,4 +29,8 @@ LLAMA_PURGE_DIR_OUTPUT
 LLAMA_CONFIG_BUILD
 LLAMA_MAKE_BUILD
 LLAMA_BUILD_OUTPUT
+
+# =================================================================================================
+# Build vers output #
+#####################
 LLAMA_BUILD_MV_BIN
