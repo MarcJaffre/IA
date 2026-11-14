@@ -5,34 +5,42 @@
 set -e
 
 # =================================================================================================
-# Configuration du WORKDIR #
-# ======================== #
-if [ -f globale.conf ]; then
-  sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" globale.conf;
-fi
-
-# =================================================================================================
-# Paramétrage de ce script #
-# ======================== #
-RUN_LLAMA="1"
-
-# =================================================================================================
 # Chargement de la configuration du WORKDIR #
 # ========================================= #
-if [ -f "$WORKDIR/globale.conf" ]; then
- source "$WORKDIR/globale.conf";
+if [ -f "./globale.conf" ]; then
+  source "./globale.conf";
+else
+  echo "Le fichier globale.conf n'existe pas";
 fi
 
 # =================================================================================================
 # Dossier output llama #
 # ==================== #
-if [ $RUN_LLAMA = "1" ]; then
-      if [ -d "$WORKDIR/output/llama.cpp/bin" ]; then
-        cd    "$WORKDIR/output/llama.cpp/bin"  ;
-      else
-        echo "Le dossier output/llama.cpp/bin est absent";
-        exit;
-      fi
-      find . -type f -iname "llama*" -exec chmod +x {} \;
-      ./llama-server --host "0.0.0.0" --port "8080" --api-key admin
+if [ -d "$WORKDIR/output/llama.cpp/bin" ]; then
+  cd    "$WORKDIR/output/llama.cpp/bin";
+else
+  echo "Le dossier output/llama.cpp/bin est absent";
+  exit;
+fi
+
+# =================================================================================================
+# Edition des permissions lancement #
+# ================================= #
+if [ $(pwd) = "$WORKDIR/output/llama.cpp/bin" ]; then
+  find . -type f -iname "llama*" -exec chmod +x {} \;
+else
+  echo "Le dossier output/llama.cpp/bin est absent";
+  exit;
+fi
+
+
+
+# =================================================================================================
+# Lancement de l'application llama #
+# ================================ #
+if [ $(pwd) = "$WORKDIR/output/llama.cpp/bin" ]; then
+  ./llama-server --host "0.0.0.0" --port "8080" --api-key admin
+else
+  echo "Le dossier output/llama.cpp/bin est absent";
+  exit;
 fi
