@@ -30,7 +30,7 @@ WORKDIR="/tmp/IA"
 
 # =============================================================================
 # Purge du dossier sortie #
-###########################
+# ======================= #
 #if [ -d  $WORKDIR\output ]; then
 #  rm -rf $WORKDIR\output;
 #fi
@@ -44,7 +44,6 @@ git clone --quiet $GITHUB_IA "$WORKDIR";
 # DOSSIER PROJET #
 # ============== #
 cd "$WORKDIR";
-
 
 # =============================================================================
 # LANCEMENT PROJET #
