@@ -17,9 +17,16 @@ OPTIONS="$PARM_1 $PARM_2 $PARM_3"
 # ========================================================================
 # Dossier de Travail #
 # ================== #
-cd "${WORKDIR}/${SUBDIR}/llama.cpp/build/bin/";
+if [ -d "$WORKDIR/$SUBDIR/llama.cpp/build/bin/" ]; then
+     cd "$WORKDIR/$SUBDIR/llama.cpp/build/bin/";
+else
+ echo "Le dossier de travail est en erreur";
+fi
 
 # ========================================================================
 # Lancement #
 #############
-./llama-server "$OPTIONS"
+
+if [ -f llama-server ]; then
+  ./llama-server "$OPTIONS";
+fi
