@@ -11,7 +11,7 @@ set -e
 # =================== #
 # Github rester globale.conf.exemple mais pas globale.conf
 if [ ! -f $(pwd)/IA/globale.conf ]; then 
- $(pwd)/IA/globale.conf.exemple $(pwd)/IA/globale.conf;
+echo $(pwd)/IA/globale.conf.exemple $(pwd)/IA/globale.conf;
 fi
 
 
