@@ -29,8 +29,8 @@ GITHUB_IA="https://github.com/MarcJaffre/IA.git"
 WORKDIR="/tmp/IA"
 
 # =============================================================================
-# Purge #
-#########
+# Purge du dossier sortie #
+###########################
 if [ -d  $WORKDIR\output ]; then
   rm -rf $WORKDIR\output;
 fi
