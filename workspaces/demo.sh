@@ -1,6 +1,4 @@
 #!/usr/bin/bash
-# echo "" > /srv/IA/workspaces/demo.sh; nano /srv/IA/workspaces/demo.sh; bash /srv/IA/workspaces/demo.sh
-# bash 
 
 # ========================================================================================
 # Configuration du script #
@@ -47,3 +45,4 @@ if [ -f llama ]; then
  ./llama-server "${OPTIONS[@]}";
 fi
  
+# echo "" > /srv/IA/workspaces/demo.sh; nano /srv/IA/workspaces/demo.sh; bash /srv/IA/workspaces/demo.sh
