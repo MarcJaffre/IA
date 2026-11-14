@@ -23,9 +23,11 @@ rm -rf /srv/IA;
 ```bash
 clear;
 cd /srv
-git --quiet clone https://github.com/MarcJaffre/IA.git;
+git clone --quiet  https://github.com/MarcJaffre/IA.git;
 cd IA;
 ```
+
+
 
 --------------------------------------------------------------------------------------------
 ## I. Avancement
