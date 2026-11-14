@@ -1,14 +1,15 @@
+cat > start_llama.sh << 'EOF'
 #!/usr/bin/bash
 
 #======================================================================================================
-# NETTOYAGE CONSOLE #
-# ================= #
-clear;
+# DOSSIER LLAMA #
+# ============= #
+LLAMA_DIR="/root/llama.cpp"
 
 #======================================================================================================
-# Variables #
-#############
-LLAMA_DIR="/root/llama.cpp"
+# Sélection des modèles #
+# ===================== #
+
 MODELE_1="Qwen/Qwen3-VL-8B-Instruct-GGUF:Q4_K_M"
 MODELE_2=""
 MODELE_3=""
@@ -17,6 +18,10 @@ MODELE_5=""
 MODELE_6=""
 LISTES_MODELES="$MODELE_1 $MODELE_2 $MODELE_3 $MODELE_4 $MODELE_5 $MODELE_6"
 
+#======================================================================================================
+# NETTOYAGE CONSOLE #
+# ================= #
+clear;
 
 #======================================================================================================
 # Phase 1 : Téléchargement des modèles #
@@ -38,3 +43,5 @@ done
 if [ "$(pwd)" == "$LLAMA_DIR" ];then
  ./llama-server --host 0.0.0.0 --port 8080 --api-key admin
 fi
+
+EOF
