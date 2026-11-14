@@ -19,6 +19,7 @@ fi
 if [ -f globale.conf ]; then
   sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" globale.conf;
 fi
+
 # =================================================================================================
 # Chargement de la configuration #
 # ============================== #
