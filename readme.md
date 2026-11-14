@@ -23,25 +23,30 @@ if [ ! -f /usr/bin/git ]; then
   apt install -y git;
 fi
 
-# ===================================================================
+
+# ================================================================================
+# Variables #
+# ========= #
+WORKDIR=/tmp/IA
+
+# ================================================================================
 # Lancement de la Construction #
 # ============================ #
 if [ -d /tmp/IA 2>/dev/null ]; then
   cd $HOME;
-  rm -rf /tmp/IA;
-  git clone --quiet https://github.com/MarcJaffre/IA.git /tmp/IA;
-  cd /tmp/IA;
+  rm -rf "$WORKDIR";
+  git clone --quiet https://github.com/MarcJaffre/IA.git "$WORKDIR";
+  cd "$WORKDIR";
   bash start.sh;
 else
-  git clone --quiet https://github.com/MarcJaffre/IA.git /tmp/IA;
+  git clone --quiet https://github.com/MarcJaffre/IA.git "$WORKDIR";
   cd /tmp/IA;
   bash start.sh;
 fi
-# ===================================================================
+# ================================================================================
 EOF
 bash test.sh
 ```
-
 
 ### C. Arborscence
 ```
