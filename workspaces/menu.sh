@@ -46,11 +46,13 @@ BASE_MENU_SELECTION() {
     echo "          MENU PRINCIPAL                         "
     echo "================================================="
     echo "1) Menu 1 : Installation Dependances"
-    echo "1) Menu 2 : Installation de LLAMA"
+    echo "2) Menu 2 : Installation de LLAMA"
+    echo ""; 
+    echo "================================================="
     echo "X) Menu X : Installation de GPU-Unlock Nvidia"
     echo "R) Menu R : Redémarrage de la machine"
-    echo "q) Quitter"
     echo "================================================="
+    echo "q) Quitter"
     # Lecture de la réponse sur la même ligne
     echo "";
     read -p "Sélectionner votre choix ? " REPONSE
@@ -65,7 +67,7 @@ BASE_CHOIX() {
         BASE_MENU_SELECTION
         # Analyse de la variable $REPONSE
         case "$REPONSE" in
-            0)
+            1)
             # ========================================================================================================
                bash ${WORKDIR}/workspaces/base/install_packages.sh 1>/dev/null;
                echo "";
@@ -75,20 +77,12 @@ BASE_CHOIX() {
             # ========================================================================================================
 
 
-            1)
+            2)
             # ========================================================================================================
                bash ${WORKDIR}/workspaces/llama/build.sh;
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
-
-
-            2)
-            # ========================================================================================================
-               read -p "Appuyez sur Entrée pour continuer..."
-               ;;
-            # ========================================================================================================
-
 
             3)
             # ========================================================================================================
