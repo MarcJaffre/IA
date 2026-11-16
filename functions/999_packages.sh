@@ -112,23 +112,23 @@ if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-header
 echo "Installation de PYTHON3-FULL";
 if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full                1>/dev/null; fi
 # --------
-echo "Installation de Python3-pip";
+echo "Installation de PYTHON3-PIP";
 if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip                 1>/dev/null; fi
 
 # ====================================================================================================================
 # Bookworm
 if [ "$VERSION_ID" = "12" ]; then
-echo "Installation de Python3-11";
+echo "Installation de PYTHON3-11";
   if [ ! -d /usr/share/doc/python3.11          ]; then apt install -y python3.11                  1>/dev/null; fi
-echo "Installation de Python3-11-env";
+echo "Installation de PYTHON3-11-ENV";
   if [ ! -d /usr/share/doc/python3.11-venv     ]; then apt install -y python3.11-venv             1>/dev/null; fi
 fi
 # ====================================================================================================================
 # Trixie
 if [ "$VERSION_ID" = "13" ]; then
-echo "Installation de Python3-13-env";
+echo "Installation de PYTHON3-13-ENV";
   if [ ! -d /usr/share/doc/python3.13          ]; then apt install -y python3.13                  1>/dev/null; fi
-echo "Installation de Python3-13-env";
+echo "Installation de PYTHON3-13-ENV";
   if [ ! -d /usr/share/doc/python3.13-venv     ]; then apt install -y python3.13-venv             1>/dev/null; fi
 fi
 # ====================================================================================================================
