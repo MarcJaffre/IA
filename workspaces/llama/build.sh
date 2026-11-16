@@ -3,80 +3,80 @@
 # =============================================================================================================
 # Arrête le script immédiatement en cas d'erreur #
 # ============================================== #
-#set -e
+set -e
 
 # =============================================================================================================
 # Définir la variable WORKDIR #
 # =========================== #
-#if [[ "$PWD" != *IA* ]]; then
-# WORKDIR=$PWD/IA
-# export WORKDIR=${WORKDIR};
-#fi
+if [[ "$PWD" != *IA* ]]; then
+ WORKDIR=$PWD/IA
+ export WORKDIR=${WORKDIR};
+fi
 
 # =============================================================================================================
 # Charger les fichiers de  Configuration #
 # ====================================== #
-#if [ -f ${WORKDIR}/config/globale.conf ]; then
+if [ -f ${WORKDIR}/config/globale.conf ]; then
   # ===========================================================================================================
-  #source ${WORKDIR}/config/globale.conf;
+  source ${WORKDIR}/config/globale.conf;
   # ===========================================================================================================
-  #for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
-  #for file in $(find $WORKDIR/functions -type f -name "*.sh");                        do source $file; done
+  for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
+  for file in $(find $WORKDIR/functions -type f -name "*.sh");                        do source $file; done
   # ===========================================================================================================
-#fi
+fi
 
 # =============================================================================================================
 # Nettoyage Console #
 # ================= #
-#clear;
+clear;
 
 # =============================================================================================================
 # Messages de présentation #
 # ======================== #
-#MESSAGE_TOP;
-#MESSAGE_OLD_TOP;
-#MESSAGE_LOADING_GLOBAL;
+MESSAGE_TOP;
+MESSAGE_OLD_TOP;
+MESSAGE_LOADING_GLOBAL;
 
 # =============================================================================================================
 # Dossier Source #
 # ============== #
-#MESSAGE_LLAMA_PURGE_SRC;
-#LLAMA_PURGE_DIR_SRC;
+MESSAGE_LLAMA_PURGE_SRC;
+LLAMA_PURGE_DIR_SRC;
 
 # =============================================================================================================
 # Dossier Output #
 # ============== #
-#MESSAGE_LLAMA_PURGE_OUTPUT;
-#LLAMA_PURGE_DIR_OUTPUT;
+MESSAGE_LLAMA_PURGE_OUTPUT;
+LLAMA_PURGE_DIR_OUTPUT;
 
 # =============================================================================================================
 # Telecharger Depots LLAMA #
 # ======================== #
-#MESSAGE_LLAMA_GIT_CLONE;
-#LLAMA_GIT_CLONE;
+MESSAGE_LLAMA_GIT_CLONE;
+LLAMA_GIT_CLONE;
 
 # =============================================================================================================
 # Configuration de la build #
 # ========================= #
-#MESSAGE_LLAMA_CONFIG_BUILD;
-#LLAMA_BUILD_CONFIG;
+MESSAGE_LLAMA_CONFIG_BUILD;
+LLAMA_BUILD_CONFIG;
 
 # =============================================================================================================
 # Compilation de la build #
 # ======================= #
-#MESSAGE_LLAMA_MAKE_BUILD;
-#LLAMA_BUILD_MAKE;
+MESSAGE_LLAMA_MAKE_BUILD;
+LLAMA_BUILD_MAKE;
 
 # =============================================================================================================
 # Installer la build dans Output #
 # ============================== #
-#MESSAGE_LLAMA_BUILD_OUTPUT;
-#LLAMA_BUILD_INSTALL;
+MESSAGE_LLAMA_BUILD_OUTPUT;
+LLAMA_BUILD_INSTALL;
 
 # =============================================================================================================
 # Message de fin #
 ##################
-#MESSAGE_LLAMA_END;
-#MESSAGE_BOT;
+MESSAGE_LLAMA_END;
+MESSAGE_BOT;
 
 # =============================================================================================================
