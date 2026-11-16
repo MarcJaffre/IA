@@ -13,10 +13,11 @@ apt install -y git;
 ```
 
 ### C. Exploitation
-#### 0. Définir emplacement du projet
+#### 0. Téléchargement du projet
 ```bash
 clear;
-cd /srv;
+cd $HOME;
+rm -r IA 2>/dev/null;
 git clone --quiet https://github.com/MarcJaffre/IA.git;
 ```
 
