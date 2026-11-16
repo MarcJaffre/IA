@@ -7,8 +7,8 @@ set -e
 # =================================================================================================
 # Charger fichier Debian #
 # ====================== #
-if [ -f  ./IA/functions/999_package.sh ]; then
-  source ./IA/functions/999_package.sh;
+if [ -f  ./IA/functions/999_packages.sh ]; then
+  source ./IA/functions/999_packages.sh;
 fi
 
 # =================================================================================================
