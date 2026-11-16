@@ -106,12 +106,14 @@ if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essent
 # --------
 echo "Installation de LINUX-HEADERS";
 if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r);  1>/dev/null; fi
+
+
 # --------
-#echo "Installation de PYTHON3-FULL";
-#if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
+echo "Installation de PYTHON3-FULL";
+if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
 # --------
-#echo "Installation de Python3-pip";
-#if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                1>/dev/null; fi
+echo "Installation de Python3-pip";
+if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                1>/dev/null; fi
 
 # ====================================================================================================================
 # Bookworm
