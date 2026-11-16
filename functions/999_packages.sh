@@ -89,7 +89,7 @@ HOST_DEBIAN_APT_INSTALL_DEPENDANCE(){
 # ====================================================================================================================
 # LLAMA
 echo "Installation de CMAKE";
-if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake                        1>/dev/null; fi
+if [ ! -f /usr/bin/cmake                     ]; then apt install -y cmake                        1>/dev/null; fi
 echo "Installation de CCACHE";
 if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache                       1>/dev/null; fi
 echo "Installation de LIBSSL-DEV";
