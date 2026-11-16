@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 if [ -d /tmp/gpu-ulonkc ]; then
-   git clone https://github.com/Zagitta/gpu-unlock /tmp/gpu-unlock;
+   git clone --quiet https://github.com/Zagitta/gpu-unlock /tmp/gpu-unlock;
    cd /tmp/gpu-unlock;
    make install;
    sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT=\"gpu_unlock.targets=all\"/' /etc/default/grub;
