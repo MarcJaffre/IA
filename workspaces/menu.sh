@@ -141,6 +141,13 @@ BASE_CHOIX() {
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
+            # Lancer le téléchargement des modèles
+            m|M)
+               bash ${WORKDIR}/workspaces/llama/start.sh;
+               read -p "Appuyez sur Entrée pour continuer..."
+               ;;
+
+            # ========================================================================================================
             # Nvidia - GPU Unlock
             x|X)
                bash ${WORKDIR}/workspaces/base/Nvidia_gpu_unlock.sh;
