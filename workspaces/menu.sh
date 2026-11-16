@@ -131,4 +131,6 @@ BASE_CHOIX() {
 # =================== #
 BASE_CONFIG_WORKDIR;
 BASE_CONFIG_FILE;
-BASE_CHOIX;
+echo "Dossier de travail: $WORKDIR"
+
+# BASE_CHOIX;
