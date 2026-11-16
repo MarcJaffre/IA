@@ -76,11 +76,11 @@ echo "    ║ [3/7] Clonage des sources depuis GitHub     [$(date +"%H:%M")]   �
 }
 # =====================================================================================
 MESSAGE_LLAMA_CONFIG_BUILD(){
-echo "    ║ [4/7] Préparation de la compilation CMake   [$(date +"%H:%M")]  ║";
+echo "    ║ [4/7] Préparation de la compilation CMake   [$(date +"%H:%M")]   ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_MAKE_BUILD(){
-echo "    ║ [5/7] Compilation complète de llama.cpp     [$(date +"%H:%M")]    ║";
+echo "    ║ [5/7] Compilation complète de llama.cpp     [$(date +"%H:%M")]   ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_BUILD_OUTPUT(){
