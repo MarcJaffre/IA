@@ -1,14 +1,17 @@
 #!/usr/bin/bash
 
-clear;
-
+# =============================================================================
 # Ne pas être dans IA !
 if [ ! -f ./IA/globale.conf ]; then
  mv ./IA/globale.conf.exemple ./IA/globale.conf;
  sed -i -e "s|WORKDIR=.*|WORKDIR=${PWD}/IA|g" ./IA/globale.conf;
 fi
+# =============================================================================
 
+
+# =============================================================================
 # Fonction d'affichage et de saisie
+clear;
 FUNC_MENU_SELECTION() {
     clear
     echo "================================================="
@@ -19,11 +22,13 @@ FUNC_MENU_SELECTION() {
     #echo "3) Menu 3 : Installation de OpenWebui"
     echo "q) Quitter"
     echo "================================================="
-    
     # Lecture de la réponse sur la même ligne
+    echo "";
     read -p "Sélectionner votre choix ? " REPONSE
+    
 }
 
+# =============================================================================
 # Fonction gérant la boucle et le traitement du choix
 FUNC_CHOIX() {
     while true; do
