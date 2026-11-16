@@ -6,6 +6,9 @@ if [ -f ! global.config ]; then
  sed -i -e "s/WORKDIR\=.*/WORKDIR\=$(pwd)/g" globale.conf;
 fi
 
+grep globale.conf;
+
+exit
 
 
 # Fonction d'affichage et de saisie
