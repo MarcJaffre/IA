@@ -101,11 +101,11 @@ echo "Installation de OPENSSL";
 if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    1>/dev/null; fi
 # --------
 # ====================================================================================================================
-#echo "Installation de BUILD-ESSENTIAL";
-#if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            1>/dev/null; fi
+echo "Installation de BUILD-ESSENTIAL";
+if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            1>/dev/null; fi
 # --------
-#echo "Installation de LINUX-HEADERS";
-#if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r);  1>/dev/null; fi
+echo "Installation de LINUX-HEADERS";
+if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r);  1>/dev/null; fi
 # --------
 #echo "Installation de PYTHON3-FULL";
 #if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
