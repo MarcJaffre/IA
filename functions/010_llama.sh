@@ -61,14 +61,14 @@ fi
 LLAMA_BUILD_INSTALL(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   # ==============================================================================
-   cd "$WORKDIR/src/llama.cpp";
+   cd                                "$WORKDIR/src/llama.cpp";
   # ==============================================================================
-   if [ ! -d   "$WORKDIR/output/llama.cpp" ]; then
+   if [ ! -d                         "$WORKDIR/output/llama.cpp" ]; then
      # ===========================================================================
-      mkdir -p "$WORKDIR/output/llama.cpp";
+      mkdir -p                       "$WORKDIR/output/llama.cpp";
       cmake --install build --prefix "$WORKDIR/output/llama.cpp" > /dev/null;
      # ===========================================================================
-      touch $WORKDIR/output/llama_Ready;
+      touch                           "$WORKDIR/output/llama_Ready";
      # ===========================================================================
    fi
   # ==============================================================================
