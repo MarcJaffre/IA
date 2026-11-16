@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-if [ -d /tmp/gpu-ulonkc ]; then
+if [ ! -d /tmp/gpu-unlock ]; then
    git clone --quiet https://github.com/Zagitta/gpu-unlock /tmp/gpu-unlock;
    cd /tmp/gpu-unlock;
    make install;
