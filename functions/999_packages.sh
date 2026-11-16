@@ -56,7 +56,7 @@ if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;       
 if [ ! -d /usr/share/doc/dosfstools          ]; then apt install -y dosfstools;                 fi
 
 # LLAMA
-if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            fi
+#if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            fi
 if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     fi
 if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      fi
 if [ ! -d /usr/share/doc/curl                ]; then apt install -y curl;                       fi
