@@ -25,7 +25,7 @@ clear;
 
 if [ ! -d $WORKDIR/IA ]; then
  # ----------------------------------------------------------------
-  git clone --quiet https://github.com/MarcJaffre/IA.git;
+  git clone https://github.com/MarcJaffre/IA.git;
   cd $WORKDIR/IA;
  # ----------------------------------------------------------------
 else
