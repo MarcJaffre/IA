@@ -21,18 +21,17 @@ fi
 # =================================================================================================
 if [ $ID = debian ]; then
  # ------------------------------------------- #
- HOST_DEBIAN_APT_REPO;
- echo "";
+ HOST_DEBIAN_APT_REPO               1>/dev/null;
  # ------------------------------------------- #
- HOST_DEBIAN_APT_UPDATE;
- HOST_DEBIAN_APT_UPGRADE;
- HOST_DEBIAN_APT_INSTALL_BASE;
+ HOST_DEBIAN_APT_UPDATE             1>/dev/null;
+ HOST_DEBIAN_APT_UPGRADE            1>/dev/null;
+ HOST_DEBIAN_APT_INSTALL_BASE       1>/dev/null;
  # ------------------------------------------- #
- HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
+ HOST_DEBIAN_APT_INSTALL_DEPENDANCE 1>/dev/null;
  # ------------------------------------------- #
- #HOST_DEBIAN_BLACKLIST_NOUVEAU;
+ HOST_DEBIAN_BLACKLIST_NOUVEAU;
  # ------------------------------------------- #
- #HOST_DEBIAN_NVIDIA;
+ HOST_DEBIAN_NVIDIA;
  # ------------------------------------------- #
  #HOST_DEBIAN_NVIDIA_CUDA;
  #echo "--------------------------------------";
