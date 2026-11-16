@@ -32,10 +32,10 @@ if [ $ID = debian ]; then
  HOST_DEBIAN_APT_INSTALL_BASE;
  echo "";
  # ----------------------------------------- #
- #HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
- #echo "";
+ HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
+ echo "";
  # ----------------------------------------- #
- #HOST_DEBIAN_BLACKLIST_NOUVEAU;
+ HOST_DEBIAN_BLACKLIST_NOUVEAU;
  # ----------------------------------------- #
  #HOST_DEBIAN_NVIDIA;
  # ----------------------------------------- #
