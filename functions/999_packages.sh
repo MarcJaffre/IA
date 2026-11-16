@@ -118,13 +118,17 @@ if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip 
 # ====================================================================================================================
 # Bookworm
 if [ "$VERSION_ID" = "12" ]; then
+echo "Installation de Python3-11";
   if [ ! -d /usr/share/doc/python3.11          ]; then apt install -y python3.11                  1>/dev/null; fi
+echo "Installation de Python3-11-env";
   if [ ! -d /usr/share/doc/python3.11-venv     ]; then apt install -y python3.11-venv             1>/dev/null; fi
 fi
 # ====================================================================================================================
 # Trixie
 if [ "$VERSION_ID" = "13" ]; then
+echo "Installation de Python3-13-env";
   if [ ! -d /usr/share/doc/python3.13          ]; then apt install -y python3.13                  1>/dev/null; fi
+echo "Installation de Python3-13-env";
   if [ ! -d /usr/share/doc/python3.13-venv     ]; then apt install -y python3.13-venv             1>/dev/null; fi
 fi
 # ====================================================================================================================
