@@ -65,20 +65,25 @@ if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full
 # --------
 echo "Installation de Python3-pip";
 if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                1>/dev/null; fi
+
 # ====================================================================================================================
-# OpenWebui
+# Bookworm
+if [ "$VERSION_ID" = "12" ]; then
+if [ ! -d /usr/share/doc/python3.11          ]; then apt install -y python3.11;                 1>/dev/null; fi
+if [ ! -d /usr/share/doc/python3.11-venv     ]; then apt install -y python3.11-venv;            1>/dev/null; fi
+fi
 # ====================================================================================================================
+# Trixies
+if [ "$VERSION_ID" = "13" ]; then
 if [ ! -d /usr/share/doc/python3.13          ]; then apt install -y python3.13;                 1>/dev/null; fi
 if [ ! -d /usr/share/doc/python3.13-venv     ]; then apt install -y python3.13-venv;            1>/dev/null; fi
+fi
 # ====================================================================================================================
 # Bypass Erreur
 # ====================================================================================================================
 echo "" > /tmp/Test;
 # ====================================================================================================================
 }
-
-
-
 
 ############################################################################################################################
 # Fondamentaux #
