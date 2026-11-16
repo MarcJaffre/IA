@@ -79,7 +79,7 @@ BASE_CHOIX() {
 
             1)
             # ========================================================================================================
-                bash ${WORKDIR}/workspaces/base/install_packages.sh 1>/dev/null;
+                bash ${WORKDIR}/workspaces/base/install_packages.sh; # 1>/dev/null;
                 echo "";
                 echo "---------------------------------------------------------------------------";
                 read -p "Appuyez sur Entrée pour continuer..."
