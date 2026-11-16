@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------------------
 ## I. Préparation du système
 ### A. Présentation
-Ce projet à pour objectif de déployer des applications IA sur une distribution Debian.
+Ce projet à pour objectif de construire un environnement complet pour l'intelligence artificielle. (Télécharger, configurer, construire, installer)
 
 ### B. Prérequis
 ```bash
@@ -39,4 +39,3 @@ bash IA/workspaces/menu.sh;
 | Stable-Diffusion  | 1%                 |                                 |
 | Open-Terminal     | 0%                 |                                 |
 | SearXNG           | 0%                 |                                 |
-| Docker            | 0%                 |                                 |
