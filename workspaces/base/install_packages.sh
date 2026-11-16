@@ -30,10 +30,10 @@ if [ $ID = debian ]; then
  echo "";
  # ----------------------------------------- #
  HOST_DEBIAN_APT_INSTALL_BASE;
- echo "";
+ #echo "";
  # ----------------------------------------- #
- HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
- echo "";
+ #HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
+ #echo "";
  # ----------------------------------------- #
  #HOST_DEBIAN_BLACKLIST_NOUVEAU;
  # ----------------------------------------- #
