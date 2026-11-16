@@ -25,13 +25,10 @@ if [ $ID = debian ]; then
  echo "";
  # ------------------------------------------- #
  HOST_DEBIAN_APT_UPDATE             1>/dev/null;
- echo "";
  HOST_DEBIAN_APT_UPGRADE            1>/dev/null;
- echo "";
- # ------------------------------------------- #
  HOST_DEBIAN_APT_INSTALL_BASE       1>/dev/null;
  # ------------------------------------------- #
- HOST_DEBIAN_APT_INSTALL_DEPENDANCE  1>/devnull;
+ HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
  # ------------------------------------------- #
  #HOST_DEBIAN_BLACKLIST_NOUVEAU;
  # ------------------------------------------- #
