@@ -35,15 +35,12 @@ clear;
 # ==================== #
 if [ -d "./output/llama.cpp/bin" ]; then
   cd    "./output/llama.cpp/bin";
-else
-  echo "Le dossier $(pwd)/output/llama.cpp/bin est absent";
 fi
 
 
 # =================================================================================================
 # Suppression du service #
 # ====================== #
-echo "TEST";
 LLAMA_SYSTEMD_DISABLED;
 LLAMA_SYSTEMD_DEL;
 
