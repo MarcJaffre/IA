@@ -44,8 +44,13 @@ HOST_DEBIAN_APT_UPDATE(){
 }
 HOST_DEBIAN_APT_INSTALL_DEPENDANCE(){
 
-# LLAMA
+# System
+if [ ! -d /usr/share/apt-file                ]; then apt install -y apt-file;                   fi
 if [ ! -d /usr/share/doc/btop                ]; then apt install -y btop;                       fi
+if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;                       fi
+if [ ! -d /usr/share/doc/dosfstools          ]; then apt install -y dosfstools;                 fi
+
+# LLAMA
 if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            fi
 if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     fi
 if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      fi
@@ -57,7 +62,6 @@ if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev; 
 if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y pciutils;                   fi
 if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                fi
 if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               fi
-if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;                       fi
 if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget;                       fi
 
 # OpenWebui
