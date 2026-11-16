@@ -26,7 +26,7 @@ FUNC_CHOIX() {
         case "$REPONSE" in
             1)
                 echo "-> Vous avez choisi le Menu 1."
-                pwd
+                echo "$(pwd);
                 ;;
             2)
                 echo "-> Vous avez choisi le Menu 2."
