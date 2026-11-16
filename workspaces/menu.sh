@@ -60,7 +60,7 @@ BASE_CHOIX() {
 
             1)
             # ========================================================================================================
-                bash ./IA/workspaces/debian_base.sh 1>/dev/null;
+                bash ./IA/workspaces/0_Install/Packages.sh 1>/dev/null;
                 echo "";
                 echo "---------------------------------------------------------------------------";
                 read -p "Appuyez sur Entrée pour continuer..."
