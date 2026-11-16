@@ -56,6 +56,7 @@ BASE_MENU_SELECTION() {
     # Lecture de la réponse sur la même ligne
     echo "";
     read -p "Sélectionner votre choix ? " REPONSE
+    echo "";
 }
 
 
