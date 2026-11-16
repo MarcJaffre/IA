@@ -89,43 +89,43 @@ HOST_DEBIAN_APT_INSTALL_DEPENDANCE(){
 # ====================================================================================================================
 # LLAMA
 echo "Installation de CMAKE";
-if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      1>/dev/null; fi
+if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake                       1>/dev/null; fi
 # --------
 echo "Installation de CCACHE";
-if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     1>/dev/null; fi
+if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache                      1>/dev/null; fi
 # --------
 echo "Installation de LIBSSL-DEV";
-if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev;                 1>/dev/null; fi
+if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev                  1>/dev/null; fi
 # --------
 echo "Installation de OPENSSL";
-if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    1>/dev/null; fi
+if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl                     1>/dev/null; fi
 # --------
 # ====================================================================================================================
 echo "Installation de BUILD-ESSENTIAL";
-if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            1>/dev/null; fi
+if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential             1>/dev/null; fi
 # --------
 echo "Installation de LINUX-HEADERS";
-if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r);  1>/dev/null; fi
+if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r)   1>/dev/null; fi
 
 
 # --------
 echo "Installation de PYTHON3-FULL";
-if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
+if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full                1>/dev/null; fi
 # --------
 echo "Installation de Python3-pip";
-if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                1>/dev/null; fi
+if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip                 1>/dev/null; fi
 
 # ====================================================================================================================
 # Bookworm
 #if [ "$VERSION_ID" = "12" ]; then
-#if [ ! -d /usr/share/doc/python3.11          ]; then apt install -y python3.11;                 1>/dev/null; fi
-#if [ ! -d /usr/share/doc/python3.11-venv     ]; then apt install -y python3.11-venv;            1>/dev/null; fi
+#if [ ! -d /usr/share/doc/python3.11          ]; then apt install -y python3.11                  1>/dev/null; fi
+#if [ ! -d /usr/share/doc/python3.11-venv     ]; then apt install -y python3.11-venv             1>/dev/null; fi
 #fi
 # ====================================================================================================================
 # Trixies
 #if [ "$VERSION_ID" = "13" ]; then
-#if [ ! -d /usr/share/doc/python3.13          ]; then apt install -y python3.13;                 1>/dev/null; fi
-#if [ ! -d /usr/share/doc/python3.13-venv     ]; then apt install -y python3.13-venv;            1>/dev/null; fi
+#if [ ! -d /usr/share/doc/python3.13          ]; then apt install -y python3.13                  1>/dev/null; fi
+#if [ ! -d /usr/share/doc/python3.13-venv     ]; then apt install -y python3.13-venv             1>/dev/null; fi
 #fi
 # ====================================================================================================================
 # Bypass Erreur
