@@ -19,7 +19,7 @@ if [ -f /etc/os-release ]; then
 fi
 
 echo $ID
-cat  $WORKDIR/IA/functions/999_package.sh
+ls $WORKDIR/IA/
 
 # =================================================================================================
 #if [ $ID = debian ]; then
