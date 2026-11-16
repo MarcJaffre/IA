@@ -39,20 +39,19 @@ if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget        
 ########################################
 HOST_DEBIAN_APT_INSTALL_DEPENDANCE(){
 echo "=== FUNC QUI TOURNE A VIDE ===";
-echo "";
-# LLAMA
 # ====================================================================================================================
+# LLAMA
 echo "Installation de CMAKE";
-#if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      1>/dev/null; fi
+if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      1>/dev/null; fi
 # --------
 echo "Installation de CCACHE";
-#if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     1>/dev/null; fi
+if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     1>/dev/null; fi
 # --------
 echo "Installation de LIBSSL-DEV";
-#if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev;                 1>/dev/null; fi
+if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev;                 1>/dev/null; fi
 # --------
 echo "Installation de OPENSSL";
-#if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    1>/dev/null; fi
+if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    1>/dev/null; fi
 # --------
 # ====================================================================================================================
 echo "Installation de BUILD-ESSENTIAL";
