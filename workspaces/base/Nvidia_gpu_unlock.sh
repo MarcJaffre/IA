@@ -1,5 +1,9 @@
 #!/usr/bin/bash
 
+######################################################
+# IL NECESSITE PAS MAL DE CPU LORS DE LA COMPILATION #
+######################################################
+
 if [ -d /tmp/gpu-unlock ]; then
  rm -rf /tmp/gpu-unlock;
 fi
