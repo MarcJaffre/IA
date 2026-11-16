@@ -29,8 +29,8 @@ if [ $ID = debian ]; then
  HOST_DEBIAN_APT_UPGRADE;
  echo "";
  # ----------------------------------------- #
- #HOST_DEBIAN_APT_INSTALL_BASE;
- #echo "";
+ HOST_DEBIAN_APT_INSTALL_BASE;
+ echo "";
  # ----------------------------------------- #
  #HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
  #echo "";
