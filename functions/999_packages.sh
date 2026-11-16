@@ -86,32 +86,34 @@ if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget        
 ############################################################################################################################
 # Installation des paquets Dependances #
 ########################################
-#HOST_DEBIAN_APT_INSTALL_DEPENDANCE(){
+HOST_DEBIAN_APT_INSTALL_DEPENDANCE(){
+echo "=== FUNC QUI TOURNE A VIDE ===";
+echo "";
 # LLAMA
 # ====================================================================================================================
-#echo "Installation de CMAKE";
+echo "Installation de CMAKE";
 #if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      1>/dev/null; fi
 # --------
-#echo "Installation de CCACHE";
+echo "Installation de CCACHE";
 #if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     1>/dev/null; fi
 # --------
-#echo "Installation de LIBSSL-DEV";
+echo "Installation de LIBSSL-DEV";
 #if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev;                 1>/dev/null; fi
 # --------
-#echo "Installation de OPENSSL";
+echo "Installation de OPENSSL";
 #if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    1>/dev/null; fi
 # --------
 # ====================================================================================================================
-#echo "Installation de BUILD-ESSENTIAL";
+echo "Installation de BUILD-ESSENTIAL";
 #if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            1>/dev/null; fi
 # --------
-#echo "Installation de LINUX-HEADERS";
+echo "Installation de LINUX-HEADERS";
 #if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r);  1>/dev/null; fi
 # --------
-#echo "Installation de PYTHON3-FULL";
+echo "Installation de PYTHON3-FULL";
 #if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
 # --------
-#echo "Installation de Python3-pip";
+echo "Installation de Python3-pip";
 #if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                1>/dev/null; fi
 # ====================================================================================================================
 
@@ -125,7 +127,7 @@ if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget        
 # ====================================================================================================================
 #echo "" > /tmp/Test;
 # ====================================================================================================================
-}
+#}
 
 ############################################################################################################################
 # Blacklist Pilote Libre #
