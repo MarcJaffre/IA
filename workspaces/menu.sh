@@ -8,7 +8,7 @@ set -e
 # ====================================================================================================================================================================================
 # Fichier Configuration #
 # ===================== #
-FUNC_CONFIG(){
+BASE_CONFIG(){
 # Ne pas être dans IA !
 if [ ! -f ./IA/config/globale.conf ]; then
 # =========================================================================
@@ -20,12 +20,10 @@ else
 fi
 }
 
-exit;
-
 # ====================================================================================================================================================================================
 # Fonction d'affichage et de saisie
 clear;
-FUNC_MENU_SELECTION() {
+BASE_MENU_SELECTION() {
     clear
     echo "================================================="
     echo "          MENU PRINCIPAL                         "
@@ -40,12 +38,14 @@ FUNC_MENU_SELECTION() {
     echo "";
     read -p "Sélectionner votre choix ? " REPONSE
 }
+
+
 # ====================================================================================================================================================================================
 # Fonction gérant la boucle et le traitement du choix
-FUNC_CHOIX() {
+BASE_CHOIX() {
     while true; do
         # Appel de l'affichage du menu
-        FUNC_MENU_SELECTION
+        BASE_MENU_SELECTION
         # Analyse de la variable $REPONSE
         case "$REPONSE" in
             0)
@@ -103,5 +103,5 @@ FUNC_CHOIX() {
 # ====================================================================================================================================================================================
 # Lancement du script #
 # =================== #
-FUNC_CONFIG;
-FUNC_CHOIX;
+BASE_CONFIG;
+BASE_CHOIX;
