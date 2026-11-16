@@ -6,7 +6,7 @@ FUNC_MENU_SELECTION() {
     echo "=================================="
     echo "          MENU PRINCIPAL          "
     echo "=================================="
-    echo "1) Menu 1 : Option un"
+    echo "1) Menu 1 : Check"
     echo "2) Menu 2 : Option deux"
     echo "3) Menu 3 : Option trois"
     echo "q) Quitter"
