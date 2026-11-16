@@ -25,12 +25,11 @@ fi
 BASE_CONFIG(){
 # Ne pas être dans IA !
 if [ ! -f ${WORKDIR}/config/globale.conf ]; then
-# =========================================================================
-  mv ${WORKDIR}/config/globale.conf.exemple     ${WORKDIR}/globale.conf;
-  sed -i -e "s|WORKDIR=.*|WORKDIR=${WORKDIR}|g" ${WORKDIR}/globale.conf;
-  ls $WORKDIR/config
-  grep 'WORKDIR=' $WORKDIR/config/globale.conf;
-# =========================================================================
+# =============================================================================
+  mv ${WORKDIR}/config/globale.conf.exemple     ${WORKDIR}/config/globale.conf;
+  sed -i -e "s|WORKDIR=.*|WORKDIR=${WORKDIR}|g" ${WORKDIR}/config/globale.conf;
+  grep 'WORKDIR=' ${WORKDIR}/config/globale.conf;
+# =============================================================================
 else
  echo "Le fichier de configuration a échoué";
 fi
@@ -121,8 +120,5 @@ BASE_CHOIX() {
 # Lancement du script #
 # =================== #
 BASE_WORKDIR_VAR;
-echo $WORKDIR
-ls ${WORKDIR}/config
-
-#BASE_CONFIG;
+BASE_CONFIG;
 # BASE_CHOIX;
