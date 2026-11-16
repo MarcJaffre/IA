@@ -9,8 +9,8 @@ FUNC_MENU_SELECTION() {
     echo "          MENU PRINCIPAL                         "
     echo "================================================="
     echo "1) Menu 1 : Installation Dependances"
-    echo "2) Menu 2 : Option deux"
-    echo "3) Menu 3 : Option trois"
+    echo "2) Menu 2 : Installation de LLAMA"
+    #echo "3) Menu 3 : Installation de OpenWebui"
     echo "q) Quitter"
     echo "=================================="
     
@@ -34,10 +34,10 @@ FUNC_CHOIX() {
                 echo "-> Vous avez choisi le Menu 2."
                 read -p "Appuyez sur Entrée pour continuer..."
                 ;;
-            3)
-                echo "-> Vous avez choisi le Menu 3."
-                read -p "Appuyez sur Entrée pour continuer..."
-                ;;
+            #3)
+            #    echo "-> Vous avez choisi le Menu 3."
+            #    read -p "Appuyez sur Entrée pour continuer..."
+            #    ;;
             q|Q)
                 echo "Fermeture du menu. Au revoir !"
                 break
