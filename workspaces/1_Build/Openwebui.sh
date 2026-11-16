@@ -9,16 +9,16 @@ set -e
 # Global.conf #
 # =========== #
 # -------------------------------------------------------------------------
-# SI fichier absent
-if [ ! -f "./globale.conf" ]; then
-     cp "./globale.conf.exemple" "./globale.conf";
-     sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" "./globale.conf";
+# Si fichier absent
+if [ ! -f "./config/globale.conf" ]; then
+     cp "./config/globale.conf.exemple" "./config/globale.conf";
+     sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" "./config/globale.conf";
      source "./globale.conf";
 # -------------------------------------------------------------------------
 # SI fichier présent 
-elif [ -f "./globale.conf" ]; then
-     sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" "./globale.conf";
-     source "./globale.conf";
+elif [ -f "./config/globale.conf" ]; then
+     sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" "./config/globale.conf";
+     source "./config/globale.conf";
 fi
 # -------------------------------------------------------------------------
 
