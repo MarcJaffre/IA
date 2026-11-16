@@ -62,16 +62,15 @@ echo "    ║ [0/7] Initialisation de l'environnement global        ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_PURGE_SRC(){
-echo "    ║                                                       ║";
 echo "    ║ [1/7] Suppression de l'ancien dossier sources llama   ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_PURGE_OUTPUT(){
+echo "    ║                                                       ║";
 echo "    ║ [2/7] Vidage complet du répertoire output   [$(date +"%H:%M")]   ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_GIT_CLONE(){
-echo "    ║                                                       ║";
 echo "    ║ [3/7] Clonage des sources depuis GitHub     [$(date +"%H:%M")]   ║";
 }
 # =====================================================================================
