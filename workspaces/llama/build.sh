@@ -3,32 +3,32 @@
 # =============================================================================================================
 # Arrête le script immédiatement en cas d'erreur #
 # ============================================== #
-set -e
+#set -e
 
 # =============================================================================================================
 # Définir la variable WORKDIR #
 # =========================== #
-if [[ "$PWD" != *IA* ]]; then
- WORKDIR=$PWD/IA
- export WORKDIR=${WORKDIR};
-fi
+#if [[ "$PWD" != *IA* ]]; then
+# WORKDIR=$PWD/IA
+# export WORKDIR=${WORKDIR};
+#fi
 
 # =============================================================================================================
 # Charger les fichiers de  Configuration #
 # ====================================== #
-if [ -f ${WORKDIR}/config/globale.conf ]; then
+#if [ -f ${WORKDIR}/config/globale.conf ]; then
   # ===========================================================================================================
-  source ${WORKDIR}/config/globale.conf;
+  #source ${WORKDIR}/config/globale.conf;
   # ===========================================================================================================
-  for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
-  for file in $(find $WORKDIR/functions -type f -name "*.sh");                        do source $file; done
+  #for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
+  #for file in $(find $WORKDIR/functions -type f -name "*.sh");                        do source $file; done
   # ===========================================================================================================
-fi
+#fi
 
 # =============================================================================================================
 # Nettoyage Console #
 # ================= #
-clear;
+#clear;
 
 # =============================================================================================================
 # Messages de présentation #
