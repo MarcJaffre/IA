@@ -15,16 +15,9 @@ apt install -y git;
 ### C. Exploitation du projet (Developpement)
 ```bash
 clear;
-rm -r /srv/IA/ 2>/dev/null
+rm -r ./IA/ 2>/dev/null
 git clone --quiet https://github.com/MarcJaffre/IA.git;
-bash IA/workspaces/menu.sh
-```
-
-### D. Nettoyage du projet
-```bash
-clear;
-cd $HOME;
-rm -r /srv/IA/ 2>dev/null;
+bash IA/workspaces/menu.sh;
 ```
 
 
