@@ -49,33 +49,33 @@ HOST_DEBIAN_APT_UPDATE(){
 # Installation de paquet #
 ##########################
 HOST_DEBIAN_APT_INSTALL_DEPENDANCE(){
+
 # System
 if [ ! -d /usr/share/apt-file                ]; then apt install -y apt-file;                   fi
 if [ ! -d /usr/share/doc/btop                ]; then apt install -y btop;                       fi
-if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;                       fi
+if [ ! -d /usr/share/doc/curl                ]; then apt install -y curl;                       fi
 if [ ! -d /usr/share/doc/dosfstools          ]; then apt install -y dosfstools;                 fi
+if [ ! -d /usr/share/doc/gnupg2              ]; then apt install -y gnupg2;                     fi
+if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y pciutils;                   fi
+if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;                       fi
+if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget;                       fi
 
 # ================================================================================================
-if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            fi
+#if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            fi
+#if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r);  fi
 # ================================================================================================
 
 # LLAMA
-if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     fi
-if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      fi
-if [ ! -d /usr/share/doc/curl                ]; then apt install -y curl;                       fi
-if [ ! -d /usr/share/doc/gnupg2              ]; then apt install -y gnupg2;                     fi
-
-if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r);  fi
-if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    fi
-if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev;                 fi
-if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y pciutils;                   fi
-if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                fi
-if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               fi
-if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget;                       fi
+#if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      fi
+#if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    fi
+#if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev;                 fi
+#if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     fi
+#if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                fi
+#if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               fi
 
 # OpenWebui
-if [ ! -d /usr/share/doc/python3.13          ]; then apt install -y python3.13;                 fi
-if [ ! -d /usr/share/doc/python3.13-venv     ]; then apt install -y python3.13-venv;            fi
+#if [ ! -d /usr/share/doc/python3.13          ]; then apt install -y python3.13;                 fi
+#if [ ! -d /usr/share/doc/python3.13-venv     ]; then apt install -y python3.13-venv;            fi
 
 # Bypass Erreur
 echo "" > $WORKDIR/Test;
