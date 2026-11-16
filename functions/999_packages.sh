@@ -78,8 +78,9 @@ if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;      
 if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     1>/dev/null; fi
 if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev;                 1>/dev/null; fi
 if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    1>/dev/null; fi
-#if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                1>/dev/null; fi
-#if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
+
+if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                1>/dev/null; fi
+if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
 # ====================================================================================================================
 
 # OpenWebui
