@@ -18,5 +18,5 @@ source /etc/os-release;
 #########################################################################################################
 # Chargement des fichiers (Config, Functions) #
 # =========================================== #
-#for file in $(find $WORKDIR/config    -type f -name "*.conf"); do source $file; done
+#for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
 for file in $(find $WORKDIR/functions -type f -name "*.sh");   do source $file; done
