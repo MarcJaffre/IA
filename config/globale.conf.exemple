@@ -11,11 +11,6 @@ WORKDIR_FINAL="/root/"
 BUILD_CPUS=$(nproc)
 
 #########################################################################################################
-# Pilote NVIDIA #
-# ============= #
-RELEASE_NVIDIA="580.142"
-
-#########################################################################################################
 # Chargement des variables systeme #
 # ================================ #
 source /etc/os-release;
@@ -23,5 +18,5 @@ source /etc/os-release;
 #########################################################################################################
 # Chargement des fichiers (Config, Functions) #
 # =========================================== #
-for file in $(find $WORKDIR/config    -type f -name "*.conf"); do source $file; done
-for file in $(find $WORKDIR/functions -type f -name "*.sh");   do source $file; done
+#for file in $(find $WORKDIR/config    -type f -name "*.conf"); do source $file; done
+#for file in $(find $WORKDIR/functions -type f -name "*.sh");   do source $file; done
