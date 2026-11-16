@@ -28,7 +28,7 @@ if [ ! -f ${WORKDIR}/config/globale.conf ]; then
 # =============================================================================
   mv ${WORKDIR}/config/globale.conf.exemple     ${WORKDIR}/config/globale.conf;
   sed -i -e "s|WORKDIR=.*|WORKDIR=${WORKDIR}|g" ${WORKDIR}/config/globale.conf;
-  grep 'WORKDIR=' ${WORKDIR}/config/globale.conf;
+  grep        'WORKDIR='                        ${WORKDIR}/config/globale.conf;
 # =============================================================================
 else
  echo "Le fichier de configuration a échoué";
