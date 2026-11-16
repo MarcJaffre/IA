@@ -43,6 +43,7 @@ fi
 # =================================================================================================
 # Suppression du service #
 # ====================== #
+echo "TEST";
 LLAMA_SYSTEMD_DISABLED;
 LLAMA_SYSTEMD_DEL;
 
