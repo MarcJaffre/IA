@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 
 clear;
+
+# Ne pas être dans IA !
 if [ ! -f ./IA/globale.conf ]; then
  mv ./IA/globale.conf.exemple ./IA/globale.conf;
  sed -i -e "s|WORKDIR=.*|WORKDIR=${PWD}/IA|g" ./IA/globale.conf;
