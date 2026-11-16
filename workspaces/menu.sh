@@ -27,12 +27,15 @@ FUNC_CHOIX() {
             1)
                 echo "-> Vous avez choisi le Menu 1."
                 echo "$(pwd);
+                read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             2)
                 echo "-> Vous avez choisi le Menu 2."
+                read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             3)
                 echo "-> Vous avez choisi le Menu 3."
+                read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             q|Q)
                 echo "Fermeture du menu. Au revoir !"
