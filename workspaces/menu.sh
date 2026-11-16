@@ -140,4 +140,4 @@ BASE_CONFIG_FILE;
 #BASE_CHOIX;
 
 
-for file in $(find $WORKDIR/config    -type f -name "*.conf"); do source $file; done
+for file in $(find $WORKDIR/config    -type f -name "*.conf"); do echo $file; done
