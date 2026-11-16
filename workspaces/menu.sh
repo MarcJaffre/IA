@@ -33,9 +33,8 @@ if [ ! -f ${WORKDIR}/config/globale.conf ]; then
   # =============================================================================
   source ${WORKDIR}/config/globale.conf;
   # =============================================================================
-  #for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
-  #for file in $(find $WORKDIR/functions -type f -name "*.sh");                        do source $file; done
-
+  for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do echo $file; done
+  for file in $(find $WORKDIR/functions -type f -name "*.sh");                        do echo $file; done
 fi
 }
 
