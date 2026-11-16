@@ -20,20 +20,21 @@ fi
 
 # =================================================================================================
 if [ $ID = debian ]; then
+ # ----------------------------------------- #
  HOST_DEBIAN_APT_REPO;
  HOST_DEBIAN_APT_UPDATE;
  HOST_DEBIAN_APT_UPGRADE;
- echo "";
- echo "";
- echo "";
- echo "";
+ # ----------------------------------------- #
+ HOST_DEBIAN_APT_INSTALL_BASE;
+ # ----------------------------------------- #
  HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
- #echo "------------------------------------"
+ # ----------------------------------------- #
  #HOST_DEBIAN_BLACKLIST_NOUVEAU;
- #echo "------------------------------------" 
+ # ----------------------------------------- #
  #HOST_DEBIAN_NVIDIA;
- #echo "------------------------------------"
+ # ----------------------------------------- #
  #HOST_DEBIAN_NVIDIA_CUDA;
+ #echo "------------------------------------"
 else
  echo "Ce projet est conçus exclusivement pour Debian."
  echo "Le fichier des dépendances se trouve IA/functions/999_package.sh";
