@@ -35,37 +35,37 @@ MESSAGE_LOADING_GLOBAL;
 # Dossier Source #
 # ============== #
 MESSAGE_LLAMA_PURGE_SRC;
-#LLAMA_PURGE_DIR_SRC;
+LLAMA_PURGE_DIR_SRC;
 
 # =============================================================================================================
 # Dossier Output #
 # ============== #
 MESSAGE_LLAMA_PURGE_OUTPUT;
-#LLAMA_PURGE_DIR_OUTPUT;
+LLAMA_PURGE_DIR_OUTPUT;
 
 # =============================================================================================================
 # Telecharger Depots LLAMA #
 # ======================== #
 MESSAGE_LLAMA_GIT_CLONE;
-#LLAMA_GIT_CLONE;
+LLAMA_GIT_CLONE;
 
 # =============================================================================================================
 # Configuration de la build #
 # ========================= #
 MESSAGE_LLAMA_CONFIG_BUILD;
-#LLAMA_BUILD_CONFIG;
+LLAMA_BUILD_CONFIG;
 
 # =============================================================================================================
 # Compilation de la build #
 # ======================= #
 MESSAGE_LLAMA_MAKE_BUILD
-#LLAMA_BUILD_MAKE;
+LLAMA_BUILD_MAKE;
 
 # =============================================================================================================
 # Installer la build dans Output #
 # ============================== #
 MESSAGE_LLAMA_BUILD_OUTPUT;
-#LLAMA_BUILD_INSTALL;
+LLAMA_BUILD_INSTALL;
 
 # =============================================================================================================
 # Message de fin #
