@@ -47,10 +47,8 @@ BASE_MENU_SELECTION() {
     echo "================================================="
     echo "          MENU PRINCIPAL                         "
     echo "================================================="
-    echo "0) Menu 0 : Check"
     echo "1) Menu 1 : Installation Dependances"
-    echo "2) Menu 2 : Installation de LLAMA"
-    #echo "3) Menu 3 : Installation de OpenWebui"
+    echo "1) Menu 2 : Installation de LLAMA"
     echo "X) Menu X : Installation de GPU-Unlock Nvidia"
     echo "R) Menu R : Redémarrage de la machine"
     echo "q) Quitter"
@@ -71,25 +69,21 @@ BASE_CHOIX() {
         case "$REPONSE" in
             0)
             # ========================================================================================================
-                ls ${WORKDIR}/config;
-                echo "";
-                echo "---------------------------------------------------------------------------";
+            #    bash ${WORKDIR}/workspaces/base/install_packages.sh 1>/dev/null;
+            #    echo "";
+            #    echo "---------------------------------------------------------------------------";
                 read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             # ========================================================================================================
-
             1)
             # ========================================================================================================
-                bash ${WORKDIR}/workspaces/base/install_packages.sh 1>/dev/null;
-                echo "";
-                echo "---------------------------------------------------------------------------";
+            #    bash ${WORKDIR}/workspaces/llama/build.sh;
                 read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             # ========================================================================================================
 
             2)
             # ========================================================================================================
-                bash ${WORKDIR}/workspaces/llama/build.sh;
                 read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             # ========================================================================================================
