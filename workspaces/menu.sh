@@ -6,7 +6,7 @@ if [ ! -f ./IA/global.conf ]; then
  sed -i -e "s/WORKDIR\=.*/WORKDIR\=$(pwd)/g" ./IA/globale.conf;
 fi
 
-grep globale.conf;
+grep "WORKDIR" globale.conf;
 
 exit
 
