@@ -27,7 +27,7 @@ FUNC_CHOIX() {
         # Analyse de la variable $REPONSE
         case "$REPONSE" in
             1)
-                ./IA/workspaces/debian_base.sh
+                bash ./IA/workspaces/debian_base.sh;
                 read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             2)
