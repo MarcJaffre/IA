@@ -8,7 +8,8 @@
 # ===================== #
 WORKDIR="XXXXXX"
 WORKDIR_FINAL="/root/"
-BUILD_CPUS=$(nproc)
+# $(nproc)
+BUILD_CPUS=$(nproc --ignore=2)
 
 #########################################################################################################
 # Chargement des variables systeme #
