@@ -33,8 +33,8 @@ if [ $ID = debian ]; then
  # ------------------------------------------- #
  HOST_DEBIAN_NVIDIA;
  # ------------------------------------------- #
- #HOST_DEBIAN_NVIDIA_CUDA;
- #echo "--------------------------------------";
+ HOST_DEBIAN_NVIDIA_CUDA;
+ # ------------------------------------------- #
 else
  echo "Ce projet est conçus exclusivement pour Debian."
  echo "Le fichier des dépendances se trouve IA/functions/999_package.sh";
