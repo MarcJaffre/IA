@@ -69,7 +69,8 @@ BASE_CHOIX() {
         case "$REPONSE" in
             0)
             # ========================================================================================================
-               echo "Dossier de travail: $WORKDIR"               echo "";
+               echo "Dossier de travail: $WORKDIR" 
+               echo "";
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
