@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 # Le test echo "$PWD" indique le dossier parent de IA.
 
-if [ ! -f global.conf ]; then
- mv globale.conf.exemple globale.conf;
- sed -i -e "s/WORKDIR\=.*/WORKDIR\=$(pwd)/g" globale.conf;
+if [ ! -f ./IA/global.conf ]; then
+ mv ./IA/globale.conf.exemple ./IA/globale.conf;
+ sed -i -e "s/WORKDIR\=.*/WORKDIR\=$(pwd)/g" ./IA/globale.conf;
 fi
 
 grep globale.conf;
