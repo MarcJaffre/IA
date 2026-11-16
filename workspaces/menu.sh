@@ -26,7 +26,7 @@ BASE_CONFIG(){
 # Ne pas être dans IA !
 if [ ! -f ${WORKDIR}/config/globale.conf ]; then
 # =========================================================================
-  mv ./IA/config/globale.conf.exemple           ${WORKDIR}/globale.conf;
+  mv ${WORKDIR}/config/globale.conf.exemple     ${WORKDIR}/globale.conf;
   sed -i -e "s|WORKDIR=.*|WORKDIR=${WORKDIR}|g" ${WORKDIR}/globale.conf;
   ls $WORKDIR/config
   grep 'WORKDIR=' $WORKDIR/config/globale.conf;
@@ -121,7 +121,8 @@ BASE_CHOIX() {
 # Lancement du script #
 # =================== #
 BASE_WORKDIR_VAR;
-
 echo $WORKDIR
+ls ${WORKDIR}/config
+
 #BASE_CONFIG;
 # BASE_CHOIX;
