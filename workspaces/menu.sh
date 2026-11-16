@@ -105,7 +105,7 @@ BASE_CHOIX() {
 
             x|X)
             # ========================================================================================================
-                $WORKDIR/workspaces/base/Nvidia_gpu_unlock.sh;
+                bash ${WORKDIR}/workspaces/base/Nvidia_gpu_unlock.sh;
                 read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             # ========================================================================================================
