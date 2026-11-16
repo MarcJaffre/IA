@@ -62,6 +62,7 @@ echo "    ║ [0/7] Initialisation de l'environnement global        ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_PURGE_SRC(){
+echo "    ║                                                       ║";
 echo "    ║ [1/7] Suppression de l'ancien dossier sources llama   ║";
 }
 # =====================================================================================
@@ -79,7 +80,7 @@ echo "    ║ [4/7] Préparation de la compilation CMake   [$(date +"%H:%M")]  �
 }
 # =====================================================================================
 MESSAGE_LLAMA_MAKE_BUILD(){
-echo "    ║ [5/7] Compilation complète de llama.cpp     [$(date +"%H:%M")]   ║";
+echo "    ║ [5/7] Compilation complète de llama.cpp     [$(date +"%H:%M")]    ║";
 }
 # =====================================================================================
 MESSAGE_LLAMA_BUILD_OUTPUT(){
