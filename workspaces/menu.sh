@@ -70,7 +70,7 @@ BASE_CHOIX() {
         case "$REPONSE" in
             0)
             # ========================================================================================================
-                ls ./IA/config;
+                ls ${WORKDIR}/config;
                 echo "";
                 echo "---------------------------------------------------------------------------";
                 read -p "Appuyez sur Entrée pour continuer..."
@@ -79,7 +79,7 @@ BASE_CHOIX() {
 
             1)
             # ========================================================================================================
-                bash ./IA/workspaces/0_Base/Install_Packages.sh 1>/dev/null;
+                bash ${WORKDIR}/workspaces/base/install_packages.sh 1>/dev/null;
                 echo "";
                 echo "---------------------------------------------------------------------------";
                 read -p "Appuyez sur Entrée pour continuer..."
