@@ -3,28 +3,31 @@
 # Arrête le script immédiatement en cas d'erreur #
 # ============================================== #
 set -e
-# =================================================================================================
-# Générer le fichier  #
-# =================== #
-# Github met à jour globale.conf.exemple mais pas le fichier globale.conf
-if [ ! -f "./globale.conf" ]; then 
-cp        "./globale.conf.exemple" "./globale.conf";
-fi
-# =================================================================================================
-# Configuration du WORKDIR #
-# ======================== #
-if [ -f "./globale.conf" ]; then
-  sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" "./globale.conf";
-fi
-# =================================================================================================
-# Chargement de la configuration du WORKDIR #
-# ========================================= #
-if [ -f  "./globale.conf" ]; then
-  source "./globale.conf";
-else
-  echo "Le fichier globale.conf n'existe pas";
+
+# =============================================================================================================
+# Définir la variable WORKDIR #
+# =========================== #
+if [[ "$PWD" != *IA* ]]; then
+ WORKDIR=$PWD/IA
+ export WORKDIR=${WORKDIR};
 fi
 
+# =============================================================================================================
+# Charger les fichiers de  Configuration #
+# ====================================== #
+if [ -f ${WORKDIR}/config/globale.conf ]; then
+  # ===========================================================================================================
+  source ${WORKDIR}/config/globale.conf;
+  # ===========================================================================================================
+  for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
+  for file in $(find $WORKDIR/functions -type f -name "*.sh");                        do source $file; done
+  # ===========================================================================================================
+fi
+
+# =============================================================================================================
+# Nettoyage Console #
+# ================= #
+clear;
 
 
 # =================================================================================================
