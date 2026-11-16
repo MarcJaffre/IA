@@ -15,12 +15,7 @@ apt install -y git;
 ### C. Exploitation du projet
 ```bash
 clear;
-cd $HOME;
-rm -r IA 2>/dev/null;
-git clone --quiet https://github.com/MarcJaffre/IA.git;
-
-WORKDIR=$(pwd)
-bash $WORKDIR/IA/workspaces/debian_base.sh;
+curl https://github.com/MarcJaffre/IA/blob/main/dev.sh | bash
 ```
 
 ### D. Nettoyage du projet
