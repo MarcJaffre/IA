@@ -33,11 +33,11 @@ if [ $ID = debian ]; then
  # ----------------------------------------- #
  HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
  # ----------------------------------------- #
- HOST_DEBIAN_BLACKLIST_NOUVEAU;
+ #HOST_DEBIAN_BLACKLIST_NOUVEAU;
  # ----------------------------------------- #
- HOST_DEBIAN_NVIDIA;
+ #HOST_DEBIAN_NVIDIA;
  # ----------------------------------------- #
- HOST_DEBIAN_NVIDIA_CUDA;
+ #HOST_DEBIAN_NVIDIA_CUDA;
  #echo "------------------------------------"
 else
  echo "Ce projet est conçus exclusivement pour Debian."
