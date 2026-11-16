@@ -10,11 +10,11 @@ set -e
 # ===================== #
 FUNC_CONFIG(){
 # Ne pas être dans IA !
-if [ ! -f ./IA/globale.conf ]; then
-# ==================================================================
-  mv ./IA/globale.conf.exemple ./IA/globale.conf;
-  sed -i -e "s|WORKDIR=.*|WORKDIR=${PWD}/IA|g" ./IA/globale.conf;
-# ==================================================================
+if [ ! -f ./IA/config/globale.conf ]; then
+# =========================================================================
+  mv ./IA/config/globale.conf.exemple          ./IA/config/globale.conf;
+  sed -i -e "s|WORKDIR=.*|WORKDIR=${PWD}/IA|g" ./IA/config/globale.conf;
+# =========================================================================
 else
  echo "Le fichier de configuration a échoué";
 fi
