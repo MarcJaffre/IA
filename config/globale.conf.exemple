@@ -7,13 +7,13 @@
 # Configuration Globale #
 # ===================== #
 WORKDIR="XXXXXX"
-WORKDIR_FINAL="/root/"
-BUILD_CPUS=$(nproc)
+#WORKDIR_FINAL="/root/"
+#BUILD_CPUS=$(nproc)
 
 #########################################################################################################
 # Chargement des variables systeme #
 # ================================ #
-source /etc/os-release;
+#source /etc/os-release;
 
 #########################################################################################################
 # Chargement des fichiers (Config, Functions) #
