@@ -126,8 +126,7 @@ echo "OK"
 BASE_CONFIG_WORKDIR;
 echo "DOSSIER DE TRAVAIL: $WORKDIR";
 
+BASE_CONFIG_FILE;
+stat ${WORKDIR}/config/globale.conf;
 
-#echo "2";
-#BASE_CONFIG_FILE;
-#echo "3";
 #BASE_CHOIX;
