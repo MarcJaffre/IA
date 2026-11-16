@@ -24,9 +24,9 @@ if [ $ID = debian ]; then
  HOST_DEBIAN_APT_REPO               1>/dev/null;
  echo "";
  # ------------------------------------------- #
- HOST_DEBIAN_APT_UPDATE             1>/dev/null;
- HOST_DEBIAN_APT_UPGRADE            1>/dev/null;
- HOST_DEBIAN_APT_INSTALL_BASE       1>/dev/null;
+ HOST_DEBIAN_APT_UPDATE;
+ HOST_DEBIAN_APT_UPGRADE;
+ HOST_DEBIAN_APT_INSTALL_BASE;
  # ------------------------------------------- #
  HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
  # ------------------------------------------- #
