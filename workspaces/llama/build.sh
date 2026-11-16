@@ -33,7 +33,7 @@ clear;
 # =============================================================================================================
 # Messages de présentation #
 # ======================== #
-MESSAGE_TOP;
+#MESSAGE_TOP;
 MESSAGE_OLD_TOP;
 MESSAGE_LOADING_GLOBAL;
 
