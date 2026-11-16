@@ -7,8 +7,8 @@ set -e
 # =================================================================================================
 # Charger fichier Debian #
 # ====================== #
-if [ -f  $WORKDIR/IA/functions/999_package.sh ]; then
-  source $WORKDIR/IA/functions/999_package.sh;
+if [ -f  ./IA/functions/999_package.sh ]; then
+  source ./IA/functions/999_package.sh;
 fi
 
 # =================================================================================================
@@ -18,19 +18,16 @@ if [ -f /etc/os-release ]; then
   source /etc/os-release;
 fi
 
-echo "Distribution       : $ID"
-echo "Dossier de travail : $WORKDIR"
-
 # =================================================================================================
-#if [ $ID = debian ]; then
-# HOST_DEBIAN_APT_REPO;
-# HOST_DEBIAN_APT_UPDATE;
-# HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
-# HOST_DEBIAN_BLACKLIST_NOUVEAU;
-# HOST_DEBIAN_NVIDIA;
-# HOST_DEBIAN_NVIDIA_CUDA;
-#else
-# echo "Ce projet est conçus exclusivement pour Debian."
-# echo "Le fichier des dépendances se trouve IA/functions/999_package.sh";
-#fi
+if [ $ID = debian ]; then
+ HOST_DEBIAN_APT_REPO;
+ HOST_DEBIAN_APT_UPDATE;
+ HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
+ HOST_DEBIAN_BLACKLIST_NOUVEAU;
+ HOST_DEBIAN_NVIDIA;
+ HOST_DEBIAN_NVIDIA_CUDA;
+else
+ echo "Ce projet est conçus exclusivement pour Debian."
+ echo "Le fichier des dépendances se trouve IA/functions/999_package.sh";
+fi
 
