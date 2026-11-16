@@ -15,7 +15,7 @@ if [ ! -d /tmp/gpu-unlock ]; then
    make install;
    sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT=\"gpu_unlock.targets=all quiet\"/' /etc/default/grub;
    grep GRUB_CMDLINE_LINUX_DEFAULT /etc/default/grub;
-   #/usr/sbin/update-grub;
+   /usr/sbin/update-grub;
 fi
 
 # https://github.com/Drthrax74/Linux/blob/main/Debian/Bookworm/Appz/Pilote/Unlock-GPU.md
