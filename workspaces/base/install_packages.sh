@@ -25,12 +25,12 @@ if [ $ID = debian ]; then
  HOST_DEBIAN_APT_UPDATE;
  echo "------------------------------------"
  HOST_DEBIAN_APT_INSTALL_DEPENDANCE;
- echo "------------------------------------"
- HOST_DEBIAN_BLACKLIST_NOUVEAU;
- echo "------------------------------------" 
- HOST_DEBIAN_NVIDIA;
- echo "------------------------------------"
- HOST_DEBIAN_NVIDIA_CUDA;
+ #echo "------------------------------------"
+ #HOST_DEBIAN_BLACKLIST_NOUVEAU;
+ #echo "------------------------------------" 
+ #HOST_DEBIAN_NVIDIA;
+ #echo "------------------------------------"
+ #HOST_DEBIAN_NVIDIA_CUDA;
 else
  echo "Ce projet est conçus exclusivement pour Debian."
  echo "Le fichier des dépendances se trouve IA/functions/999_package.sh";
