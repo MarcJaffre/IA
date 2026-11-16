@@ -5,9 +5,9 @@
 # Fonction d'affichage et de saisie
 FUNC_MENU_SELECTION() {
     clear
-    echo "=================================="
-    echo "          MENU PRINCIPAL          "
-    echo "=================================="
+    echo "================================================="
+    echo "          MENU PRINCIPAL                         "
+    echo "================================================="
     echo "1) Menu 1 : Installation Dependances"
     echo "2) Menu 2 : Option deux"
     echo "3) Menu 3 : Option trois"
@@ -27,7 +27,7 @@ FUNC_CHOIX() {
         # Analyse de la variable $REPONSE
         case "$REPONSE" in
             1)
-                ./IA/workspaces/debian_bash.sh
+                ./IA/workspaces/debian_base.sh
                 read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             2)
