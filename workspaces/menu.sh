@@ -23,7 +23,7 @@ fi
 # ===================== #
 BASE_CONFIG(){
 # Ne pas être dans IA !
-if [ ! -f ./IA/config/globale.conf ]; then
+if [ ! -f ${WORKDIR}/config/globale.conf ]; then
 # =========================================================================
   mv ./IA/config/globale.conf.exemple           ${WORKDIR}/globale.conf;
   sed -i -e "s|WORKDIR=.*|WORKDIR=${WORKDIR}|g" ${WORKDIR}/globale.conf;
