@@ -137,5 +137,7 @@ BASE_CHOIX() {
 # =================== #
 BASE_CONFIG_WORKDIR;
 BASE_CONFIG_FILE;
-
 #BASE_CHOIX;
+
+
+for file in $(find $WORKDIR/config    -type f -name "*.conf"); do source $file; done
