@@ -1,5 +1,10 @@
 #!/usr/bin/bash
 
+if [ -d /tmp/gpu-unlock ]; then
+ rm -rf /tmp/gpu-unlock;
+fi
+
+
 if [ ! -d /tmp/gpu-unlock ]; then
    git clone --quiet https://github.com/Zagitta/gpu-unlock /tmp/gpu-unlock;
    cd /tmp/gpu-unlock;
@@ -8,3 +13,6 @@ if [ ! -d /tmp/gpu-unlock ]; then
    grep GRUB_CMDLINE_LINUX_DEFAULT /etc/default/grub;
    /usr/sbin/update-grub;
 fi
+
+# https://github.com/Drthrax74/Linux/blob/main/Debian/Bookworm/Appz/Pilote/Unlock-GPU.md
+# /root/.cache/gpu-unlock/inputs/NVIDIA-kernel-module-source-610.43.03.tar.xz
