@@ -15,14 +15,16 @@ apt install -y git;
 ### C. Exploitation du projet (Developpement)
 ```bash
 clear;
-curl -s https://raw.githubusercontent.com/MarcJaffre/IA/refs/heads/main/dev.sh | bash 
+rm -r /srv/IA/ 2>/dev/null
+git clone https://github.com/MarcJaffre/IA.git;
+bash IA/workspaces/menu.sh
 ```
 
 ### D. Nettoyage du projet
 ```bash
 clear;
 cd $HOME;
-rm -r /srv/IA;
+rm -r /srv/IA/ 2>dev/null;
 ```
 
 
