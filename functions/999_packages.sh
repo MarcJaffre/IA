@@ -48,7 +48,7 @@ HOST_DEBIAN_APT_UPDATE(){
 # Mise à niveau du système #
 ############################
 HOST_DEBIAN_APT_UPGRADE(){
-DEBIAN_FRONTEND=noninteractive /usr/bin/apt upgrade -y;
+DEBIAN_FRONTEND=noninteractive /usr/bin/apt upgrade -y 1>/dev/null;
 }
 
 ############################################################################################################################
