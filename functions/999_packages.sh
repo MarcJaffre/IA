@@ -48,10 +48,8 @@ HOST_DEBIAN_APT_UPDATE(){
 # Mise à niveau du système #
 ############################
 HOST_DEBIAN_APT_UPGRADE(){
-/usr/bin/apt -y upgrade 1>/dev/null;
+DEBIAN_FRONTEND=noninteractive /usr/bin/apt upgrade -y;
 }
-
-
 
 ############################################################################################################################
 # Installation de paquet #
