@@ -34,49 +34,49 @@ clear;
 # Messages de présentation #
 # ======================== #
 #MESSAGE_TOP;
-MESSAGE_OLD_TOP;
-MESSAGE_LOADING_GLOBAL;
+#MESSAGE_OLD_TOP;
+#MESSAGE_LOADING_GLOBAL;
 
 # =============================================================================================================
 # Dossier Source #
 # ============== #
-MESSAGE_LLAMA_PURGE_SRC;
-LLAMA_PURGE_DIR_SRC;
+#MESSAGE_LLAMA_PURGE_SRC;
+#LLAMA_PURGE_DIR_SRC;
 
 # =============================================================================================================
 # Dossier Output #
 # ============== #
-MESSAGE_LLAMA_PURGE_OUTPUT;
-LLAMA_PURGE_DIR_OUTPUT;
+#MESSAGE_LLAMA_PURGE_OUTPUT;
+#LLAMA_PURGE_DIR_OUTPUT;
 
 # =============================================================================================================
 # Telecharger Depots LLAMA #
 # ======================== #
-MESSAGE_LLAMA_GIT_CLONE;
-LLAMA_GIT_CLONE;
+#MESSAGE_LLAMA_GIT_CLONE;
+#LLAMA_GIT_CLONE;
 
 # =============================================================================================================
 # Configuration de la build #
 # ========================= #
-MESSAGE_LLAMA_CONFIG_BUILD;
-LLAMA_BUILD_CONFIG;
+#MESSAGE_LLAMA_CONFIG_BUILD;
+#LLAMA_BUILD_CONFIG;
 
 # =============================================================================================================
 # Compilation de la build #
 # ======================= #
-MESSAGE_LLAMA_MAKE_BUILD;
-LLAMA_BUILD_MAKE;
+#MESSAGE_LLAMA_MAKE_BUILD;
+#LLAMA_BUILD_MAKE;
 
 # =============================================================================================================
 # Installer la build dans Output #
 # ============================== #
-MESSAGE_LLAMA_BUILD_OUTPUT;
-LLAMA_BUILD_INSTALL;
+#MESSAGE_LLAMA_BUILD_OUTPUT;
+#LLAMA_BUILD_INSTALL;
 
 # =============================================================================================================
 # Message de fin #
 ##################
-MESSAGE_LLAMA_END;
-MESSAGE_BOT;
+#MESSAGE_LLAMA_END;
+#MESSAGE_BOT;
 
 # =============================================================================================================
