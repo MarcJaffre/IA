@@ -26,18 +26,13 @@ FUNC_CHOIX() {
         case "$REPONSE" in
             1)
                 echo "-> Vous avez choisi le Menu 1."
-                # Ajoutez ici vos commandes pour le Menu 1
-                read -p "Appuyez sur Entrée pour continuer..."
+                pwd
                 ;;
             2)
                 echo "-> Vous avez choisi le Menu 2."
-                # Ajoutez ici vos commandes pour le Menu 2
-                read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             3)
                 echo "-> Vous avez choisi le Menu 3."
-                # Ajoutez ici vos commandes pour le Menu 3
-                read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             q|Q)
                 echo "Fermeture du menu. Au revoir !"
