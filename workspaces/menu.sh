@@ -136,9 +136,5 @@ BASE_CHOIX() {
 # Lancement du script #
 # =================== #
 BASE_CONFIG_WORKDIR;
-echo "DOSSIER DE TRAVAIL: $WORKDIR";
-
 BASE_CONFIG_FILE;
-stat ${WORKDIR}/config/globale.conf;
-
-#BASE_CHOIX;
+BASE_CHOIX;
