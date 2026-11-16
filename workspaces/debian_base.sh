@@ -18,8 +18,8 @@ if [ -f /etc/os-release ]; then
   source /etc/os-release;
 fi
 
-echo $ID
-ls $WORKDIR/IA/
+echo "Distribution       : $ID"
+echo "Dossier de travail : $WORKDIR"
 
 # =================================================================================================
 #if [ $ID = debian ]; then
