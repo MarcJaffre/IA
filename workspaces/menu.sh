@@ -51,6 +51,7 @@ BASE_MENU_SELECTION() {
     echo "1) Menu 1 : Installation Dependances"
     echo "2) Menu 2 : Installation de LLAMA"
     #echo "3) Menu 3 : Installation de OpenWebui"
+    echo "X) Menu X : Installation de GPU-Unlock Nvidia"
     echo "q) Quitter"
     echo "================================================="
     # Lecture de la réponse sur la même ligne
@@ -101,6 +102,14 @@ BASE_CHOIX() {
             #    read -p "Appuyez sur Entrée pour continuer..."
             #    ;;
             # ========================================================================================================
+
+            x|X)
+            # ========================================================================================================
+                $WORKDIR/workspaces/base/Nvidia_gpu_unlock.sh;
+                read -p "Appuyez sur Entrée pour continuer..."
+                ;;
+            # ========================================================================================================
+
 
 
             q|Q)
