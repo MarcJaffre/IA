@@ -5,29 +5,26 @@
 # ============================================== #
 set -e
 
-# =================================================================================================
-# Générer le fichier  #
-# =================== #
-# Github rester globale.conf.exemple mais pas globale.conf
-if [ ! -f globale.conf ]; then 
- cp globale.conf.exemple globale.conf;
+# =============================================================================================================
+# Définir la variable WORKDIR #
+# =========================== #
+if [[ "$PWD" != *IA* ]]; then
+ WORKDIR=$PWD/IA
+ export WORKDIR=${WORKDIR};
 fi
 
-# =================================================================================================
-# Configuration du WORKDIR #
-# ======================== #
-if [ -f globale.conf ]; then
-  sed -i -e "s|^WORKDIR\=.*|WORKDIR=\"$(pwd)\"|g" globale.conf;
+# =============================================================================================================
+# Charger les fichiers de  Configuration #
+# ====================================== #
+if [ -f ${WORKDIR}/config/globale.conf ]; then
+  # ===========================================================================================================
+  source ${WORKDIR}/config/globale.conf;
+  # ===========================================================================================================
+  for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
+  for file in $(find $WORKDIR/functions -type f -name "*.sh");                        do source $file; done
+  # ===========================================================================================================
 fi
 
-# =================================================================================================
-# Chargement de la configuration du WORKDIR #
-# ========================================= #
-if [ -f "./globale.conf" ]; then
-  source "./globale.conf";
-else
-  echo "Le fichier globale.conf n'existe pas";
-fi
 
 # =================================================================================================
 # Dossier output llama #
