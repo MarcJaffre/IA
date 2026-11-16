@@ -80,7 +80,7 @@ if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev; 
 if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    1>/dev/null; fi
 
 if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                1>/dev/null; fi
-if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
+#if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
 # ====================================================================================================================
 
 # OpenWebui
