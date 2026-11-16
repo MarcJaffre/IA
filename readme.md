@@ -13,6 +13,7 @@ apt install -y git;
 ```
 
 ### C. Exploitation du projet (Developpement)
+Chaque binaire construit sera mis dans output\<NomAppz>.
 ```bash
 clear;
 rm -r ./IA/ 2>/dev/null;
