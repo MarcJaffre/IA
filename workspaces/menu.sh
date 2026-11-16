@@ -17,6 +17,7 @@ BASE_CONFIG_WORKDIR(){
 if [[ "$PWD" != *IA* ]]; then
  WORKDIR=$PWD/IA
 fi
+
 }
 
 # ====================================================================================================================================================================
@@ -30,7 +31,7 @@ if [ ! -f ${WORKDIR}/config/globale.conf ]; then
   sed -i -e "s|WORKDIR=.*|WORKDIR=${WORKDIR}|g" ${WORKDIR}/config/globale.conf;
   # =============================================================================
   source ${WORKDIR}/config/globale.conf;
-  export WORKDIRG=${WORKDIR}
+  export WORKDIR=${WORKDIR}
   # =============================================================================
 fi
 }
