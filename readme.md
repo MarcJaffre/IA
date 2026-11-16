@@ -45,8 +45,6 @@ if [ -d $WORKDIR/IA ]; then
  # ----------------------------------------------------------------
   cd $WORKDIR/IA;
   bash ./workspaces/debian_base.sh;
-else
- echo "Le fichier dependances.sh est absent";
  # ----------------------------------------------------------------
 fi
 ```
