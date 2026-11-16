@@ -8,31 +8,31 @@ set -e
 # ====================================================================================================================================================================
 # Définir la variable WORKDIR #
 # =========================== #
-#BASE_CONFIG_WORKDIR(){
-#if [[ "$PWD" != *IA* ]]; then
-# WORKDIR=$PWD/IA
-# export WORKDIR=${WORKDIR};
-#fi
+BASE_CONFIG_WORKDIR(){
+if [[ "$PWD" != *IA* ]]; then
+ WORKDIR=$PWD/IA
+ export WORKDIR=${WORKDIR};
+fi
 
 # =============================================================================================================
 # Charger les fichiers de  Configuration #
 # ====================================== #
-#BASE_CONFIG_LOAD(){
-#if [ -f ${WORKDIR}/config/globale.conf ]; then
+BASE_CONFIG_LOAD(){
+if [ -f ${WORKDIR}/config/globale.conf ]; then
   # ===========================================================================================================
-  #source ${WORKDIR}/config/globale.conf;
+  source ${WORKDIR}/config/globale.conf;
   # ===========================================================================================================
-  #for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
-  #for file in $(find $WORKDIR/functions -type f -name "*.sh");                        do source $file; done
+  for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
+  for file in $(find $WORKDIR/functions -type f -name "*.sh");                        do source $file; done
   # ===========================================================================================================
-#fi
-#}
+fi
+}
 
 # =============================================================================================================
 # Messages de présentation #
 ############################
-#MESSAGE_TOP;
-#MESSAGE_LOADING_GLOBAL;
+MESSAGE_TOP;
+MESSAGE_LOADING_GLOBAL;
 
 # =============================================================================================================
 # Dossier Source #
