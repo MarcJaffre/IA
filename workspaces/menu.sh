@@ -60,7 +60,7 @@ BASE_CHOIX() {
 
             1)
             # ========================================================================================================
-                bash ./IA/workspaces/0_Install/Packages.sh 1>/dev/null;
+                bash ./IA/workspaces/0_Base/Install_Packages.sh 1>/dev/null;
                 echo "";
                 echo "---------------------------------------------------------------------------";
                 read -p "Appuyez sur Entrée pour continuer..."
