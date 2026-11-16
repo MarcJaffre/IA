@@ -1,7 +1,8 @@
 ############################################################################################################################
 # Installation de paquet
 ############################################################################################################################
-
+#
+#
 ############################################################################################################################
 # Installation des paquets de base #
 ####################################
@@ -33,7 +34,6 @@ echo "Installation de WGET";
 if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget                         1>/dev/null; fi
 }
 
-
 ############################################################################################################################
 # Installation des paquets Dependances #
 ########################################
@@ -55,25 +55,25 @@ if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;    
 # --------
 # ====================================================================================================================
 echo "Installation de BUILD-ESSENTIAL";
-#if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            1>/dev/null; fi
+if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            1>/dev/null; fi
 # --------
 echo "Installation de LINUX-HEADERS";
-#if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r);  1>/dev/null; fi
+if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r);  1>/dev/null; fi
 # --------
 echo "Installation de PYTHON3-FULL";
-#if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
+if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
 # --------
 echo "Installation de Python3-pip";
-#if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                1>/dev/null; fi
+if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                1>/dev/null; fi
 # ====================================================================================================================
 # OpenWebui
 # ====================================================================================================================
-#if [ ! -d /usr/share/doc/python3.13          ]; then apt install -y python3.13;                 1>/dev/null; fi
-#if [ ! -d /usr/share/doc/python3.13-venv     ]; then apt install -y python3.13-venv;            1>/dev/null; fi
+if [ ! -d /usr/share/doc/python3.13          ]; then apt install -y python3.13;                 1>/dev/null; fi
+if [ ! -d /usr/share/doc/python3.13-venv     ]; then apt install -y python3.13-venv;            1>/dev/null; fi
 # ====================================================================================================================
 # Bypass Erreur
 # ====================================================================================================================
-#echo "" > /tmp/Test;
+echo "" > /tmp/Test;
 # ====================================================================================================================
 }
 
@@ -127,7 +127,6 @@ HOST_DEBIAN_APT_UPDATE(){
 HOST_DEBIAN_APT_UPGRADE(){
 DEBIAN_FRONTEND=noninteractive /usr/bin/apt upgrade -y;
 }
-
 
 ############################################################################################################################
 # Blacklist Pilote Libre #
