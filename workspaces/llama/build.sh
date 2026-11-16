@@ -13,6 +13,7 @@ if [[ "$PWD" != *IA* ]]; then
  WORKDIR=$PWD/IA
  export WORKDIR=${WORKDIR};
 fi
+}
 
 # =============================================================================================================
 # Charger les fichiers de  Configuration #
