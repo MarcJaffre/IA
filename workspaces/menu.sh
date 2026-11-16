@@ -67,6 +67,15 @@ BASE_CHOIX() {
         BASE_MENU_SELECTION
         # Analyse de la variable $REPONSE
         case "$REPONSE" in
+            0)
+            # ========================================================================================================
+               echo "Dossier de travail: $WORKDIR"               echo "";
+               read -p "Appuyez sur Entrée pour continuer..."
+               ;;
+            # ========================================================================================================
+
+
+
             1)
             # ========================================================================================================
                bash ${WORKDIR}/workspaces/base/install_packages.sh 1>/dev/null;
@@ -131,6 +140,4 @@ BASE_CHOIX() {
 # =================== #
 BASE_CONFIG_WORKDIR;
 BASE_CONFIG_FILE;
-echo "Dossier de travail: $WORKDIR"
-
-# BASE_CHOIX;
+BASE_CHOIX;
