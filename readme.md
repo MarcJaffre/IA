@@ -12,24 +12,16 @@ apt update;
 apt install -y git;
 ```
 
-### C. Exploitation
-#### 0. Téléchargement du projet
+### C. Exploitation du projet
 ```bash
 clear;
 cd $HOME;
 rm -r IA 2>/dev/null;
 git clone --quiet https://github.com/MarcJaffre/IA.git;
-```
-
-
-#### 2. Installer les dependances
-```bash
-clear;
-WORKDIR=$(pwd)
 bash $WORKDIR/IA/workspaces/debian_base.sh;
 ```
 
-#### 3. Nettoyage
+### D. Nettoyage du projet
 ```bash
 clear;
 cd $HOME;
