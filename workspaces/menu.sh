@@ -30,6 +30,7 @@ FUNC_MENU_SELECTION() {
     echo "================================================="
     echo "          MENU PRINCIPAL                         "
     echo "================================================="
+    echo "0) Menu 0 : Check"
     echo "1) Menu 1 : Installation Dependances"
     echo "2) Menu 2 : Installation de LLAMA"
     #echo "3) Menu 3 : Installation de OpenWebui"
@@ -47,8 +48,16 @@ FUNC_CHOIX() {
         FUNC_MENU_SELECTION
         # Analyse de la variable $REPONSE
         case "$REPONSE" in
-            1)
+            0)
+            # ========================================================================================================
+                ls ./IA/config;
+                echo "";
+                echo "---------------------------------------------------------------------------";
+                read -p "Appuyez sur Entrée pour continuer..."
+                ;;
+            # ========================================================================================================
 
+            1)
             # ========================================================================================================
                 bash ./IA/workspaces/debian_base.sh 1>/dev/null;
                 echo "";
