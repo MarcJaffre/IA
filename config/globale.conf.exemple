@@ -20,3 +20,5 @@ source /etc/os-release;
 # =========================================== #
 for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
 for file in $(find $WORKDIR/functions -type f -name "*.sh");   do source $file; done
+
+# Attention au boucle infini avec globale.conf
