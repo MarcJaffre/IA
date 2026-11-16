@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+# Le test echo "$PWD" indique le dossier parent de IA.
+
 # Fonction d'affichage et de saisie
 FUNC_MENU_SELECTION() {
     clear
@@ -26,7 +28,6 @@ FUNC_CHOIX() {
         case "$REPONSE" in
             1)
                 echo "-> Vous avez choisi le Menu 1."
-                echo "$(pwd)";
                 read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             2)
