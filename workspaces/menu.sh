@@ -12,7 +12,7 @@ FUNC_MENU_SELECTION() {
     echo "2) Menu 2 : Installation de LLAMA"
     #echo "3) Menu 3 : Installation de OpenWebui"
     echo "q) Quitter"
-    echo "=================================="
+    echo "================================================="
     
     # Lecture de la réponse sur la même ligne
     read -p "Sélectionner votre choix ? " REPONSE
@@ -27,7 +27,7 @@ FUNC_CHOIX() {
         # Analyse de la variable $REPONSE
         case "$REPONSE" in
             1)
-                bash ./IA/workspaces/debian_base.sh;
+                bash ./IA/workspaces/debian_base.sh 1>/dev/null;
                 read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             2)
