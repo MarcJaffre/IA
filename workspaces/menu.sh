@@ -26,7 +26,7 @@ FUNC_CHOIX() {
         case "$REPONSE" in
             1)
                 echo "-> Vous avez choisi le Menu 1."
-                echo "$(pwd);
+                echo "$(pwd)";
                 read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             2)
