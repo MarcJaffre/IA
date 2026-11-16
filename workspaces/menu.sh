@@ -14,6 +14,7 @@ if [ ! -f ./IA/config/globale.conf ]; then
 # =========================================================================
   mv ./IA/config/globale.conf.exemple          ./IA/config/globale.conf;
   sed -i -e "s|WORKDIR=.*|WORKDIR=${PWD}/IA|g" ./IA/config/globale.conf;
+  ls /IA/config
 # =========================================================================
 else
  echo "Le fichier de configuration a échoué";
