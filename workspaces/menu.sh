@@ -31,10 +31,20 @@ if [ ! -f ${WORKDIR}/config/globale.conf ]; then
   mv ${WORKDIR}/config/globale.conf.exemple     ${WORKDIR}/config/globale.conf;
   sed -i -e "s|WORKDIR=.*|WORKDIR=${WORKDIR}|g" ${WORKDIR}/config/globale.conf;
   # =============================================================================
+fi
+}
+
+# ====================================================================================================================================================================
+# Fichier Configuration #
+# ===================== #
+BASE_CONFIG_LOAD(){
+if [ -f ${WORKDIR}/config/globale.conf ]; then
+  # ===========================================================================================================
   source ${WORKDIR}/config/globale.conf;
-  # =============================================================================
+  # ===========================================================================================================
   for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
   for file in $(find $WORKDIR/functions -type f -name "*.sh");                        do source $file; done
+  # ===========================================================================================================
 fi
 }
 
@@ -144,4 +154,5 @@ BASE_CHOIX() {
 # =================== #
 BASE_CONFIG_WORKDIR;
 BASE_CONFIG_FILE;
+BASE_CONFIG_LOAD;
 BASE_CHOIX;
