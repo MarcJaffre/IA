@@ -69,7 +69,8 @@ fi
 # Lancement de l'application llama #
 # ================================ #
 if [ $(pwd) = "$WORKDIR/output/llama.cpp/bin" ]; then
-  ./llama-server --host "0.0.0.0" --port "8080" --api-key admin
+  ./llama-server $LLAMA_SERVICE_OPTION
+  #--host "0.0.0.0" --port "8080" --api-key admin
 else
   echo "Le dossier output/llama.cpp/bin est absent";
   exit;
