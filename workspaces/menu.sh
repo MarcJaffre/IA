@@ -8,7 +8,7 @@ FUNC_MENU_SELECTION() {
     echo "=================================="
     echo "          MENU PRINCIPAL          "
     echo "=================================="
-    echo "1) Menu 1 : Check"
+    echo "1) Menu 1 : Installation Dependances"
     echo "2) Menu 2 : Option deux"
     echo "3) Menu 3 : Option trois"
     echo "q) Quitter"
@@ -27,7 +27,7 @@ FUNC_CHOIX() {
         # Analyse de la variable $REPONSE
         case "$REPONSE" in
             1)
-                echo "-> Vous avez choisi le Menu 1."
+                ./IA/workspaces/debian_bash.sh
                 read -p "Appuyez sur Entrée pour continuer..."
                 ;;
             2)
