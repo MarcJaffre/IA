@@ -50,7 +50,7 @@ HOST_DEBIAN_APT_UPDATE(){
 ##########################
 HOST_DEBIAN_APT_INSTALL_DEPENDANCE(){
 
-# System
+# Tool
 # ====================================================================================================================
 if [ ! -d /usr/share/apt-file                ]; then apt install -y apt-file                     1>/dev/null; fi
 if [ ! -d /usr/share/doc/btop                ]; then apt install -y btop                         1>/dev/null; fi
@@ -60,6 +60,7 @@ if [ ! -d /usr/share/doc/gnupg2              ]; then apt install -y gnupg2      
 if [ ! -d /usr/share/doc/pciutils            ]; then apt install -y pciutils                     1>/dev/null; fi
 if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree                         1>/dev/null; fi
 if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget                         1>/dev/null; fi
+
 # ====================================================================================================================
 #if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            1>/dev/null; fi
 #if [ ! -d /usr/src/linux-headers-$(uname -r) ]; then apt install -y linux-headers-$(uname -r);  1>/dev/null; fi
@@ -67,12 +68,12 @@ if [ ! -d /usr/share/doc/wget                ]; then apt install -y wget        
 
 # LLAMA
 # ====================================================================================================================
-if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      1>/dev/null; fi
-if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     1>/dev/null; fi
-if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev;                 1>/dev/null; fi
-if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    1>/dev/null; fi
-if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                1>/dev/null; fi
-if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
+#if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      1>/dev/null; fi
+#if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     1>/dev/null; fi
+#if [ ! -d /usr/share/doc/libssl-dev          ]; then apt install -y libssl-dev;                 1>/dev/null; fi
+#if [ ! -d /usr/share/doc/openssl             ]; then apt install -y openssl;                    1>/dev/null; fi
+#if [ ! -f /usr/bin/pip3                      ]; then apt install -y python3-pip;                1>/dev/null; fi
+#if [ ! -d /usr/share/doc/python3-full        ]; then apt install -y python3-full;               1>/dev/null; fi
 # ====================================================================================================================
 
 # OpenWebui
