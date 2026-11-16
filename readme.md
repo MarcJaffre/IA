@@ -16,48 +16,22 @@ apt install -y git;
 #### 0. Définir emplacement du projet
 ```bash
 clear;
-export WORKDIR=/srv
+cd /srv;
+git clone --quiet https://github.com/MarcJaffre/IA.git IA;
 ```
 
-#### 1. Synchroniser le projet
-```bash
-clear;
 
-if [ ! -d $WORKDIR/IA ]; then
- # ----------------------------------------------------------------
-  git clone https://github.com/MarcJaffre/IA.git $WORKDIR/IA;
-  cd $WORKDIR/IA;
- # ----------------------------------------------------------------
-else
- # ----------------------------------------------------------------
- cd $WORKDIR/IA;
- git fetch --all               2>/dev/null;
- git reset --hard origin/main  1>/dev/null;
- git clean -fd                 2>/dev/null;
- # ----------------------------------------------------------------
-fi
-```
 #### 2. Installer les dependances
 ```bash
 clear;
-
-if [ -d $WORKDIR/IA ]; then
- # ----------------------------------------------------------------
-  cd $WORKDIR/IA;
-  bash ./workspaces/debian_base.sh;
- # ----------------------------------------------------------------
-fi
+bash ./workspaces/debian_base.sh;
 ```
 
 #### 3. Nettoyage
 ```bash
 clear;
-if [ -d $WORKDIR/IA ]; then
-  cd $WORKDIR/;
-  rm -rf $WORKDIR/IA;
-else
- echo "Le dossier est déjà purger";
-fi
+cd $HOME;
+rm -r /srv/IA
 ```
 
 
