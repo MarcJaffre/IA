@@ -17,21 +17,22 @@ apt install -y git;
 ```bash
 clear;
 cd /srv;
-git clone --quiet https://github.com/MarcJaffre/IA.git IA;
+git clone --quiet https://github.com/MarcJaffre/IA.git;
 ```
 
 
 #### 2. Installer les dependances
 ```bash
 clear;
-bash ./workspaces/debian_base.sh;
+WORKDIR=$(pwd)
+bash $WORKDIR/IA/workspaces/debian_base.sh;
 ```
 
 #### 3. Nettoyage
 ```bash
 clear;
 cd $HOME;
-rm -r /srv/IA
+rm -r /srv/IA;
 ```
 
 
