@@ -18,4 +18,4 @@ git clone --quiet https://github.com/MarcJaffre/IA.git
 # ====================================================================
 # Lancement #
 # ========= #
-bash ./IA/workspaces/debian_base.sh;
+bash ./IA/workspaces/menu.sh;
