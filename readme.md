@@ -12,10 +12,10 @@ apt update;
 apt install -y git;
 ```
 
-### C. Exploitation du projet
+### C. Exploitation du projet (Developpement)
 ```bash
 clear;
-curl https://github.com/MarcJaffre/IA/blob/main/dev.sh | bash
+curl -s https://raw.githubusercontent.com/MarcJaffre/IA/refs/heads/main/dev.sh | bash 
 ```
 
 ### D. Nettoyage du projet
