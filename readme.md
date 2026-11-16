@@ -16,7 +16,7 @@ apt install -y git;
 ```bash
 clear;
 rm -r /srv/IA/ 2>/dev/null
-git clone https://github.com/MarcJaffre/IA.git;
+git clone --quiet https://github.com/MarcJaffre/IA.git;
 bash IA/workspaces/menu.sh
 ```
 
