@@ -55,8 +55,11 @@ if [ ! -d /usr/share/doc/btop                ]; then apt install -y btop;       
 if [ ! -d /usr/share/doc/tree                ]; then apt install -y tree;                       fi
 if [ ! -d /usr/share/doc/dosfstools          ]; then apt install -y dosfstools;                 fi
 
+# ================================================================================================
+if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            fi
+# ================================================================================================
+
 # LLAMA
-#if [ ! -d /usr/share/build-essential         ]; then apt install -y build-essential;            fi
 if [ ! -d /usr/share/doc/ccache              ]; then apt install -y ccache;                     fi
 if [ ! -d /usr/share/cmake                   ]; then apt install -y cmake;                      fi
 if [ ! -d /usr/share/doc/curl                ]; then apt install -y curl;                       fi
