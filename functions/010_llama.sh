@@ -56,8 +56,8 @@ fi
 }
 
 ########################################################################################################################
-# Compiler et sortir les binaires #
-###################################
+# Compiler et sortir les binaires pour les test #
+#################################################
 # 
 LLAMA_BUILD_INSTALL(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
@@ -75,10 +75,13 @@ if [ -d "$WORKDIR/src/llama.cpp" ]; then
 fi
 }
 
+########################################################################################################################
+# Compiler et sortir les binaires du dossier IA #
+#################################################
 LLAMA_BUILD_INSTALL_FINAL(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   # ==============================================================================
-   if [ ! -d                         "$WORKDIR/output/llama.cpp" ]; then
+   if [ ! -d                         "$WORKDIR_FINAL/llama.cpp" ]; then
      # ===========================================================================
       cd                             "$WORKDIR/src/llama.cpp";
       mkdir -p                       "$WORKDIR_FINAL/llama.cpp";
