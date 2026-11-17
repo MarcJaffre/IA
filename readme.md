@@ -35,7 +35,7 @@ bash IA/workspaces/menu.sh;
 | Nvidia Drivers    | Opérationnel       |                                 |
 | Nvidia Cuda       | Opérationnel       |                                 |
 | Nvidia GPU Unlock | 100%               | Dmesg OK, a valider             |
-| LLAMA             | 0%                 | Révision complète du code       |
+| LLAMA             | 100%               | Révision complète du code       |
 | OpenWebui         | 1%                 |                                 |
 | Stable-Diffusion  | 1%                 |                                 |
 | Open-Terminal     | 0%                 |                                 |
