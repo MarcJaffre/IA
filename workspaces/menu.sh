@@ -173,7 +173,9 @@ BASE_CHOIX() {
             # Menu de Test
             0)
                echo "Dossier de travail: $WORKDIR | $WORKDIR_FINAL";
+               echo "Dossier Finale    : $WORKDIR_FINAL"
                echo "GIT LLAMA : $GITHUB_LLAMA";
+
                echo "";
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
