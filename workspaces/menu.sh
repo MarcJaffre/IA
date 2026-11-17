@@ -94,6 +94,7 @@ BASE_CHOIX() {
             # ========================================================================================================
             # Installation des Dependances
             a|A)
+               clear;
                bash ${WORKDIR}/workspaces/base/install_packages.sh 1>/dev/null;
                echo "";
                echo "---------------------------------------------------------------------------";
@@ -102,62 +103,72 @@ BASE_CHOIX() {
             # ========================================================================================================
             # Installation de GPU-Unlock Nvidia
             b|B)
+               clear;
                bash ${WORKDIR}/workspaces/base/Nvidia_gpu_unlock.sh;
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
             # Construction de LLAMA"
             c|C)
+               clear;
                bash ${WORKDIR}/workspaces/llama/build.sh;
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
             # Construction de OpenWebui
             #d|D)
+            #   clear;
             #   echo "-> Vous avez choisi le Menu 3."
             #   read -p "Appuyez sur Entrée pour continuer..."
             #   ;;
             # ========================================================================================================
             # Installation du service Llama
             e|E)
+               clear;
                bash ${WORKDIR}/workspaces/llama/service_install.sh;
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
             # Installation du service OpenWebui
             #f|F)
+            #   clear;
             #   bash ${WORKDIR}/workspaces/openwebui/service_install.sh;
             #   read -p "Appuyez sur Entrée pour continuer..."
             #   ;;
             # ========================================================================================================
             # Désinstallation du service Llama
             g|G)
+               clear;
                bash ${WORKDIR}/workspaces/llama/service_uninstall.sh;
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
             # Désinstallation du service OpenWebui
             #h|H)
+            #   clear;
             #   bash ${WORKDIR}/workspaces/openwebui/service_uninstall.sh;
             #   read -p "Appuyez sur Entrée pour continuer..."
             #   ;;
             # ========================================================================================================
             # Lancer le téléchargement des modèles
             m|M)
+               clear;
                bash ${WORKDIR}/workspaces/llama/start.sh;
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
             # Redémarrer la machine
             r|R)
-                reboot;
-                ;;
+               clear;
+               reboot;
+               ;;
             # ========================================================================================================
             # Quitter le menu
             q|Q)
-                echo "Fermeture du menu. Au revoir !"
-                break
-                ;;
+               clear;
+               echo "Fermeture du menu. Au revoir !"
+               break
+               ;;
             # ========================================================================================================
             # Menu de Test
             0)
