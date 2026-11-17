@@ -56,42 +56,36 @@ fi
 }
 
 ########################################################################################################################
-# Compiler et sortir les binaires dans output #
-###############################################
+# Compiler et sortir les binaires #
+###################################
+# 
 LLAMA_BUILD_INSTALL(){
 if [ -d "$WORKDIR/src/llama.cpp" ]; then
   # ==============================================================================
-   cd                                "$WORKDIR/src/llama.cpp";
-  # ==============================================================================
    if [ ! -d                         "$WORKDIR/output/llama.cpp" ]; then
      # ===========================================================================
+      cd                             "$WORKDIR/src/llama.cpp";
       mkdir -p                       "$WORKDIR/output/llama.cpp";
       cmake --install build --prefix "$WORKDIR/output/llama.cpp" > /dev/null;
-     # ===========================================================================
-      touch                           "$WORKDIR/output/llama_Ready";
+      touch                          "$WORKDIR/output/llama_Ready";
      # ===========================================================================
    fi
   # ==============================================================================
+
 fi
 }
 
-########################################################################################################################
-# Déplacement de la Source vers output #
-########################################
-LLAMA_BUILD_MV_BIN(){
-if [ ! -d "$WORKDIR/output/llama.cpp" ]; then
+LLAMA_BUILD_INSTALL_FINAL(){
+if [ -d "$WORKDIR/src/llama.cpp" ]; then
   # ==============================================================================
-  echo "Déplacement des binaires llama.cpp";
-  # ==============================================================================
-  cd       "$WORKDIR/src/llama.cpp/build/bin/"
-  # ==============================================================================
-  mkdir -p "$WORKDIR_FINAL/llama.cpp";
-  mv *     "$WORKDIR_FINAL/llama.cpp";
-  # ==============================================================================
-  find     "$WORKDIR_FINAL/llama.cpp" \
-  -type f \
-  -iname "llama*" \
-  -exec chmod +x {} \;
+   if [ ! -d                         "$WORKDIR/output/llama.cpp" ]; then
+     # ===========================================================================
+      cd                             "$WORKDIR/src/llama.cpp";
+      mkdir -p                       "$WORKDIR_FINAL/llama.cpp";
+      cmake --install build --prefix "$WORKDIR_FINAL/llama.cpp" > /dev/null;
+      touch                          "$WORKDIR_FINAL/llama_Ready";
+     # ===========================================================================
+   fi
   # ==============================================================================
 fi
 }
