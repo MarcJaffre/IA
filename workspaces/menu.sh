@@ -48,7 +48,7 @@ fi
 }
 
 BASE_CONFIG_WORKDIR;
-
+BASE_CONFIG_FILE
 echo "Dossier de travail Tempo : $WORKDIR"
 echo "Dossier de Travail Final : $WORKDIR_FINAL"
 
