@@ -49,6 +49,7 @@ BASE_MENU_SELECTION() {
     echo "================================================="
     echo "Dossier de travail Tempo : $WORKDIR";
     echo "Dossier de Travail Final : $WORKDIR_FINAL";
+    echo "Test du fichier Openwebui: $PYTHON_PACKAGE";
     echo "";
     echo "================================================="
     echo "A) Menu A : Installation des Dependances"
