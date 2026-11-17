@@ -13,20 +13,15 @@ if [ -f ${WORKDIR}/config/globale.conf ]; then
   source ${WORKDIR}/config/globale.conf;
   # ===========================================================================================================
   for file in $(find $WORKDIR/config    -type f -name "*.conf" ! -name globale.conf); do source $file; done
-  for file in $(find $WORKDIR/functions -type f -name "*.sh");                        do source $file; done
+  for file in $(find $WORKDIR/functions -type f -name "*.sh")                       ; do source $file; done
   # ===========================================================================================================
 fi
-
-    echo "Dossier de travail Tempo : $WORKDIR";
-    echo "Dossier de Travail Final : $WORKDIR_FINAL";
-    echo "Test du fichier Openwebui: $PYTHON_PACKAGE";
-
 
 # =============================================================================================================
 # Messages de présentation #
 # ======================== #
-#MESSAGE_TOP;
-#MESSAGE_OLD_TOP;
+MESSAGE_TOP;
+MESSAGE_OLD_TOP;
 #MESSAGE_LOADING_GLOBAL;
 
 # =============================================================================================================
