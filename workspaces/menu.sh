@@ -45,10 +45,11 @@ fi
 BASE_MENU_SELECTION() {
     clear;
     echo "================================================="
+    echo "          MENU PRINCIPAL                         "
+    echo "================================================="
     echo "Dossier de travail Tempo : $WORKDIR";
     echo "Dossier de Travail Final : $WORKDIR_FINAL";
-    echo "================================================="
-    echo "          MENU PRINCIPAL                         "
+    echo "";
     echo "================================================="
     echo "A) Menu A : Installation des Dependances"
     echo "B) Menu B : Installation de GPU-Unlock Nvidia"
