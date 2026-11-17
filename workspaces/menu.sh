@@ -163,18 +163,19 @@ BASE_CHOIX() {
             # ========================================================================================================
             # Menu de Test
             0)
+               clear;
                echo "Dossier de travail: $WORKDIR | Finale: $WORKDIR_FINAL";
                echo "GIT LLAMA : $GITHUB_LLAMA";
-
                echo "";
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
             # Choix incorrect
             *)
-                echo "Erreur : Choix invalide ($REPONSE). Veuillez réessayer."
-                sleep 2
-                ;;
+               clear;
+               echo "Erreur : Choix invalide ($REPONSE). Veuillez réessayer."
+               sleep 2
+               ;;
             # ========================================================================================================
         esac
     done
