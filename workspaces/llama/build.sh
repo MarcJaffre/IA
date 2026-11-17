@@ -58,7 +58,7 @@ LLAMA_BUILD_MAKE;
 # Installer la build dans Output #
 # ============================== #
 MESSAGE_LLAMA_BUILD_OUTPUT;
-LLAMA_BUILD_INSTALL;      # {WORKDIR/output
+#LLAMA_BUILD_INSTALL;        # {WORKDIR/output
 #LLAMA_BUILD_INSTALL_FINAL; # $WORKDIR_FINAL/llama.cpp
 
 # =============================================================================================================
