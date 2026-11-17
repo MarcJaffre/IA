@@ -47,9 +47,8 @@ if [ -f ${WORKDIR}/config/globale.conf ]; then
 fi
 }
 
-
-;BASE_CONFIG_FILE
-;BASE_CONFIG_LOAD
+BASE_CONFIG_FILE;
+BASE_CONFIG_LOAD;
 
 echo "Dossier de travail Tempo : $WORKDIR"
 echo "Dossier de Travail Final : $WORKDIR_FINAL"
@@ -57,8 +56,17 @@ echo "Dossier de Travail Final : $WORKDIR_FINAL"
 
 
 
-exit;
 
+
+
+
+
+
+
+
+
+
+exit;
 
 # ====================================================================================================================================================================
 # Fonction d'affichage et de saisie
