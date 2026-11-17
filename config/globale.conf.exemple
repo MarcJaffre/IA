@@ -7,7 +7,7 @@
 # Configuration Globale #
 # ===================== #
 WORKDIR="XXXXXX"
-WORKDIR_FINAL="/srv/"
+WORKDIR_FINAL="/srv"
 # $(nproc)
 BUILD_CPUS=$(nproc --ignore=2)
 
