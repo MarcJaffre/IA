@@ -107,7 +107,8 @@ BASE_CHOIX() {
             # ========================================================================================================
             # Construction de LLAMA"
             2)
-               bash ${WORKDIR}/workspaces/llama/build.sh;
+               echo "Le menu est opérationnel mais j'ai commenté la ligne";
+               #bash ${WORKDIR}/workspaces/llama/build.sh;
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
