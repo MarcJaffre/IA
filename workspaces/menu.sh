@@ -8,7 +8,7 @@ set -e
 # ====================================================================================================================================================================
 # Nettoyage Console #
 #####################
-#clear;
+clear;
 
 # ====================================================================================================================================================================
 # Définir la variable WORKDIR #
@@ -48,8 +48,8 @@ fi
 }
 
 
-BASE_CONFIG_FILE
-BASE_CONFIG_LOAD
+;BASE_CONFIG_FILE
+;BASE_CONFIG_LOAD
 
 echo "Dossier de travail Tempo : $WORKDIR"
 echo "Dossier de Travail Final : $WORKDIR_FINAL"
