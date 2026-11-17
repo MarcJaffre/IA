@@ -38,5 +38,6 @@ bash IA/workspaces/menu.sh;
 | LLAMA             | 100%               | Révision complète du code       |
 | OpenWebui         | 1%                 |                                 |
 | Stable-Diffusion  | 1%                 |                                 |
+| N8N               | 0%                 |                                 |
 | Open-Terminal     | 0%                 |                                 |
 | SearXNG           | 0%                 |                                 |
