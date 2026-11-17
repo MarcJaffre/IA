@@ -47,7 +47,7 @@ if [ -f ${WORKDIR}/config/globale.conf ]; then
 fi
 }
 
-BASE_CONFIG_FILE;
+#BASE_CONFIG_FILE;
 #BASE_CONFIG_LOAD;
 
 #echo "Dossier de travail Tempo : $WORKDIR"
