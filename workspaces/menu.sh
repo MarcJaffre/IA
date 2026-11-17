@@ -59,23 +59,25 @@ BASE_MENU_SELECTION() {
     echo "================================================="
     echo "          MENU PRINCIPAL                         "
     echo "================================================="
-    echo "1) Menu 1 : Installation Dependances"
-    echo "2) Menu 2 : Construction de LLAMA"
-    echo "3) Menu 3 : Construction de OpenWebui"
+    echo "A) Menu A : Installation des Dependances"
+    echo "B) Menu B : Installation de GPU-Unlock Nvidia"
+    echo "";
     echo "================================================="
-    echo "A) Menu A: Installation du service Llama"
-    echo "B) Menu B: Installation du service OpenWebui"
-    echo "C) Menu C: Désinstallation du service Llama"
-    echo "D) Menu D: Désinstallation du service OpenWebui"   
+    echo "C) Menu C : Construction de LLAMA"
+   #echo "D) Menu D : Construction de OpenWebui"
+    echo "";
+    echo "================================================="
+    echo "E) Menu E : Installation du service Llama"
+   #echo "F) Menu F : Installation du service OpenWebui"
+    echo "G) Menu G : Désinstallation du service Llama"
+   #echo "H) Menu H : Désinstallation du service OpenWebui" 
+    echo "";
     echo "================================================="
     echo "M) Menu M: Lancer le téléchargement des modèles"   
     echo "================================================="
-    
-    echo "X) Menu X : Installation de GPU-Unlock Nvidia"
     echo "R) Menu R : Redémarrage de la machine"
+    echo "q) Menu Q : Quitter"
     echo "================================================="
-    echo "q) Quitter"
-    # Lecture de la réponse sur la même ligne
     echo "";
     read -p "Sélectionner votre choix ? " REPONSE
     echo "";
@@ -90,68 +92,59 @@ BASE_CHOIX() {
         # Analyse de la variable $REPONSE
         case "$REPONSE" in
             # ========================================================================================================
-            0)
-               echo "Dossier de travail: $WORKDIR | $WORKDIR_FINAL";
-               echo "GIT LLAMA : $GITHUB_LLAMA";
-               echo "";
-               read -p "Appuyez sur Entrée pour continuer..."
-               ;;
-            # ========================================================================================================
-            # Installation Dependances
-            1)
+            # Installation des Dependances
+            a|A)
                bash ${WORKDIR}/workspaces/base/install_packages.sh 1>/dev/null;
                echo "";
                echo "---------------------------------------------------------------------------";
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
+            # Installation de GPU-Unlock Nvidia
+            b|B)
+               bash ${WORKDIR}/workspaces/base/Nvidia_gpu_unlock.sh;
+               read -p "Appuyez sur Entrée pour continuer..."
+               ;;
+            # ========================================================================================================
             # Construction de LLAMA"
-            2)
-               echo "Le menu est opérationnel mais j'ai commenté la ligne";
-               #bash ${WORKDIR}/workspaces/llama/build.sh;
+            c|C)
+               bash ${WORKDIR}/workspaces/llama/build.sh;
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
             # Construction de OpenWebui
-            3)
-               echo "-> Vous avez choisi le Menu 3."
-               read -p "Appuyez sur Entrée pour continuer..."
-               ;;
+            #d|D)
+            #   echo "-> Vous avez choisi le Menu 3."
+            #   read -p "Appuyez sur Entrée pour continuer..."
+            #   ;;
             # ========================================================================================================
             # Installation du service Llama
-            a|A)
+            e|E)
                bash ${WORKDIR}/workspaces/llama/service_install.sh;
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
             # Installation du service OpenWebui
-            b|B)
-               bash ${WORKDIR}/workspaces/openwebui/service_uninstall.sh;
-               read -p "Appuyez sur Entrée pour continuer..."
-               ;;
+            #f|F)
+            #   bash ${WORKDIR}/workspaces/openwebui/service_install.sh;
+            #   read -p "Appuyez sur Entrée pour continuer..."
+            #   ;;
             # ========================================================================================================
             # Désinstallation du service Llama
-            c|C)
+            g|G)
                bash ${WORKDIR}/workspaces/llama/service_uninstall.sh;
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
             # Désinstallation du service OpenWebui
-            d|D)
-               bash ${WORKDIR}/workspaces/openwebui/service_uninstall.sh;
-               read -p "Appuyez sur Entrée pour continuer..."
-               ;;
+            #h|H)
+            #   bash ${WORKDIR}/workspaces/openwebui/service_uninstall.sh;
+            #   read -p "Appuyez sur Entrée pour continuer..."
+            #   ;;
             # ========================================================================================================
             # Lancer le téléchargement des modèles
             m|M)
                bash ${WORKDIR}/workspaces/llama/start.sh;
-               read -p "Appuyez sur Entrée pour continuer..."
-               ;;
-
-            # ========================================================================================================
-            # Nvidia - GPU Unlock
-            x|X)
-               bash ${WORKDIR}/workspaces/base/Nvidia_gpu_unlock.sh;
                read -p "Appuyez sur Entrée pour continuer..."
                ;;
             # ========================================================================================================
@@ -165,6 +158,14 @@ BASE_CHOIX() {
                 echo "Fermeture du menu. Au revoir !"
                 break
                 ;;
+            # ========================================================================================================
+            # Menu de Test
+            0)
+               echo "Dossier de travail: $WORKDIR | $WORKDIR_FINAL";
+               echo "GIT LLAMA : $GITHUB_LLAMA";
+               echo "";
+               read -p "Appuyez sur Entrée pour continuer..."
+               ;;
             # ========================================================================================================
             # Choix incorrect
             *)
