@@ -156,7 +156,7 @@ if [ ! -d /usr/share/doc/nvidia-settings         ]; then apt install -y nvidia-s
 ######################################
 HOST_DEBIAN_NVIDIA_CUDA(){
 if [ ! -d /usr/share/doc/nvidia-settings         ]; then apt install -y nvidia-setting           1>/dev/null; fi
-if [ ! -d /usr/lib/nvidia-cuda-toolkit           ]; then apt install -y nvidia-cuda-toolkit;     1>/dev/null; fi
+if [ ! -d /usr/lib/nvidia-cuda-toolkit           ]; then apt install -y nvidia-cuda-toolkit      1>/dev/null; fi
 if [ ! -d /usr/share/doc/nvidia-cuda-toolkit-gcc ]; then apt install -y nvidia-cuda-toolkit-gcc  1>/dev/null; fi
 #apt install -y apt nvidia-cuda-dev
 #apt install -y apt nvidia-cuda-gdb
