@@ -60,6 +60,9 @@ HOST_DEBIAN_APT_INSTALL_BASE(){
 echo "Installation de APT-FILE";
 if [ ! -d /usr/share/apt-file                ]; then apt install -y apt-file                      1>/dev/null; fi
 
+echo "Installation de APT-UTILS";
+if [ ! -d /usr/share/doc/apt-utils           ]; then apt install -y apt-utils                     1>/dev/null; fi
+
 echo "Installation de BTOP";
 if [ ! -d /usr/share/doc/btop                ]; then apt install -y btop                          1>/dev/null; fi
 
